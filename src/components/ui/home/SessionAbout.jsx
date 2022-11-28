@@ -10,8 +10,8 @@ const SessionAbout = ({ ...rest }) => {
     }
     <div className="description">{rest.description}</div>
     {
-        rest.sub - content_second && (
-            <p className="sub-content-second">{rest.sub - content_second}</p>
+        rest.sub_content_second && (
+            <p className="sub-content-second">{rest.sub_content_second}</p>
         )
     }
 }
