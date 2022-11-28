@@ -1,6 +1,9 @@
+import data from "../asset/fakedata/test";
+import SessionAbout from "../components/ui/home/SessionAbout";
+
 function Homepage(){
     return(
-        <p>sadfd</p>
+        <SessionAbout data = {data}/>
     )
 }
 export default Homepage;
