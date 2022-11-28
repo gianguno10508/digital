@@ -1,7 +1,7 @@
 // round, title, description, subtitle
 const SessionAbout = ({ ...rest }) => {
     <div className="sub-heading">
-        <span>{rest.sub_heading}</span>
+        <span>{{ ...rest }.rest.sub_heading}</span>
     </div>
     {
         rest.title && (
