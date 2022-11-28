@@ -6,6 +6,7 @@ import { Markup } from 'interweave';
 import Header from './components/common/Header';
 import './asset/styles/common_styles.css';
 import Footer from './components/common/Footer';
+import Homepage from './page/Homepage';
 
 function App() {
   const [menu, setMenu] = useState({});
@@ -30,6 +31,7 @@ function App() {
           ))}
       </ul>
       <Header />
+      <Homepage />
       <Footer />
     </div>
   );
