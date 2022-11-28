@@ -1,4 +1,4 @@
-import data from "../asset/fakedata/test";
+import data from "../asset/fakedata/homepage/test";
 import SessionAbout from "../components/ui/home/SessionAbout";
 
 function Homepage(){
