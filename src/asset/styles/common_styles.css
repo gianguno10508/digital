@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-inner {
+    max-width: 1548px;
+    padding: 0 25px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1650px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    height: 1000px;
+    background-color: #183B56;
+}
+
+ul li,
+a {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+
+}

@@ -1,11 +1,13 @@
 import './App.css';
-import MainItemCol from './components/common/MainItemCol';
+import Header from './components/common/Header';
+import './asset/styles/common_styles.css';
+import Footer from './components/common/Footer';
 
 function App() {
-
   return (
-    <div className="App"> 
-      <MainItemCol/>
+    <div className="App">
+      <Header />
+      <Footer />
     </div>
   );
 }
