@@ -1,0 +1,68 @@
+.web-develop .section-banner{
+    position: relative;
+}
+.web-develop .section-banner .top-banner{
+    opacity: 1;
+    transform: translateZ(0);
+}
+.web-develop .section-banner .top-banner .image{
+    z-index: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.web-develop .section-banner .top-banner .image picture{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 460px;
+}
+.web-develop .section-banner .top-banner .image picture img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 460px;
+}
+.web-develop .section-banner .banner-title{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.web-develop .section-banner .banner-title .title{
+    margin-bottom: 22px;
+    text-align: left;
+    max-width: 750px;
+    margin-left: 0;
+}
+.web-develop .section-banner .banner-title .title h1{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #FFCD06;
+    font-family: 'myfont';
+}
+.web-develop .section-banner .banner-title .description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    max-width: 625px;
+    margin-left: 8px;
+    text-transform: inherit;
+    color: #fff;
+}
+.web-develop .section-banner .banner-title .description a{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+.web-develop .section-banner .banner-title .description a:hover{
+    color: #0056b3;
+    text-decoration: underline;
+    transition: all 0.2s;
+}
