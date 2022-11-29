@@ -1,10 +1,565 @@
 .banner-main {
     width: 100%;
     height: 100%;
-    /* background-color: ; */
+    background-color: #292A39;
 }
 
 .banner-main img {
     width: 100%;
     height: 100%;
+}
+
+
+
+/* _____section-about-main____ */
+.section-about-main {
+    background: #292A39;
+    padding: 79px 0 1px;
+}
+
+.section-about-main .sub-heading {
+    display: flex;
+    margin-bottom: 71px;
+
+}
+
+.section-about-main .sub-heading span {
+    color: #FFCD06;
+    background: rgba(255, 205, 6, 0.1);
+
+}
+
+.section-about-main .description,
+.section-about-main .sub-content-second {
+    max-width: 1032px;
+    margin: 0 auto;
+}
+
+.section-about-main .description p,
+.section-about-main .sub-content-second {
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-bottom: 28px;
+}
+
+.section-about-main .sub-content-second {
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #FFCD06;
+    margin-bottom: 88px;
+}
+
+.section-about-main span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 145px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+/* _____section-about-main-----END____ */
+
+/*_____ home-our-services______ */
+.home-our-services {
+    background-image: url(../img/bkg_services.png);
+    padding: 80px 0 89px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.home-our-services .services-we-offer span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 145px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.home-our-services .services-we-offer .sub-heading {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.home-our-services .services-we-offer .sub-heading span {
+    color: #0149AB;
+    background: rgba(1, 73, 171, 0.1);
+}
+
+.home-our-services h2 {
+    margin-bottom: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 71px;
+    text-transform: capitalize;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.home-our-services .description p {
+    color: #183B56;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0;
+    max-width: 894px;
+    margin: 0 auto;
+}
+
+.home-our-services .services-we-offer {
+    position: relative;
+    padding-bottom: 31px;
+    margin-bottom: 61px;
+}
+
+.home-our-services .services-we-offer::after {
+    content: '';
+    width: 521px;
+    height: 2px;
+    background: #0149AB;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+/*_____ home-our-servicesEND______ */
+
+/* ____home-our-services-list____ */
+.home-our-services .container {
+    max-width: 1240px;
+    padding: 0 25px;
+}
+
+.home-our-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-our-services-list .our-services-item {
+    margin-bottom: 41px;
+    overflow-y: hidden;
+}
+
+.home-our-services-list .our-services-item .wapper {
+    border-radius: 10px;
+    padding: 98px 30px 20px;
+    text-align: center;
+    min-height: 100%;
+    background: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 9px 8px 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-our-services-list .our-services-item .box-icon {
+    margin: 0 auto;
+    max-height: 81px;
+    object-fit: cover;
+}
+
+.home-our-services-list .our-services-item .title p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34.47px;
+    line-height: 42px;
+    color: #3FA9F5;
+    margin: 0;
+    padding: 62px 0px 33px;
+    letter-spacing: 0;
+}
+
+.home-our-services-list .our-services-item .hover {
+    display: block;
+    background: #0149AB;
+    border-color: #0149AB;
+    padding: 20px 20px 10px;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s;
+    /* transform: none; */
+    margin: 0 10px;
+    overflow-y: hidden;
+
+}
+
+.home-our-services-list .our-services-item:hover .hover {
+    top: 0;
+    bottom: 0;
+    width: 95%;
+    border-radius: 10px;
+    display: block;
+    opacity: 1;
+    overflow-y: hidden;
+
+}
+
+.home-our-services-list .our-services-item .hover .title p {
+    color: #fff;
+    padding: 0 0 15px;
+    font-size: 25px;
+}
+
+.home-our-services-list .our-services-item .hover .description p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin: 0 0 15px;
+    padding: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.home-our-services-list .our-services-item .hover .button-link a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #1F9BEB;
+    background: transparent;
+    padding: 0;
+    text-transform: inherit;
+    position: relative;
+    padding-right: 32px;
+    letter-spacing: 0;
+    border: 0;
+    height: auto;
+    width: auto;
+    color: #FFCD06;
+}
+
+.home-our-services-list .our-services-item .hover .button-link a::after {
+    content: '';
+    background: url(../img/arr-icon-hover.png);
+    width: 11px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+/* ____home-our-services-listEND____ */
+
+/* _____section-facts-figures_____ */
+.section-home-page .section-facts-figures {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.section-home-page .section-facts-figures h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+
+}
+
+.section-home-page .facts-figures-list {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 43px;
+}
+
+.section-home-page .facts-figures-list .facts-figures-item {
+    padding-top: 61px;
+    padding-bottom: 85px;
+    border-right: 1px solid rgb(224 224 224 / 50%);
+}
+
+.section-home-page .facts-figures-list .facts-figures-item:last-child {
+    border-right: none;
+}
+
+.section-home-page .facts-figures-list .facts-figures-item .title {
+    height: 53px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    place-items: flex-start;
+    margin-top: 32px;
+}
+
+.section-home-page .facts-figures-list .facts-figures-item .title p {
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+.section-home-page .facts-figures-list .facts-figures-item .description p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #183B56;
+}
+
+/* _____section-facts-figuresEND_____ */
+
+/* ____section-home-features_____ */
+.section-home-page .section-home-features {
+    text-align: center;
+    padding: 35px 0 0;
+}
+
+.section-home-page .section-home-features h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 71px;
+    text-transform: capitalize;
+    margin: 0;
+    letter-spacing: 0;
+    margin-bottom: 60px;
+}
+
+.section-home-page .section-home-features .latest-list .latest-items {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.section-home-features .latest-list .latest-items .background-img {
+    border-radius: 16px;
+    position: relative;
+    padding-bottom: 107.473%;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-home-features .latest-list .latest-items .background-img::before {
+    content: '';
+    background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, #101921 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
+}
+
+.section-home-features .latest-list .latest-items .background-img .description {
+    position: absolute;
+    bottom: 0;
+    padding: 40px 32px 20px;
+}
+
+.section-home-features .latest-list .latest-items .background-img .description p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: static;
+    text-decoration: none;
+}
+
+/* ____section-home-featuresEnd_____ */
+
+/* ______home-home-insights_____ */
+.home-home-insights {
+    padding: 45px 0;
+}
+
+.section-home-page .home-home-insights .sub-heading {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.section-home-page .home-home-insights .sub-heading span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 145px;
+    margin: 0 auto;
+    border-radius: 100px;
+
+    margin: 0;
+    background: rgba(21, 101, 216, 0.1);
+    color: #1565D8;
+}
+
+.section-home-page .home-home-insights h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 71px;
+    text-transform: capitalize;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.section-home-page .home-home-insights .insights-items,
+.section-home-page .home-home-insights .fist-item-insights {
+    margin-bottom: 52px;
+}
+
+.section-home-page .home-home-insights .insights-items .wapper {
+    background: #FFFFFF;
+    box-shadow: 0px 17px 39px rgb(0 0 0 / 5%);
+    border-radius: 20px;
+    padding: 30px 38px;
+    height: 100%;
+    position: relative;
+}
+
+.section-home-page .home-home-insights .insights-items .wapper::before {
+    width: 6px;
+    background: #FFCD06;
+    border-radius: 0px 5px 5px 0px;
+    content: '';
+    position: absolute;
+    top: 14px;
+    height: 113px;
+    left: 0;
+}
+
+.section-home-page .home-home-insights .insights-items .box-icon {
+    border: 2px solid #FFCD06;
+    border-radius: 16px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-home-page .home-home-insights .insights-items .box-icon span {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-home-page .home-home-insights .insights-items .title p {
+    margin: 32px 0 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #183b56;
+}
+
+.section-home-page .home-home-insights .insights-items .description p {
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    letter-spacing: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+/* ______home-home-insightsEND_____ */
+
+/* ____home-home-contact-us____ */
+.section-home-page .home-home-contact-us .background-img {
+    background-image: url(https://onextdigital.com/wp-content/uploads/2022/09/Frame-336.jpg);
+    padding: 80px 0;
+    position: relative;
+}
+
+.section-home-page .home-home-contact-us .contact-us-title {
+    max-width: 631px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-home-page .home-home-contact-us .contact-us-title h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 71px;
+    text-transform: capitalize;
+    margin: 0;
+    letter-spacing: 0;
+
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.section-home-page .home-home-contact-us .contact-us-title .button-more a {
+    max-width: none;
+    width: auto;
+    background: #FFCD06;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: #183B56;
+    text-transform: capitalize;
+    height: 55px;
+    padding: 15px 30px;
+
+    border: 1px solid;
+}
+
+.section-home-page .home-home-contact-us .contact-us-title .button-more a:hover {
+    background: transparent;
+    border-color: #FFCD06;
+    color: #FFCD06;
+}
+
+/* _____home-home-contact-us END____ */
+
+@media screen and (max-width: 990px) {
+    .home-our-services-list {
+        height: auto;
+    }
+
+    .home-our-services-list .our-services-item .wapper {
+        padding: 34px 10px 20px;
+    }
 }

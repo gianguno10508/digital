@@ -6,7 +6,7 @@ const SessionAbout = ({ data }) => {
                 <span>{data.sub_heading}</span>
             </div>
             {data.title && <h2>{data.title}</h2>}
-            <div className="description">{data.description}</div>
+            <div className="description"><p>{data.description}</p></div>
             {data.sub_content_second && (
                 <p className="sub-content-second">{data.sub_content_second}</p>
             )}
