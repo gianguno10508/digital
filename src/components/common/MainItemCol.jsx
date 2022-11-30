@@ -12,12 +12,18 @@ const MainItemCol = ({ data }) => {
             )}
             {data.number && (
                 <div className="number">
-                    <p>{data.number}</p>
+                    <span>{data.number}</span>
                 </div>
             )}
             {data.title && (
                 <div className="title">
-                    <p>{data.title}</p>
+                    {data.type_title == "h1" ? (
+                        <h1>{data.title}</h1>
+                        ) : data.type_title == "h2" ? (
+                        <h2>{data.title}</h2>
+                        ) : (
+                        <p>{data.title}</p>
+                    )}
                 </div>
             )}
             {data.description && (
@@ -25,9 +31,9 @@ const MainItemCol = ({ data }) => {
                     <p>{data.description}</p>
                 </div>
             )}
-            {data.button || data.url && (
+            {data.url && (
                 <div className="button-link">
-                    <a href={data.url} className="button">Learn More</a>
+                    <a href={data.url} className="button">{data.button}</a>
                 </div>
             )}
         </>
