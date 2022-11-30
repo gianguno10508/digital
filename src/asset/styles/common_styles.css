@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: "myfont";
     src: url("../font/HelveticaNowDisplay-Regular.woff") format('woff'),
         url("../font/HelveticaNowDisplay-Regular.woff2") format('woff2')
 }
+
 @font-face {
     font-family: "myfont";
     src: url("../font/HelveticaNowDisplay-Bold.woff") format('woff'),
@@ -16,7 +18,7 @@
 }
 
 
-body{
+body {
     font-family: 'myfont';
 }
 
@@ -111,4 +113,8 @@ img {
     max-width: 25%;
     width: 100%;
     padding: 0 15px;
+}
+
+.section {
+    padding: 5rem 0;
 }

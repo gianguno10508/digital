@@ -1,0 +1,400 @@
+/* ______section-banner-white-lable______ */
+.section-white-lable-page .section-banner-white-lable .section-banner {
+    position: relative;
+}
+
+.section-white-lable-page .section-banner-white-lable .section-banner .banner-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    transform: translateY(-50%);
+    z-index: 1;
+    max-width: 1650px;
+    padding: 0 144px;
+
+}
+
+.section-banner-white-lable .section-banner .banner-title .title h1 {
+    margin-bottom: 22px;
+    text-align: left;
+    max-width: 750px;
+    margin-left: 0;
+
+    text-transform: capitalize;
+    color: #FFCD06;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px
+}
+
+.section-banner-white-lable .section-banner .banner-title .description {
+    max-width: 625px;
+}
+
+.section-banner-white-lable .section-banner .banner-title .description span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0;
+
+}
+
+.section-white-lable-page .section-banner-white-lable .section-banner .top-banner .image-banner picture,
+.section-white-lable-page .section-banner-white-lable .section-banner .top-banner .image-banner img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 460px;
+}
+
+/* ______section-banner-white-lable END____ */
+
+/* ______section-introduce______ */
+.section-white-lable-page .section-introduce {
+    background: #292A39;
+    text-align: center;
+    padding: 73px 0 59px 0;
+    margin-top: -1px;
+    position: relative;
+    z-index: 2;
+    height: 1887px;
+}
+
+/* _____section-introduce END_____ */
+/* ____our_services_and_techs-section____ */
+.section-white-lable-page .our_services_and_techs-section {
+    padding: 5rem 0;
+}
+
+.section-white-lable-page .our_services_and_techs-section .section-title {
+    margin-bottom: 50px;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+.section-white-lable-page .our_services_and_techs-section .services-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -65px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.section-white-lable-page .our_services_and_techs-section .services-list .services-item {
+    flex: 0 0 20%;
+    max-width: 20%;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.our_services_and_techs-section .services-list .services-item .wapper {
+    background: #fff;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 34px;
+    padding-bottom: 32px;
+
+    height: 261px;
+}
+
+.our_services_and_techs-section .services-list .services-item .wapper .box-icon img {
+    max-height: 95px;
+}
+
+.our_services_and_techs-section .services-list .services-item .wapper .title p {
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-transform: capitalize;
+    color: #007bff;
+}
+
+.our_services_and_techs-section .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 96px;
+}
+
+.our_services_and_techs-section .tech-list .tech-item {
+    padding: 0 38px;
+}
+
+.our_services_and_techs-section .tech-list .tech-item .box-icon img {
+    max-height: 84px;
+}
+
+/* ____our_services_and_techs-section EnD____ */
+
+/* ______benefits-section_____ */
+.section-white-lable-page .benefits-section {
+    padding: 5rem 0;
+}
+
+.section-white-lable-page .benefits-section .benefits-section-inner {
+    padding: 0;
+    gap: 44px;
+    border: 2px solid #E0E0E0;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+
+
+}
+
+.section-white-lable-page .benefits-section .benefits-section-inner .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.benefits-section .benefits-section-inner .section-content .section-inner-banner,
+.benefits-section .benefits-section-inner .section-content .section-inner-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.benefits-section .benefits-section-inner .section-content .section-inner-content {
+    padding: 80px 15px 40px 15px
+}
+
+.benefits-section .benefits-section-inner .section-content .section-inner-content h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+.benefits-section .benefits-section-inner .section-content .section-inner-content .benefits-item {
+    padding-left: 3rem;
+    margin-top: 44px;
+}
+
+.benefits-section .benefits-section-inner .section-content .section-inner-content .benefits-item ul {
+    margin: 0 0 3rem 3rem;
+}
+
+.benefits-section .benefits-section-inner .section-content .section-inner-content .benefits-item ul li {
+    list-style: none;
+    padding-left: 60px;
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+    color: #5A7184;
+    margin-bottom: 25px;
+}
+
+.benefits-section .benefits-section-inner .section-content .section-inner-content .benefits-item ul li::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(https://onextdigital.com/wp-content/themes/ahtsolution/assets/images/frame11029.png);
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+
+/* ______benefits-sectionEND_____ */
+
+/* why_choose_us-section_____ */
+.section-white-lable-page .why_choose_us-section {
+    padding: 104px 0px 50px;
+}
+
+.section-white-lable-page .why_choose_us-section .why_choose_us-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+.section-white-lable-page .why_choose_us-section img {
+    width: 100%;
+}
+
+.section-white-lable-page .why_choose_us-section .why_choose_us-banner .why_choose_us-banner-left {
+    margin-top: 46px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.section-white-lable-page .why_choose_us-section .why_choose_us-banner .why_choose_us-banner-right {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: -77px;
+}
+
+/* why_choose_us-sectionEND_____ */
+
+/* ___reasons-list_____ */
+.section-white-lable-page .why_choose_us-section .reasons-list {
+    padding: 25px 60px;
+    margin-top: 46px;
+}
+
+.why_choose_us-section .reasons-list .reasons-items {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 35px;
+    ;
+}
+
+.why_choose_us-section .reasons-list .reasons-items div:nth-child(n+1) {
+    display: inline-block;
+    color: #183B56;
+    margin-top: 0;
+    margin-bottom: 33px;
+
+}
+
+.why_choose_us-section .reasons-list .reasons-items .title p,
+.why_choose_us-section .reasons-list .reasons-items .number p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.why_choose_us-section .reasons-list .reasons-items .number p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    margin-right: 4px;
+}
+
+.why_choose_us-section .reasons-list .reasons-items .description p {
+    font-weight: 400;
+    color: #5A7184;
+    letter-spacing: 0.1px;
+    padding-right: 6px;
+    text-align: justify;
+}
+
+.why_choose_us-section .reasons-list .reasons-items div:last-child {
+    display: block;
+}
+
+/* ___reasons-listEND_____ */
+
+/* _____bottom_panel_banner-section____ */
+.section-white-lable-page .bottom_panel_banner-section {
+    padding: 21px 0px 50px
+}
+
+.bottom_panel_banner-section .wapper {
+    background: #FBDB6A;
+    border-radius: 16px;
+    padding-bottom: 45px;
+    position: relative;
+    padding: 35px 260px 52px;
+    text-align: center;
+}
+
+.bottom_panel_banner-section .wapper::before {
+    content: '';
+    background-image: url(https://onextdigital.com/wp-content/themes/ahtsolution/assets/images/ellipse34.png);
+    position: absolute;
+    width: 132px;
+    height: 329px;
+    top: 0;
+    left: 0;
+}
+
+.bottom_panel_banner-section .wapper::after {
+    content: '';
+    background-image: url(https://onextdigital.com/wp-content/themes/ahtsolution/assets/images/ellipse32.png);
+    position: absolute;
+    width: 321px;
+    height: 281px;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom_panel_banner-section .wapper .bottom_panel_banner-title {
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    color: #183B56;
+    margin-top: 0;
+    margin-bottom: 20px;
+    opacity: 1;
+
+    font-size: 38px;
+    line-height: 64px;
+
+    margin: 0 0 24px 0;
+}
+
+.bottom_panel_banner-section .wapper .bottom_panel_banner-description {
+    margin-bottom: 38px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #5A7184;
+}
+
+.bottom_panel_banner-section .wapper .button-more a {
+    background: #0149AB;
+    border-radius: 8px;
+    color: #FFFFFF;
+
+    border: 1px solid #0149AB;
+    text-decoration: none;
+    transition: all .3s;
+    line-height: 32px;
+
+    max-width: none;
+    width: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+    height: 55px;
+    padding: 9px 30px;
+
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.bottom_panel_banner-section .wapper .button-more a:hover {
+    background: transparent;
+    color: #0149AB;
+}
+
+/* _____bottom_panel_banner-sectionEND_____ */
