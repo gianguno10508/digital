@@ -18,13 +18,7 @@ const LeftRightCol = ({ data }) => {
         )}
       </div>
       <div className={`content-right col-sm-12 col-md-${data.piece_col_right}`}>
-        {data.type_title == "h1" ? (
-          <h1>{data.title}</h1>
-        ) : data.type_title == "h2" ? (
-          <h2>{data.title}</h2>
-        ) : (
-          <p>{data.title}</p>
-        )}
+          <data.type_title>{data.title}</data.type_title>
         <div className="description">
             <Markup content={data.description} />
         </div>

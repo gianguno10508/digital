@@ -1,12 +1,11 @@
-const base_url = 'http://localhost:828/graphql'
+const base_url = 'https://72.arrowhitech.net/tn3/digital/graphql'
 
 // Request init
 const resquest_init = {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
-    },
-
+    }
 }
 
 // Primary Menu Header
@@ -15,23 +14,33 @@ export const getMenuHeader = async () => {
         ...resquest_init,
         body: JSON.stringify({
             query: `
-				{
-                    menus(where: {location: PRIMARY}) {
-                        edges {
-                          node {
-                            menuItems {
-                              edges {
-                                node {
-                                  label
-                                  path
-                                }
-                              }
-                            }
-                          }
-                        }
-                    }
+            query MyQuery2 {
+              page(id: "cG9zdDo0MA==") {
+                id
+                title
+                banner {
+                  description
+                  title
                 }
-			`
+                webdevelopment {
+                  items{
+                    title
+                    image {
+                      id
+                      sourceUrl
+                    }
+                    description
+                  }
+                  services {
+                    description
+                    techTitle
+                    title
+                  }
+                  fieldGroupName
+                }
+              }
+            }
+			      `
         })
     }).then(res => res.json())
         .then(res => res.data)

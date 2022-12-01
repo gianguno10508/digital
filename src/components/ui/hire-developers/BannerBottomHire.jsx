@@ -1,11 +1,11 @@
 import bannerBottomHireDeveloper from "../../../asset/fakedata/hiredevelopers/dataBannerBottomHire";
-import BackgroundItem from "../../common/BackgroundItem";
+import ItemHasBackground from "../../common/ItemHasBackground";
 
 const BannerBottomHire = () =>{
     return(
         <div className="section-bottom-hire">
             <div className="container">
-                <BackgroundItem data={bannerBottomHireDeveloper} />
+                <ItemHasBackground data={bannerBottomHireDeveloper} />
             </div>
         </div>
     )

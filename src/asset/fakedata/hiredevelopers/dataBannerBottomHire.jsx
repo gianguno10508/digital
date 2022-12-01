@@ -5,6 +5,5 @@ const bannerBottomHireDeveloper = {
     type_title: 'h2',
     button: 'Get Started',
     url: '#',
-    type_title: 'h2'
 }
 export default bannerBottomHireDeveloper;

@@ -35,7 +35,13 @@ const BackgroundItem = ({ data }) => {
           </div>
         </div>
       </div>
-      {data.button && <div className="button-link">{data.title_button}</div>}
+      {data.url && (
+        <div className="button-link">
+          <a href={data.url} className="button">
+            {data.button}
+          </a>
+        </div>
+      )}
     </div>
   );
 };

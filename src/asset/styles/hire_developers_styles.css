@@ -81,6 +81,25 @@
     padding-bottom: 9rem;
     align-items: center;
 }
+.hire-develop .section-our-developers .item-inner:nth-child(even){
+    position: relative;
+    padding-left: 62px;
+}
+.hire-develop .section-our-developers .item-inner:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    top: 101px;
+    left: 0;
+    z-index: -1;
+    right: 0;
+    bottom: 83px;
+    background: #FBFBFB;
+    box-shadow: 0px 17px 39px rgb(0 0 0 / 5%);
+    border-radius: 28px;
+}
+.hire-develop .section-our-developers .item-inner:last-child{
+    padding-bottom: 0;
+}
 .hire-develop .section-our-developers .content-right h2{
     font-weight: 700;
     font-size: 38px;
@@ -183,33 +202,167 @@
 
 
 /*Banner bottom*/
-.hire-develop .section-bottom-hire .section-banner .top-banner .image picture img{
-    height: auto;
-    object-fit: cover;
-    width: 100%;
-}
-.hire-develop .section-bottom-hire .section-banner .banner-title{
-    position: absolute;
-    top: 15%;
-    left: 0;
-    width: 100%;
+.hire-develop .section-bottom-hire .inner-block{
     text-align: left;
-    transform: translateY(-15%);
-    z-index: 1;
-    padding: 0 25px;
+    background: #183B56;
+    border-radius: 16px;
+    padding: 35px 260px 52px;
+    background-size: cover;
+    background-position: center;
+    padding-left: 132px;
 }
-.hire-develop .section-bottom-hire .section-banner .banner-title .title{
+.hire-develop .section-bottom-hire .inner-block h2{
+    text-align: left;
     color: #FFCD06;
     margin-bottom: 21px;
-    margin: 0 0 24px 0;
-}
-.hire-develop .section-bottom-hire .section-banner .banner-title .title h2{
-    text-align: left;
-    font-family: 'myfont';
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
     line-height: 64px;
     text-transform: capitalize;
+    margin: 0 0 24px 0;
+    font-family: 'myfont';
+}
+.hire-develop .section-bottom-hire .inner-block .description{
+    text-align: left;
+    color: #FFF;
+    margin-bottom: 38px;
+}
+.hire-develop .section-bottom-hire .inner-block .button-link a{
+    max-width: none;
+    width: auto;
+    background: #FFCD06;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    border: 1px solid;
+    text-decoration: none;
+    transition: all .3s;
+    line-height: 32px;
+    color: #183B56;
+    text-transform: capitalize;
+    height: 55px;
+    padding: 9px 30px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-appearance: none;
+    margin: 0;
+    opacity: 1;
+    letter-spacing: 0.0333em;
+    text-align: center;
 }
 /*End banner bottom*/
+
+
+@media (max-width: 1400px){
+    .hire-develop .section-our-developers .image-feature .image img{
+        max-width: 100%;
+    }
+    .hire-develop .section-our-developers .content-right h2{
+        font-size: 39px;
+        line-height: 50px;
+    }
+    .hire-develop .section-our-developers .item-inner ol li{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 1200px){
+    .hire-develop .section-our-developers .content-right .description p{
+        padding-right: 0;
+    }
+    .hire-develop .section-our-developers .item-inner ol li{
+        width: 50%;
+        -webkit-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .hire-develop .section-our-developers .item-inner ol{
+        margin-right: 0;
+    }
+    .hire-develop .section-our-developers .caption{
+        padding-right: 0;
+    }
+    .hire-develop .section-our-developers .item-inner:nth-child(even){
+        padding-left: 0px;
+    }
+}
+@media (max-width: 767px){
+    .hire-develop .section-banner .banner-title .title h1{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .hire-develop .section-banner .banner-title .description{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .hire-develop .section-our-developers .content-right h2{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .hire-develop .section-our-developers .content-right{
+        margin-top: 40px;
+    }
+    .hire-develop .section-our-developers .content-right .description p{
+        padding-right: 0;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 24px;
+    }
+    .hire-develop .section-our-developers .item-inner ul li{
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 43px;
+    }
+    .hire-develop .section-our-developers .item-inner:nth-child(even) .image-feature{
+        order: 0 !important;
+    }
+    .hire-develop .section-our-developers .item-inner{
+        padding-bottom: 0;
+    }
+    .hire-develop .section-bottom-hire .inner-block{
+        padding: 89px 15px;
+    }
+    .hire-develop .section-bottom-hire .inner-block h2{
+        text-align: center;
+        margin-bottom: 8px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .hire-develop .section-bottom-hire .inner-block .description p{
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .hire-develop .section-bottom-hire .inner-block .button-link{
+        text-align: center;
+    }
+    .hire-develop .section-bottom-hire .inner-block .button-link a{
+        min-width: 220px;
+        height: 48px;
+        line-height: 20px;
+        max-width: none;
+        width: auto;
+        padding: 14px 65px;
+    }
+    .hire-develop .section-our-developers .item-inner ul li::before{
+        width: 34px;
+        height: 34px;
+        background-size: contain;
+        top: -6px;
+    }
+}
+@media (max-width: 490px){
+    .hire-develop .section-banner .banner-title .title h1{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .hire-develop .section-our-developers .content-right h2{
+        font-size: 24px;
+        line-height: 31px;
+    }
+}
