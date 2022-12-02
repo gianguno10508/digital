@@ -6,6 +6,7 @@ import Header from './components/common/Header';
 import HireDevelopers from './page/HireDevelopers';
 import Homepage from './page/Homepage';
 import MobileAppdevelopment from './page/MobileAppdevelopment';
+import UxUiDesignService from './page/UxUiDesignService';
 import WebDevelopment from './page/WebDevelopment';
 import WhiteLabelSoftware from './page/WhiteLabelSoftware';
 function App() {
