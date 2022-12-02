@@ -3,6 +3,11 @@
     position: relative;
 }
 
+.section-mobile-app-development .mobile-app-development-banner .section-banner .top-banner .image img {
+    width: 100%;
+    height: 100%;
+}
+
 .mobile-app-development-banner .section-banner .banner-title {
     padding: 0 25px;
 
@@ -47,10 +52,491 @@
     line-height: 28px;
     text-align: left;
     width: 625px;
-    margin-left: 120px;
+    margin-left: 30px;
     text-transform: inherit;
 
     color: #fff;
 }
 
 /* _____mobile-app-development-bannerEND____ */
+
+/* ___mobile-service-section____ */
+.section-mobile-app-development .mobile-service-section {
+    padding: 5rem 0;
+}
+
+.mobile-service-section .mobile-service-heder {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.mobile-service-section .mobile-service-heder h2 {
+    font-size: 46px;
+    line-height: 74px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 74px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+.mobile-service-section .mobile-service-content .mobile-service-top {
+    margin-bottom: 70px;
+}
+
+.mobile-service-content .mobile-service-top .service-top-col-meta,
+.mobile-service-content .mobile-service-top .service-top-col-items {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.mobile-service-content .mobile-service-top .service-top-col-meta {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.mobile-service-content .mobile-service-top .service-top-col-meta .vcenter-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-service-top .service-top-col-meta .vcenter-item h2 {
+    font-size: 35px;
+    line-height: 53px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+.mobile-service-content .mobile-service-top .service-top-col-items {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mobile-service-top .service-top-col-items .inner-service {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.mobile-service-top .service-top-col-items .inner-service .box-icon img {
+    width: 100%;
+    max-width: 340px;
+}
+
+.mobile-service-top .service-top-col-items .inner-service .title h2 {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 24px;
+    color: #183B56;
+}
+
+.mobile-service-top .service-top-col-items .inner-service .title::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 35px;
+    background: #FFCD06;
+    border-radius: 3px;
+    left: -9px;
+}
+
+.mobile-service-bottom .item-inner .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-service-bottom .item-inner .content-right {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile-service-bottom .item-inner .content-right h2 {
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+    font-size: 35px;
+    line-height: 53px;
+}
+
+.mobile-service-bottom .item-inner .content-right .description span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #183B56;
+}
+
+/* ___mobile-service-sectionEND____ */
+
+/* ____our_technology_stack-section___ */
+.section-mobile-app-development .our_technology_stack-section {
+    background-color: #fff;
+    background-image: url(https://onextdigital.com/wp-content/themes/ahtsolution/assets/images/rectangle17.png);
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5rem 0;
+
+}
+
+.our_technology_stack-section .section-banner .banner-title {
+    text-align: center;
+}
+
+.our_technology_stack-section .section-banner .banner-title .title {
+    margin-bottom: 13px;
+}
+
+.our_technology_stack-section .section-banner .banner-title .title h2 {
+    font-size: 46px;
+    line-height: 74px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+.our_technology_stack-section .section-banner .banner-title .description {
+    width: 100%;
+    max-width: 565px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 54px;
+}
+
+.our_technology_stack-section .section-banner .banner-title .description span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #183B56;
+}
+
+.our_technology_stack-section .section-banner .top-banner {
+    max-width: 1429px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -148px;
+}
+
+.our_technology_stack-section .section-banner .top-banner .image img {
+    width: 100%;
+}
+
+/* ____our_technology_stack-sectionEND___ */
+
+/* app_features-section___ */
+.section-mobile-app-development .app_features-section {
+    padding: 301px 0px 50px;
+}
+
+.app_features-section .banner-title .title {
+    margin-bottom: 43px;
+    text-align: center;
+}
+
+.app_features-section .banner-title .title h2 {
+    font-size: 46px;
+    line-height: 74px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+.app_features-section .banner-title .description {
+    max-width: 1032px;
+    margin: auto;
+    color: #5A7184;
+    text-align: center;
+}
+
+.app_features-section .app_features-content .app_features-list {
+    justify-content: center;
+    margin-right: -40px;
+    margin-left: -40px;
+}
+
+.app_features-section .app_features-content .app_features-list .app_features-items {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 80px;
+
+    height: 272.2px;
+
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.app_features-section .app_features-content .app_features-list .wapper {
+    border: 1px dashed #292A39;
+    border-radius: 12px;
+    padding: 57px 80px 40px;
+    min-height: 250px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.app_features-section .app_features-content .app_features-list .wapper:hover {
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+}
+
+.app_features-section .app_features-content .app_features-list .wapper .square {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+.app_features-section .app_features-content .app_features-list .wapper .title {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.app_features-section .app_features-content .app_features-list .wapper .title h2 {
+    font-style: normal;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.app_features-section .app_features-content .app_features-list .wapper .description {
+    max-width: 490px;
+}
+
+.app_features-section .app_features-content .app_features-list .wapper .description p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #183B56;
+}
+
+/* app_features-sectionEND___ */
+/* madp-section____ */
+.section-mobile-app-development .madp-section {
+    padding: 51px 0px 40px;
+    background: #292A39;
+}
+
+.madp-section .banner-title {
+    text-align: center;
+}
+
+.madp-section .container {
+    max-width: 1264px;
+}
+
+.madp-section .banner-title .title {
+    margin-top: 3px;
+    line-height: 53px;
+    margin: 0 0 24px 0;
+}
+
+.madp-section .banner-title .title h2 {
+    color: #FFCD06;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.madp-section .banner-title .description span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.madp-section .madp-content .madp-list .madp-col-meta {
+    flex: 0 0 25%;
+    max-width: 25%;
+
+    text-align: center;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-top: 92px;
+    margin-bottom: 35px;
+}
+
+.madp-section .madp-content .madp-col-meta {
+    text-align: center;
+}
+
+.madp-section .madp-content .madp-col-meta:hover {
+    cursor: pointer;
+}
+
+.madp-section .madp-content .madp-col-meta .madp-step {
+    background: rgba(255, 205, 6, 0.1);
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    color: #FFCD06;
+    position: relative;
+    font-weight: 600;
+
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.madp-section .madp-content .madp-col-meta:hover .madp-step {
+    background: #E0E0E0;
+    color: #5A7184;
+}
+
+.madp-section .madp-content .madp-col-meta .madp-step::after {
+    content: '';
+    width: 180px;
+    height: 1px;
+    position: absolute;
+    top: 20px;
+    border-bottom: 1px dashed #FFCD06;
+    left: 123%;
+}
+
+.madp-section .madp-content .madp-col-meta:hover .madp-step::after {
+    border-color: #5A7184;
+}
+
+.madp-section .madp-content .madp-col-meta:nth-child(4) .madp-step::after,
+.madp-section .madp-content .madp-col-meta:last-child .madp-step::after {
+    content: none;
+}
+
+.madp-section .madp-content .madp-col-meta .madp-sttl {
+    background: #FFFFFF;
+    box-shadow: 0px 17px 39px rgb(0 0 0 / 5%);
+    border-radius: 8px;
+    min-height: 131px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.madp-section .madp-content .madp-col-meta:hover .madp-sttl {
+    background: #E0E0E0;
+}
+
+.madp-section .madp-content .madp-col-meta .madp-sttl img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -24px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.madp-section .madp-content .madp-col-meta:hover .madp-sttl img {
+    filter: grayscale(100%);
+}
+
+.madp-section .madp-content .madp-col-meta .madp-sttl span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #183B56;
+}
+
+/* madp-sectionEND____ */
+
+/* ___bottom_panel_banner-section___ */
+.section-mobile-app-development .bottom_panel_banner-section {
+    padding: 5rem 0;
+}
+
+.bottom_panel_banner-section .border-bottom-banner {
+    background: #183B56;
+    border-radius: 16px;
+    padding: 35px 260px 52px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.bottom_panel_banner-section .border-bottom-banner h2 {
+    color: #FFCD06;
+    margin-bottom: 21px;
+    font-size: 35px;
+    line-height: 53px;
+    margin: 0 0 24px 0;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.bottom_panel_banner-section .border-bottom-banner .description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFF;
+    margin-bottom: 38px;
+}
+
+.bottom_panel_banner-section .border-bottom-banner .button-more a {
+    border: 1px solid;
+    text-decoration: none;
+    transition: all .3s;
+    line-height: 32px;
+    max-width: none;
+    width: auto;
+    background: #FFCD06;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #183B56;
+    text-transform: capitalize;
+    height: 55px;
+    padding: 15px 30px;
+}
+
+.bottom_panel_banner-section .border-bottom-banner .button-more a:hover {
+    background-color: transparent;
+    border-color: #FFCD06;
+    color: #FFCD06;
+}
+
+/* ___bottom_panel_banner-sectionEND___ */

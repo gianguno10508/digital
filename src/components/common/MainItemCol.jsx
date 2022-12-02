@@ -2,7 +2,7 @@
 const MainItemCol = ({ data }) => {
     return (
         <>
-            {data.square && <div className="square"></div>}
+            {data.square && <div className="square" style={{ backgroundColor: data.square }}></div>}
             {data.img && (
                 <div className="box-icon">
                     <span>
@@ -19,9 +19,9 @@ const MainItemCol = ({ data }) => {
                 <div className="title">
                     {data.type_title == "h1" ? (
                         <h1>{data.title}</h1>
-                        ) : data.type_title == "h2" ? (
+                    ) : data.type_title == "h2" ? (
                         <h2>{data.title}</h2>
-                        ) : (
+                    ) : (
                         <p>{data.title}</p>
                     )}
                 </div>

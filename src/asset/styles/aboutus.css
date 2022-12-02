@@ -1,0 +1,78 @@
+/* ______BannerTop____ */
+.about-us-section .about-us-banner-top .section-banner .top-banner .image {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.about-us-section .about-us-banner-top {
+    position: relative;
+}
+
+.about-us-section .about-us-banner-top .section-banner .top-banner .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(0 0 0 / 50%);
+}
+
+.about-us-section .about-us-banner-top .section-banner .top-banner .image picture,
+.about-us-section .about-us-banner-top .section-banner .top-banner .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 460px;
+}
+
+.about-us-section .about-us-banner-top .section-banner .banner-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 0 25px;
+}
+
+.about-us-section .about-us-banner-top .section-banner .banner-title .title,
+.about-us-section .about-us-banner-top .section-banner .banner-title .description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-us-section .about-us-banner-top .section-banner .banner-title .title {
+
+    max-width: 750px;
+    margin-bottom: 22px;
+}
+
+.about-us-section .about-us-banner-top .section-banner .banner-title .title h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFCD06;
+}
+
+.about-us-section .about-us-banner-top .section-banner .banner-title .description {
+    color: #fff;
+    max-width: 625px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: inherit;
+}
+
+.about-us-section .about-us-banner-top .section-banner .banner-title .description a:hover {
+    text-decoration: underline;
+}
+
+/* ______BannerTopEND____ */

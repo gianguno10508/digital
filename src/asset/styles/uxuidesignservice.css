@@ -1,0 +1,459 @@
+/* _____Banner___ */
+.section-uxui-design-service .section-banner {
+    position: relative;
+}
+
+.section-uxui-design-service .section-banner .image-banner .image {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.section-uxui-design-service .section-banner .image-banner .image picture {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 460px;
+}
+
+.section-uxui-design-service .section-banner .image-banner .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 460px;
+}
+
+.section-uxui-design-service .section-banner .banner-title {
+    padding: 0 25px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.section-uxui-design-service .section-banner .banner-title .container {
+    max-width: 1400px;
+}
+
+.section-uxui-design-service .section-banner .banner-title .title {
+    text-align: left;
+}
+
+.section-uxui-design-service .section-banner .banner-title .title h1 {
+    margin-bottom: 22px;
+    text-align: left;
+    max-width: 750px;
+    margin-left: 0;
+    overflow: hidden;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #FFCD06;
+}
+
+.section-uxui-design-service .section-banner .banner-title .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    max-width: 625px;
+    margin-left: 8px;
+    text-transform: inherit;
+    color: #fff;
+}
+
+.section-uxui-design-service .section-banner .banner-title .description a:hover {
+    text-decoration: underline;
+}
+
+/* _____BannerENd___ */
+
+/* ___TopContent___ */
+.section-uxui-design-service .design-services-section .top-content-title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-top: 72px;
+
+}
+
+.section-uxui-design-service .design-services-section .top-content .top-content-title h2 {
+    display: inline-block;
+    width: 43%;
+    font-size: 46px;
+    line-height: 52px;
+    text-transform: capitalize;
+    color: #183B56;
+    padding-right: 30px;
+    margin: 0 0 24px 0;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+}
+
+.section-uxui-design-service .design-services-section .top-content .top-content-title .content {
+    margin-top: 10px;
+    display: inline-block;
+    width: 50%;
+    font-size: 18px;
+    line-height: 25.5px;
+    padding-left: 30px;
+    color: #183B56;
+}
+
+.section-uxui-design-service .design-services-section .top-content .top-content-list-design {
+    display: block;
+    margin-bottom: 86px;
+    margin-top: 55px;
+    padding: 0;
+}
+
+.design-services-section .top-content .top-content-list-design .list-design {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.design-services-section .top-content .top-content-list-design .list-design .design-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 33px 15px 33px 19px;
+    background: #FFFFFF;
+    border: 1px solid #E5EAF4;
+    box-shadow: 0px 17px 39px rgb(0 0 0 / 5%);
+    border-radius: 16px;
+    max-width: 32.7%;
+}
+
+.top-content .top-content-list-design .list-design .design-item .image-feature {
+    width: 7.666667%;
+}
+
+.top-content .top-content-list-design .list-design .design-item .image-feature .image img {
+    width: 100%;
+}
+
+.top-content .top-content-list-design .list-design .design-item .content-right h2 {
+    display: block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    color: #183B56;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.top-content .top-content-list-design .list-design .design-item .content-right .description span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5A7184;
+    display: block;
+    width: 100%;
+    padding-right: 75px;
+}
+
+/* ___TopContentENd___ */
+
+/* ____-BannerBottom___ */
+.section-uxui-design-service .design-services-section .section-banner {
+    background-repeat: no-repeat;
+    background-image: url(https://onextdigital.com/wp-content/uploads/2022/07/uxdesign.png);
+}
+
+.section-uxui-design-service .design-services-section .section-banner .top-banner .image-banner .image img {
+    width: 100%;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+.section-uxui-design-service .design-services-section .section-banner .top-banner .image-banner .image {
+    height: auto;
+}
+
+.section-uxui-design-service .design-services-section .section-banner .banner-title .title {
+    position: absolute;
+    top: -220px;
+    max-width: 329px;
+    left: 5%;
+    z-index: 1;
+}
+
+.section-uxui-design-service .design-services-section .section-banner .banner-title .title h2 {
+    font-family: 'Open Sans';
+    line-height: 53px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+/* ____-BannerBottomEnd___ */
+
+/* ____-why-aht-solution-section____ */
+.section-uxui-design-service .why-aht-solution-section {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px 60px;
+
+}
+
+.section-uxui-design-service .why-aht-solution-section .top-content {
+    margin-bottom: 80px;
+}
+
+.section-uxui-design-service .why-aht-solution-section .top-content .title {
+    padding-bottom: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #5A7184;
+}
+
+.section-uxui-design-service .why-aht-solution-section .top-content h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+.why-aht-solution-section .why-aht-solution-content .solution-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.why-aht-solution-section .why-aht-solution-content .solution-list .solution-item {
+    width: calc(100% - 34px);
+    padding: 36px 82px 32px;
+    display: flex;
+    position: relative;
+    margin-bottom: 57px;
+    align-items: center;
+
+}
+
+.why-aht-solution-section .why-aht-solution-content .solution-list .solution-item:nth-child(odd) {
+    background: #EFF9FF;
+    border-radius: 12px;
+}
+
+.why-aht-solution-section .why-aht-solution-content .solution-list .solution-item:nth-child(even) {
+    margin-left: 31px;
+    background: #FBFBFB;
+    border-radius: 12px;
+}
+
+.why-aht-solution-content .solution-list .solution-item:nth-child(odd) .number {
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    border-radius: 50%;
+    right: -32px;
+    top: -32px;
+    background: #FFCD06;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    align-items: center;
+    vertical-align: middle;
+    display: inline-grid;
+}
+
+.why-aht-solution-content .solution-list .solution-item:nth-child(even) .number {
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    border-radius: 50%;
+    left: -32px;
+    top: -32px;
+    background: #FFCD06;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    align-items: center;
+    vertical-align: middle;
+    display: inline-grid;
+}
+
+.why-aht-solution-content .solution-list .solution-item .item-inner {
+    align-items: center;
+    text-align: left;
+}
+
+.why-aht-solution-content .solution-list .solution-item .item-inner .content-right h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #183B56;
+    padding-bottom: 15px;
+
+}
+
+.why-aht-solution-content .solution-list .solution-item .item-inner .content-right .description span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #183B56;
+    padding-right: 0px;
+    text-align: left;
+}
+
+/* ____-why-aht-solution-sectionEND____ */
+
+/* ___why-aht-solution-bottom-section___ */
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner {
+    padding: 0 0 120px;
+    max-width: 100%;
+}
+
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .top-banner {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    display: block;
+    padding: 0 15px;
+}
+
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .top-banner .image {
+    height: auto;
+}
+
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .top-banner .image img {
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 350px !important;
+
+}
+
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title {
+    padding: 75px 100px;
+}
+
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title .title h2 {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #FFCD06;
+}
+
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title .description span p {
+    color: #fff;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title .description span a {
+    max-width: none;
+    width: auto;
+    background: #FFCD06;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: #183B56;
+    text-transform: capitalize;
+    height: 62px;
+    padding: 18px 20px 14px;
+}
+
+.section-uxui-design-service .why-aht-solution-bottom-section .banner-title {
+    top: 31%;
+}
+
+/* ___why-aht-solution-bottom-sectionEND___ */
+
+@media screen and (max-width:1200px) {
+    .top-content .top-content-list-design .list-design .design-item .content-right .description span {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .section-uxui-design-service .design-services-section .top-content-title {
+        flex-direction: column;
+    }
+
+    .section-uxui-design-service .design-services-section .top-content .top-content-title h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 26.4px;
+        text-align: center;
+        margin-bottom: 9px;
+    }
+
+    .section-uxui-design-service .design-services-section .top-content .top-content-title .content {
+        display: inline-block;
+        width: 100%;
+        vertical-align: super;
+        text-align: center;
+        font-size: 14px;
+        line-height: 19.6px;
+        padding: 0 25px;
+    }
+
+    .section-uxui-design-service .design-services-section .top-content .top-content-list-design {
+        margin-top: 33px;
+        padding: 0;
+        margin-bottom: 46px;
+    }
+
+    .design-services-section .top-content .top-content-list-design .list-design {
+        display: block;
+    }
+
+    .design-services-section .top-content .top-content-list-design .list-design .design-item {
+        width: 100%;
+        display: flex;
+        margin-bottom: 16px;
+        max-width: 100%;
+        padding: 16px 15px 15px;
+    }
+
+    .section-uxui-design-service .design-services-section .section-banner .banner-title .title {
+        top: -403px;
+        left: 13%;
+    }
+}
