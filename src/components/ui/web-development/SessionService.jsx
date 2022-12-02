@@ -3,16 +3,16 @@ import contentLeftRight from "../../../asset/fakedata/webdevelopment/contentLeft
 import { Markup } from "interweave";
 
 const SessionService = ({data}) =>{
-    //console.log(data);
+    console.log(data);
     //console.log(typeof(data));
     return (
         <div className="section-service">
             <div className="container">
-                {/* {data.map((item, index)=>(
+                {data.map((item, index)=>(
                     <LeftRightCol data={item} />
-                ))} */}
+                ))}
                 {/* <Markup content={data.image.sourceUrl} /> */}
-                <Markup content={data} />
+                {/* <Markup content={data} /> */}
             </div>
         </div>
     )

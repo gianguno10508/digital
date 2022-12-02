@@ -1,4 +1,3 @@
-import bannerWebdevelop from "../asset/fakedata/webdevelopment/bannerWebdevelop";
 import BackgroundItem from "../components/common/BackgroundItem";
 import '../asset/styles/web_development_styles.css';
 import SessionService from "../components/ui/web-development/SessionService";
@@ -8,12 +7,17 @@ import { useEffect, useState } from "react";
 import { getContentWebDevelopment } from "../gql/web-development";
 
 function WebDevelopment(){
-    const [services, setServices] = useState("");
+    const [banner, setBanner] = useState([]);
+    const [services, setServices] = useState([]);
     useEffect(() => {
         try {
             getContentWebDevelopment().then(function (res){
-            console.log(res);
-            setServices(res.page.content)
+            setServices(res.page.webdevelopment.services);
+            const bannerWebdevelop = {
+              content: res.page.content,
+              img: res.page.featuredImage.node.sourceUrl
+            }
+            setBanner(bannerWebdevelop);
           })
         } catch (error) {
           console.log(error);
@@ -21,7 +25,7 @@ function WebDevelopment(){
       }, [])
     return(
         <div className="web-develop">
-            <BackgroundItem data={bannerWebdevelop} />
+            <BackgroundItem data={banner} />
             <SessionService data={services}/>
             <ChooseUsWeb />
             <SessionBottom />

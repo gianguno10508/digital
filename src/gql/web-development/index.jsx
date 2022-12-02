@@ -7,9 +7,33 @@ export const getContentWebDevelopment = async () => {
         body: JSON.stringify({
             query: `
             query MyQuery2 {
-              page(id: "cG9zdDoy") {
-                id
+              page(id: "cG9zdDo0MA==") {
+                title
                 content
+                featuredImage {
+                  node {
+                    sourceUrl
+                  }
+                }
+                webdevelopment {
+                  services {
+                    image {
+                      sourceUrl
+                    }
+                    columnLeft
+                    description
+                    location
+                    techTitleTitle
+                    title
+                  }
+                  items {
+                    description
+                    title
+                    image {
+                      sourceUrl
+                    }
+                  }
+                }
               }
             }
 			      `

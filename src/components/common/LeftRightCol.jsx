@@ -5,11 +5,15 @@ import { useState } from "react";
 const LeftRightCol = ({ data }) => {
 //   const [left, setLeft] = useState(0);
 //   data.isLeft ? setLeft(0) : setLeft(2);
+  let order_id = 0;
+  if(data.location == 'Left'){
+    order_id = 2;
+  }
   return (
     <div className="item-inner row">
-      <div className={`image-feature col-sm-12 col-md-${data.piece_col_left}`} style={{order: data.order}} >
+      <div className={`image-feature col-sm-12 col-md-${data.columnLeft}`} style={{order: order_id}} >
         <div className="image">
-          <img src={data.img} alt="" className="banner-image"/>
+          <img src={data.image.sourceUrl} alt="" className="banner-image"/>
         </div>
         {data.caption && (
           <div className="caption">
@@ -17,12 +21,12 @@ const LeftRightCol = ({ data }) => {
           </div>
         )}
       </div>
-      <div className={`content-right col-sm-12 col-md-${data.piece_col_right}`}>
-          <data.type_title>{data.title}</data.type_title>
+      <div className={`content-right col-sm-12 col-md-${12-data.columnLeft}`}>
+        <div className="title"><Markup content={data.title} /></div>
         <div className="description">
             <Markup content={data.description} />
         </div>
-        {data.sub_description && <h5>{data.sub_description}</h5>}
+        {data.techTitleTitle && <h5>{data.techTitleTitle}</h5>}
         {data.logos && (
           <div className="logos">
             {data.logos.map((item, index) => (

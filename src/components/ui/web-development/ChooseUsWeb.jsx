@@ -14,7 +14,7 @@ const ChooseUsWeb = () =>{
                 <div className="why-choose-us-list row">
                     {chooseUs.map((item,index)=>(
                         <div key={index} className="item col-sm-12 col-md-6 col-lg-4">
-                            <MainItemCol data={item} />
+                            <MainItemCol data={item} number={`0${index+1}`} />
                         </div>
                     ))}
                 </div>

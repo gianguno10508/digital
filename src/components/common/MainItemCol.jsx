@@ -1,5 +1,5 @@
 //img, title, description, button link, number, url, span square
-const MainItemCol = ({ data }) => {
+const MainItemCol = ({ data, number }) => {
     return (
         <>
             {data.square && <div className="square"></div>}
@@ -10,9 +10,9 @@ const MainItemCol = ({ data }) => {
                     </span>
                 </div>
             )}
-            {data.number && (
+            {number && (
                 <div className="number">
-                    <span>{data.number}</span>
+                    <span>{number}</span>
                 </div>
             )}
             {data.title && (
