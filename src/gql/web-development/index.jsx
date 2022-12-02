@@ -1,42 +1,38 @@
-const base_url = 'https://72.arrowhitech.net/tn3/digital/graphql'
+import base_url from '../api.jsx';
+import header_api from '../header_api.jsx';
 
-// Request init
-const resquest_init = {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    }
-}
-
-// Primary Menu Header
-export const getMenuHeader = async () => {
+export const getContentWebDevelopment = async () => {
     const response = await fetch(base_url, {
-        ...resquest_init,
+        ...header_api,
         body: JSON.stringify({
             query: `
             query MyQuery2 {
               page(id: "cG9zdDo0MA==") {
-                id
                 title
-                banner {
-                  description
-                  title
+                content
+                featuredImage {
+                  node {
+                    sourceUrl
+                  }
                 }
                 webdevelopment {
-                  items{
-                    title
+                  services {
                     image {
-                      id
                       sourceUrl
                     }
+                    columnLeft
                     description
-                  }
-                  services {
-                    description
-                    techTitle
+                    location
+                    techTitleTitle
                     title
                   }
-                  fieldGroupName
+                  items {
+                    description
+                    title
+                    image {
+                      sourceUrl
+                    }
+                  }
                 }
               }
             }
