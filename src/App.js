@@ -4,6 +4,7 @@ import './asset/styles/common_styles.css';
 import Footer from './components/common/Footer';
 import Header from './components/common/Header';
 import AboutUs from './page/AboutUs';
+import CaseStudies from './page/CaseStudies';
 import Contact from './page/Contact';
 import Detail from './page/Detail';
 import HireDevelopers from './page/HireDevelopers';
@@ -27,6 +28,7 @@ function App() {
       {/* <OurSolution /> */}
       {/* <Contact /> */}
       {/* <Detail /> */}
+      {/* <CaseStudies /> */}
       <Footer />
     </div>
   );

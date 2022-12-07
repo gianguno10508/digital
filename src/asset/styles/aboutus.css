@@ -39,20 +39,17 @@
     padding: 0 25px;
 }
 
-.about-us-section .about-us-banner-top .section-banner .banner-title h1,
+.about-us-section .about-us-banner-top .section-banner .banner-title .title,
 .about-us-section .about-us-banner-top .section-banner .banner-title p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.about-us-section .about-us-banner-top .section-banner .banner-title h1 {
+.about-us-section .about-us-banner-top .section-banner .banner-title .title {
 
     max-width: 750px;
     margin-bottom: 22px;
-}
-
-.about-us-section .about-us-banner-top .section-banner .banner-title h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 46px;
@@ -61,6 +58,7 @@
     text-transform: capitalize;
     color: #FFCD06;
 }
+
 
 .about-us-section .about-us-banner-top .section-banner .banner-title p {
     color: #fff;
@@ -121,7 +119,7 @@
     border-color: transparent;
 }
 
-.facts_figures-section .facts_figures-content .facts_figures-item .title {
+.facts_figures-section .facts_figures-content .facts_figures-item .totalNumber {
     height: 53px;
     overflow: hidden;
     display: flex;
@@ -132,7 +130,7 @@
     margin-bottom: 8px;
 }
 
-.facts_figures-section .facts_figures-content .facts_figures-item .title h2 {
+.facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3 {
     font-size: 48px;
     line-height: 53px;
     text-align: center;
@@ -159,7 +157,7 @@
 }
 
 .about-us-section .our_vision-section .item-inner .image-feature {
-    padding-right: 7.2rem;
+    padding: 0px 72px 0px 15px;
 }
 
 .about-us-section .our_vision-section .item-inner .image-feature img {
@@ -167,7 +165,7 @@
 }
 
 .about-us-section .our_vision-section .item-inner .content-right {
-    padding-left: 8.2rem;
+    padding: 0px 15px 0px 82px;
 }
 
 .about-us-section .our_vision-section .item-inner .content-right .title {
@@ -378,3 +376,149 @@
 }
 
 /* __-why-choose-us-banner-bottomEND___ */
+@media screen and (max-width:1300px) {
+    .about-us-section .our_vision-section .item-inner .image-feature {
+        padding: 0px 30px 0px 15px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .why-choose-us-section .why-choose-us-content .content-item,
+    .why-choose-us-section .why-choose-us-content .content-item:first-child {
+        padding: 31px 30px 8px;
+    }
+
+    .about-us-section .our_vision-section .item-inner .content-right {
+        padding: 0px 15px 0px 45px;
+    }
+
+}
+
+@media screen and (max-width:769px) {
+    .about-us-section .facts_figures-section {
+        padding-bottom: 0px;
+    }
+
+    .about-us-section .about-us-banner-top .section-banner .banner-title .title {
+        font-size: 35px;
+    }
+
+    .facts_figures-section .facts_figures-content .facts_figures-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .about-us-section .our_vision-section .item-inner .image-feature {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .about-us-section .our_vision-section .item-inner .content-right {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .about-us-section .our_vision-section {
+        padding: 40px 0px;
+    }
+
+    .about-us-section .our_technological_expertise-section .expertise-list .expertise-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .about-us-section .our_technological_expertise-section {
+        padding-bottom: 30px;
+    }
+
+    .why-choose-us-section .why-choose-us-content .content-item,
+    .why-choose-us-section .why-choose-us-content .content-item:first-child {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .about-us-section .why-choose-us-banner-bottom {
+        padding: 50px 0px;
+    }
+
+    .about-us-section .why-choose-us-banner-bottom .background-img {
+        padding: 55px 100px 72px;
+    }
+
+    .why-choose-us-section .why-choose-us-content .content-item:nth-child(3) {
+        border-right: 1px solid #E0E0E0;
+    }
+
+
+}
+
+@media screen and (max-width:540px) {
+
+    .about-us-section .about-us-banner-top .section-banner .banner-title .title,
+    .about-us-section .why-choose-us-banner-bottom .background-img h2 {
+        font-size: 25px;
+    }
+
+    .facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3,
+    .about-us-section .our_technological_expertise-section .section-banner h2,
+    .about-us-section .our_vision-section .item-inner .content-right .title h2,
+    .facts_figures-section .facts_figures-content .facts_figures-title h2 {
+        font-size: 35px;
+    }
+
+    .about-us-section .about-us-banner-top .section-banner .banner-title p {
+        font-size: 14px;
+    }
+
+    .about-us-section .facts_figures-section {
+        padding-top: 0px;
+    }
+
+    .facts_figures-section .facts_figures-content .facts_figures-title h2 {
+        margin-bottom: 30px;
+    }
+
+    .facts_figures-section .facts_figures-content .facts_figures-item {
+        border-right: none;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .facts_figures-section .facts_figures-content .facts_figures-item:nth-child(2) {
+        padding: 0;
+    }
+
+    .about-us-section .our_technological_expertise-section .expertise-list .expertise-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .why-choose-us-section .why-choose-title h2 {
+        font-size: 35px;
+    }
+
+    .why-choose-us-section .why-choose-us-content .content-item,
+    .why-choose-us-section .why-choose-us-content .content-item:first-child {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-us-section .why-choose-us-banner-bottom .background-img {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .why-choose-us-section .why-choose-us-content .content-item,
+    .why-choose-us-section .why-choose-us-content .content-item:first-child {
+        border-right: none;
+    }
+
+    .about-us-section .why-choose-us-banner-bottom .background-img .button-more a {
+        padding: 10px 15px;
+    }
+
+    .about-us-section .about-us-banner-top .section-banner .banner-title .container {
+        padding: 0;
+    }
+}

@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { itemWhyChoose } from '../../../asset/fakedata/aboutus/itemsAboutus';
 import MainItemCol from '../../common/MainItemCol';
+import MainItemCol1 from '../../common/MainItemCol1';
 
 
-function WhyChooseUs() {
+function WhyChooseUs({ items }) {
     return (
         <div className='container'>
             <div className='why-choose-title'>
@@ -13,9 +13,9 @@ function WhyChooseUs() {
             <div className='why-choose-us-content'>
                 <div className='list-content'>
                     {
-                        itemWhyChoose.map((item, index) => (
+                        items.map((item, index) => (
                             <div className='content-item' key={index}>
-                                <MainItemCol data={item} number={`0${index + 1}`} />
+                                <MainItemCol1 data={item} number={`0${index + 1}`} />
                             </div>
                         ))
                     }

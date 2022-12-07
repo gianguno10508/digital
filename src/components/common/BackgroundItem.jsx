@@ -2,7 +2,7 @@ import { Markup } from "interweave";
 
 //Img, title, description, button, tag title
 const BackgroundItem = ({ data }) => {
-  console.log(data.content);
+  // console.log(data.content);
   return (
     <div className="section-banner">
       <div className="banner-title">
