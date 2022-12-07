@@ -1,0 +1,173 @@
+/* ___Banner____ */
+.our-solution-section .banner-our-solution .section-banner .top-banner .image {
+    background: #EFF9FF;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.our-solution-section .banner-our-solution .section-banner .top-banner .image::after {
+    content: "";
+    background-image: url(https://onextdigital.com/wp-content/themes/ahtsolution/assets/images/Rectangle31.svg);
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.our-solution-section .banner-our-solution {
+    position: relative;
+}
+
+.our-solution-section .banner-our-solution .list-plaform {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 45%;
+    min-width: 650px;
+}
+
+.our-solution-section .banner-our-solution .list-plaform .platform_represent-border {
+    position: relative;
+}
+
+.banner-our-solution .list-plaform .platform_represent-border .plaform_1 {
+    max-width: 339.41px;
+    max-height: 234.26px;
+}
+
+.banner-our-solution .list-plaform .platform_represent-border .plaform_3 {
+    width: 427.72px;
+    height: 295.22px;
+}
+
+.banner-our-solution .list-plaform .platform_represent-border .plaform_2 {
+    width: 354.16px;
+    height: 244.44px;
+
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+.banner-our-solution .list-plaform .platform_represent-border img {
+    width: 100%;
+}
+
+.banner-our-solution .list-plaform .platform_represent-border .plaform_1,
+.banner-our-solution .list-plaform .platform_represent-border .plaform_2,
+.banner-our-solution .list-plaform .platform_represent-border .plaform_3 {
+    transform: translate3d(0px, 0px, 3px);
+}
+
+.our-solution-section .banner-our-solution .section-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-solution-section .banner-our-solution .section-banner .banner-title {
+    padding: 0 25px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.our-solution-section .banner-our-solution .section-banner .banner-title span h1 {
+    margin-bottom: 22px;
+    text-align: left;
+    max-width: 750px;
+    margin-left: 0;
+    color: #FFCD06;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+}
+
+/* ___BannerEND____ */
+
+/* introduce-section___ */
+.our-solution-section .introduce-section {
+    background: #292A39;
+    text-align: center;
+    padding: 73px 0 59px 0;
+    margin-top: -1px;
+    position: relative;
+    z-index: 2;
+}
+
+.our-solution-section .introduce-section .container {
+    max-width: 1557px;
+    padding: 0 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.our-solution-section .introduce-section .introduce-inner {
+    border-radius: 12px;
+    padding: 60px 25px 23px 25px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFCD06;
+    position: relative;
+    border: 1px solid;
+}
+
+.our-solution-section .introduce-section .introduce-inner .cicle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -32.5px;
+    background: #FFCD06;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.our-solution-section .introduce-section .introduce-inner .cicle::before {
+    content: '';
+    display: inline-block;
+    left: 50%;
+    width: 33px;
+    height: 35px;
+    background: url(https://onextdigital.com/wp-content/themes/ahtsolution/assets/images/fluent_star-16-filled.svg);
+    background-size: contain;
+}
+
+.our-solution-section .introduce-section .introduce-inner .content {
+    max-width: 1207px;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFCD06;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+/* introduce-sectionEND___ */
+
+/* _____ */
+.our-solution-section .after-banner-section {
+    position: relative;
+    padding: 30px 0px;
+}
+
+/* _____END */

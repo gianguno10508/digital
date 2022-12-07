@@ -15,10 +15,11 @@ const bannerBottomUxUi = {
 }
 
 const bannerBottomSection = {
-    img: 'https://onextdigital.com/wp-content/uploads/2022/07/banner-bottom-1.png',
-    title: 'Schedule a Call ',
+    image: {
+        sourceUrl: 'https://onextdigital.com/wp-content/uploads/2022/07/banner-bottom-1.png'
+    },
+    title: '<h2>Schedule a Call</h2> ',
     description: '<p>Enjoy bringing your idea to life together with our skilled design team.</p><a class="button" href="#" target="_self">Get Started</a>',
-    type_title: 'h2',
     img_responsive: 'https://onextdigital.com/wp-content/uploads/2022/07/banner-bottom-1.png',
 
 }

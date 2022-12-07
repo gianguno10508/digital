@@ -23,7 +23,7 @@ function MobileAppdevelopment() {
                     </div>
                     <div className='mobile-service-content'>
                         <MobileServiceTop />
-                        <MobileServiceBottom />
+                        {/* <MobileServiceBottom /> */}
                     </div>
                 </div>
             </div>

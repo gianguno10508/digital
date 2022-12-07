@@ -1,0 +1,7 @@
+const AfterBanner = ({ data }) => {
+    return (
+        <>
+
+        </>
+    )
+}
