@@ -96,7 +96,6 @@ const reasonsItems = [
     {
         id: 1,
         square: null,
-        number: '01',
         img: null,
         title: 'Affordable Services',
         description: 'By partnering with us, you have a wide door of access to high-quality talents at a much more favorable price. The lower average living and labor costs make it more affordable to hire employees with equal expertise in Vietnam than in your primary country.'
@@ -105,7 +104,6 @@ const reasonsItems = [
     {
         id: 2,
         square: null,
-        number: '02',
         img: null,
         title: 'Affordable Services',
         description: 'By partnering with us, you have a wide door of access to high-quality talents at a much more favorable price. The lower average living and labor costs make it more affordable to hire employees with equal expertise in Vietnam than in your primary country.'
@@ -114,7 +112,6 @@ const reasonsItems = [
     {
         id: 3,
         square: null,
-        number: '03',
         img: null,
         title: 'Affordable Services',
         description: 'By partnering with us, you have a wide door of access to high-quality talents at a much more favorable price. The lower average living and labor costs make it more affordable to hire employees with equal expertise in Vietnam than in your primary country.'
@@ -123,7 +120,6 @@ const reasonsItems = [
     {
         id: 4,
         square: null,
-        number: '04',
         img: null,
         title: 'Affordable Services',
         description: 'By partnering with us, you have a wide door of access to high-quality talents at a much more favorable price. The lower average living and labor costs make it more affordable to hire employees with equal expertise in Vietnam than in your primary country.'
@@ -132,7 +128,6 @@ const reasonsItems = [
     {
         id: 5,
         square: null,
-        number: '05',
         img: null,
         title: 'Affordable Services',
         description: 'By partnering with us, you have a wide door of access to high-quality talents at a much more favorable price. The lower average living and labor costs make it more affordable to hire employees with equal expertise in Vietnam than in your primary country.'

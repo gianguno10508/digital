@@ -39,9 +39,6 @@
 
 .section-uxui-design-service .section-banner .banner-title .title {
     text-align: left;
-}
-
-.section-uxui-design-service .section-banner .banner-title .title h1 {
     margin-bottom: 22px;
     text-align: left;
     max-width: 750px;
@@ -56,7 +53,8 @@
     color: #FFCD06;
 }
 
-.section-uxui-design-service .section-banner .banner-title .description {
+
+.section-uxui-design-service .section-banner .banner-title span p {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -67,7 +65,7 @@
     color: #fff;
 }
 
-.section-uxui-design-service .section-banner .banner-title .description a:hover {
+.section-uxui-design-service .section-banner .banner-title span p a:hover {
     text-decoration: underline;
 }
 
@@ -131,19 +129,24 @@
     max-width: 32.7%;
 }
 
-.top-content .top-content-list-design .list-design .design-item .image-feature {
-    width: 7.666667%;
+.top-content .top-content-list-design .list-design .design-item .box-icon {
+    padding-right: 19px;
+    display: block;
 }
 
-.top-content .top-content-list-design .list-design .design-item .image-feature .image img {
+.top-content .top-content-list-design .list-design .design-item .box-icon img {
+    display: block;
     width: 100%;
+    height: auto;
 }
 
-.top-content .top-content-list-design .list-design .design-item .content-right h2 {
+
+
+.top-content .top-content-list-design .list-design .content-title .title span h3 {
     display: block;
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 28px;
     text-align: left;
@@ -152,7 +155,7 @@
     margin-bottom: 10px;
 }
 
-.top-content .top-content-list-design .list-design .design-item .content-right .description span {
+.top-content .top-content-list-design .list-design .design-item .content-title .description p {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -161,6 +164,7 @@
     width: 100%;
     padding-right: 75px;
 }
+
 
 /* ___TopContentENd___ */
 
@@ -183,15 +187,15 @@
     height: auto;
 }
 
-.section-uxui-design-service .design-services-section .section-banner .banner-title .title {
+.section-uxui-design-service .design-services-section .section-banner .banner-title {
     position: absolute;
-    top: -220px;
-    max-width: 329px;
-    left: 5%;
+    top: 24%;
+    max-width: 347px;
+    left: 2%;
     z-index: 1;
 }
 
-.section-uxui-design-service .design-services-section .section-banner .banner-title .title h2 {
+.section-uxui-design-service .design-services-section .section-banner .banner-title span h2 {
     font-family: 'Open Sans';
     line-height: 53px;
     font-style: normal;
@@ -308,7 +312,7 @@
     text-align: left;
 }
 
-.why-aht-solution-content .solution-list .solution-item .item-inner .content-right h2 {
+.why-aht-solution-content .solution-list .solution-item .item-inner .content-right span h3 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;

@@ -2,15 +2,20 @@ import { Markup } from "interweave";
 
 //Img, title, description, button, tag title
 const BackgroundItem = ({ data }) => {
+<<<<<<< HEAD
   console.log(data.content);
+=======
+  // console.log(data);
+>>>>>>> 02662c6623fd17ce1e5b4d120233c2abdbe20170
   return (
     <div className="section-banner">
       <div className="banner-title">
         <div className="container">
+          {data.title && <div className="title">{data.title}</div>}
           <Markup content={data.content} />
         </div>
       </div>
-      
+
       <div className="top-banner">
         <div className="image-banner">
           <div className="image">
