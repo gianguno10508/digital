@@ -2,10 +2,13 @@ import React from 'react';
 import bannerWhiteLabel from '../asset/fakedata/whitelabelsSoftware/banner';
 import BackgroundItem from '../components/common/BackgroundItem';
 import "../asset/styles/white_label_sofware.css";
-import { reasonsItems, servicesItem, techsItem } from '../asset/fakedata/whitelabelsSoftware/itemOur';
-import MainItemCol from '../components/common/MainItemCol';
 import Benefits from '../components/ui/white-label-software-service/Benefist';
 import benefits from '../asset/fakedata/whitelabelsSoftware/benefits';
+import TimeLine from '../components/ui/white-label-software-service/TimeLine';
+import timeLine from '../asset/fakedata/whitelabelsSoftware/timeLine';
+import OurServiceWhitePage from '../components/ui/white-label-software-service/OurService';
+import WhyChooseWhite from '../components/ui/white-label-software-service/WhyChooseWhite';
+import BottomPanelBannerWhite from '../components/ui/white-label-software-service/BottomPanelBannerWhite';
 function WhiteLabelSoftware() {
     return (
         <div className='section-white-lable-page'>
@@ -14,44 +17,20 @@ function WhiteLabelSoftware() {
             </div>
 
             <div className='section-introduce'>
-
-            </div>
-
-            <div className='our_services_and_techs-section'>
-                <div className='container'>
-                    <h2 className='section-title'>Our services and techs</h2>
-                    <div className='section-banner-our'>
-                        <img
-                            src='https://onextdigital.com/wp-content/uploads/2022/07/Rectangle-32.jpg'
-                            alt=''
-                        >
-                        </img>
+                <TimeLine data={timeLine} />
+                <div className="section-introduce-inner">
+                    <div className="container">
+                        <div className="introduce-inner run-line show-content">
+                            <div className="circle"></div>
+                            <div className="content">
+                                <p><strong>ONextDigital</strong> will help your business solve all challenges by offering comprehensive outsourcing IT service with seamless incorporation of cutting-edge technology and skilled resources. Possessing 12 years of experience in offering first-rate IT white label software service to a wide range of clients across the globe, we have helped many agencies reduce business expenses, expand portfolios, and build company reputation while enjoying complete ownership safeguarded by strict NDAs.</p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div className='services-list row'>
-                        {
-                            servicesItem.map((item, index) => (
-                                <div className='services-item ' key={index}>
-                                    <div className='wapper'>
-                                        <MainItemCol data={item} />
-                                    </div>
-                                </div>
-                            ))
-                        }
-                    </div>
-
-                    <div className='tech-list '>
-                        {
-                            techsItem.map((item, index) => (
-                                <div className='tech-item'>
-                                    <MainItemCol data={item} />
-                                </div>
-                            ))
-                        }
-                    </div>
-
                 </div>
             </div>
+
+            <OurServiceWhitePage />
 
             <div className='benefits-section'>
                 <div className='container'>
@@ -59,59 +38,9 @@ function WhiteLabelSoftware() {
                         <Benefits data={benefits} />
                     </div>
                 </div>
-
             </div>
-
-            <div className='why_choose_us-section'>
-                <div className='container'>
-                    <h2 className='why_choose_us-title'>Why choose us</h2>
-
-                    <div className='why_choose_us-banner '>
-                        <div className='row'>
-                            <div className='why_choose_us-banner-left'>
-                                <img src='https://onextdigital.com/wp-content/uploads/2022/09/MEM_9933-scaled-e1663144555274.jpg' alt=''></img>
-                            </div>
-                            <div className='why_choose_us-banner-right'>
-                                <img src='https://onextdigital.com/wp-content/uploads/2022/09/MEM_9903-1-scaled-e1663144715272.jpg' alt=''></img>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className='reasons-list'>
-                        <div className='row'>
-                            {
-                                reasonsItems.map((item, index) => (
-                                    <div className='reasons-items' key={index}>
-                                        <MainItemCol data={item} />
-                                    </div>
-                                ))
-                            }
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-            <div className='bottom_panel_banner-section'>
-                <div className='container'>
-                    <div className='wapper'>
-                        <h2 className='bottom_panel_banner-title'>
-                            Ready to experience first-rate service quality with us?
-                        </h2>
-                        <p className='bottom_panel_banner-description'>
-                            Outsource IT Services with the Most Talented Engineers in the Industry
-                        </p>
-                        <div className='button-more'>
-                            <a href='#'>Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <WhyChooseWhite />
+            <BottomPanelBannerWhite />
         </div>
     );
 }

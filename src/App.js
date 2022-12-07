@@ -6,6 +6,7 @@ import Header from './components/common/Header';
 import HireDevelopers from './page/HireDevelopers';
 import Homepage from './page/Homepage';
 import MobileAppdevelopment from './page/MobileAppdevelopment';
+import OurSolution from './page/OurSolution';
 import UxUiDesignService from './page/UxUiDesignService';
 import WebDevelopment from './page/WebDevelopment';
 import WhiteLabelSoftware from './page/WhiteLabelSoftware';
@@ -14,9 +15,11 @@ function App() {
     <div className="App">
       {/* <HireDevelopers /> */}
       {/* <Header /> */}
-      <WebDevelopment />
+      {/* <WebDevelopment /> */}
       {/* <Homepage />
       <WhiteLabelSoftware /> */}
+      {/* <UxUiDesignService /> */}
+      <OurSolution />
       {/* <MobileAppdevelopment />
       <Footer /> */}
     </div>

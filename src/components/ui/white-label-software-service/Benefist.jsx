@@ -2,14 +2,14 @@
 
 const Benefits = ({ data }) => {
     return (
-        <div className="section-content">
-            <div className="section-inner-banner">
+        <div className="row">
+            <div className="col-md-12 col-lg-6 section-inner-banner">
                 {
                     data.img && <img src={data.img} alt=''></img>
                 }
 
             </div>
-            <div className="section-inner-content">
+            <div className="col-md-12 col-lg-6 section-inner-content">
                 {data.title && <h3>{data.title}</h3>}
                 <div className="benefits-item">
                     {data.content &&

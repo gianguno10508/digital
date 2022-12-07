@@ -4,6 +4,7 @@
 }
 
 .section-white-lable-page .section-banner-white-lable .section-banner .banner-title {
+    padding: 0 25px;
     position: absolute;
     top: 50%;
     left: 0;
@@ -11,12 +12,9 @@
     text-align: left;
     transform: translateY(-50%);
     z-index: 1;
-    max-width: 1650px;
-    padding: 0 144px;
-
 }
 
-.section-banner-white-lable .section-banner .banner-title .title h1 {
+.section-banner-white-lable .section-banner .banner-title h1 {
     margin-bottom: 22px;
     text-align: left;
     max-width: 750px;
@@ -34,7 +32,7 @@
     max-width: 625px;
 }
 
-.section-banner-white-lable .section-banner .banner-title .description span {
+.section-banner-white-lable .section-banner .banner-title .description {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -45,7 +43,15 @@
     margin: 0;
 
 }
-
+.section-white-lable-page .section-banner-white-lable .section-banner .top-banner img{
+    z-index: 0;
+    height: 100vh;
+}
+.section-white-lable-page .section-banner-white-lable .section-banner .top-banner .image-banner .image{
+    overflow: hidden;
+    z-index: 0;
+    height: 100vh;
+}
 .section-white-lable-page .section-banner-white-lable .section-banner .top-banner .image-banner picture,
 .section-white-lable-page .section-banner-white-lable .section-banner .top-banner .image-banner img {
     height: 100%;
@@ -60,11 +66,92 @@
 .section-white-lable-page .section-introduce {
     background: #292A39;
     text-align: center;
-    padding: 73px 0 59px 0;
+    padding: 0px 0 59px 0;
     margin-top: -1px;
     position: relative;
     z-index: 2;
-    height: 1887px;
+}
+.section-white-lable-page .questions-section .container{
+    max-width: 757px;
+}
+.section-white-lable-page .questions-section .question:first-child{
+    padding-top: 182px;
+}
+.section-white-lable-page .questions-section .question:last-child{
+    padding-bottom: 262px;
+}
+.section-white-lable-page .questions-section .question{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFCD06;
+    padding-top: 215px;
+}
+.section-white-lable-page .questions-section .question .item{
+    position: relative;
+}
+.section-white-lable-page .questions-section .question .item::after{
+    height: 150px;
+    transition: all ease-in-out .5s;
+    width: 3px;
+    background: #fff;
+    top: -182px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    position: absolute;
+}
+.section-white-lable-page .section-introduce-inner .container{
+    max-width: 1557px;
+}
+.section-white-lable-page .section-introduce-inner .introduce-inner{
+    border-radius: 12px;
+    padding: 60px 25px 23px 25px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFCD06;
+    position: relative;
+    border: 1px solid;
+}
+.section-white-lable-page .section-introduce-inner .introduce-inner.run-line::before{
+    height: 215px;
+    transition: all ease-in-out .5s;
+    width: 3px;
+    background: #fff;
+    top: -230px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    position: absolute;
+}
+.section-white-lable-page .section-introduce-inner .introduce-inner.run-line .circle{
+    transform: translate(-50%, 0);
+    opacity: 1;
+    transition: all ease-in-out .3s;
+    position: absolute;
+    left: 50%;
+    top: -32.5px;
+    background: #FFCD06;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.section-white-lable-page .section-introduce-inner .introduce-inner.run-line .circle::before{
+    content: '';
+    display: inline-block;
+    left: 50%;
+    width: 33px;
+    height: 35px;
+    background-size: contain;
+    background-image: url('https://onextdigital.com/wp-content/themes/ahtsolution/assets/images/fluent_star-16-filled.svg');
 }
 
 /* _____section-introduce END_____ */
@@ -72,18 +159,20 @@
 .section-white-lable-page .our_services_and_techs-section {
     padding: 5rem 0;
 }
-
+.section-white-lable-page .our_services_and_techs-section .section-banner-our img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
 .section-white-lable-page .our_services_and_techs-section .section-title {
-    margin-bottom: 50px;
     text-align: center;
-
+    margin-bottom: 50px;
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
     line-height: 64px;
     text-transform: capitalize;
     color: #183B56;
-    margin: 0 0 24px 0;
 }
 
 .section-white-lable-page .our_services_and_techs-section .services-list {
@@ -96,7 +185,9 @@
     padding-right: 15px;
 
 }
-
+.our_services_and_techs-section .services-list .services-item .wapper .button-link a.button:hover{
+    text-decoration: underline;
+}
 .section-white-lable-page .our_services_and_techs-section .services-list .services-item {
     flex: 0 0 20%;
     max-width: 20%;
@@ -161,28 +252,18 @@
     border-radius: 20px;
     width: 100%;
     max-width: 100%;
-
-
+}
+.benefits-section .benefits-section-inner .section-inner-banner img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.benefits-section .benefits-section-inner .section-inner-content {
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
-.section-white-lable-page .benefits-section .benefits-section-inner .section-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.benefits-section .benefits-section-inner .section-content .section-inner-banner,
-.benefits-section .benefits-section-inner .section-content .section-inner-content {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.benefits-section .benefits-section-inner .section-content .section-inner-content {
-    padding: 80px 15px 40px 15px
-}
-
-.benefits-section .benefits-section-inner .section-content .section-inner-content h3 {
+.benefits-section .benefits-section-inner .section-inner-content h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -192,16 +273,16 @@
     margin: 0 0 24px 0;
 }
 
-.benefits-section .benefits-section-inner .section-content .section-inner-content .benefits-item {
+.benefits-section .benefits-section-inner .section-inner-content .benefits-item {
     padding-left: 3rem;
     margin-top: 44px;
 }
 
-.benefits-section .benefits-section-inner .section-content .section-inner-content .benefits-item ul {
+.benefits-section .benefits-section-inner .section-inner-content .benefits-item ul {
     margin: 0 0 3rem 3rem;
 }
 
-.benefits-section .benefits-section-inner .section-content .section-inner-content .benefits-item ul li {
+.benefits-section .benefits-section-inner .section-inner-content .benefits-item ul li {
     list-style: none;
     padding-left: 60px;
     position: relative;
@@ -211,7 +292,7 @@
     margin-bottom: 25px;
 }
 
-.benefits-section .benefits-section-inner .section-content .section-inner-content .benefits-item ul li::before {
+.benefits-section .benefits-section-inner .section-inner-content .benefits-item ul li::before {
     content: '';
     width: 40px;
     height: 40px;
@@ -236,6 +317,7 @@
     text-transform: capitalize;
     color: #183B56;
     margin: 0 0 24px 0;
+    font-family: 'myfont';
 }
 
 .section-white-lable-page .why_choose_us-section img {
@@ -276,7 +358,14 @@
     margin-bottom: 33px;
 
 }
-
+.why_choose_us-section .reasons-list .reasons-items .number span{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    margin-right: 4px;
+}
 .why_choose_us-section .reasons-list .reasons-items .title p,
 .why_choose_us-section .reasons-list .reasons-items .number p {
     font-weight: 700;
@@ -398,3 +487,243 @@
 }
 
 /* _____bottom_panel_banner-sectionEND_____ */
+
+
+@media(max-width: 1400px){
+    .section-white-lable-page .our_services_and_techs-section .section-title {
+        font-size: 39px;
+        line-height: 50px;
+    }
+}
+
+@media(max-width: 1200px){
+    .section-white-lable-page .our_services_and_techs-section{
+        padding: 3em 0;
+    }
+    .our_services_and_techs-section .services-list .services-item .wapper .box-icon img{
+        object-fit: contain;
+        width: 77px;
+        height: 79px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .our_services_and_techs-section .tech-list{
+        margin-top: 50px;
+    }
+    .our_services_and_techs-section .tech-list .tech-item{
+        margin-bottom: 48px;
+    }
+    .section-white-lable-page .benefits-section{
+        padding: 0;
+    }
+}
+@media(max-width: 1187px){
+    .section-white-lable-page .benefits-section .benefits-section-inner{
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    .section-white-lable-page .benefits-section .benefits-section-inner .section-inner-content{
+        padding-left: 35px;
+        padding-right: 15px;
+        min-height: 1px;
+    }
+    .benefits-section .benefits-section-inner .section-inner-content .benefits-item{
+        padding-left: 0;
+    }
+    .bottom_panel_banner-section .wapper{
+        padding: 105px 24px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1440px){
+    .benefits-section .benefits-section-inner .section-inner-content h3{
+        font-size: 35px;
+    }
+    .benefits-section .benefits-section-inner .section-inner-content .benefits-item ul{
+        margin-left: 0;
+    }
+    .benefits-section .benefits-section-inner .section-inner-content .benefits-item ul li{
+        padding-left: 60px;
+        margin-left: 15px;
+    }
+}
+@media (max-width: 1024px){
+    .section-white-lable-page .section-introduce-inner .introduce-inner .content{
+        max-width: 1207px;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFCD06;
+        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+    .section-white-lable-page .section-introduce-inner .introduce-inner .content p{
+        font-size: 18px;
+    }
+    .our_services_and_techs-section .services-list .services-item .wapper{
+        padding-top: 32px;
+        min-height: 180px;
+        margin-bottom: 24px;
+        height: 188px;
+    }
+    .our_services_and_techs-section .services-list .services-item .wapper .title{
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: -10px;
+    }
+    .section-white-lable-page .our_services_and_techs-section .services-list .services-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 10px;
+    }
+    .benefits-section .benefits-section-inner .section-inner-banner img{
+        margin-bottom: 0;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .section-white-lable-page .benefits-section .benefits-section-inner{
+        padding: 0;
+    }
+    .benefits-section .benefits-section-inner .section-inner-content{
+        padding-top: 20px;
+    }
+    .section-white-lable-page .why_choose_us-section .why_choose_us-title{
+        font-size: 36px;
+        line-height: 45px;
+    }
+}
+@media (max-width: 767px){
+    .section-banner-white-lable .section-banner .banner-title h1{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .section-banner-white-lable .section-banner .banner-title .description{
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+    .section-white-lable-page .section-introduce-inner .introduce-inner .content p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .section-white-lable-page .our_services_and_techs-section .section-title{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .our_services_and_techs-section .services-list .services-item .wapper .title p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .our_services_and_techs-section .tech-list .tech-item .box-icon img{
+        max-height: 50px;
+        object-fit: cover;
+    }
+    .benefits-section .benefits-section-inner .section-inner-content h3{
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .benefits-section .benefits-section-inner .section-inner-content .benefits-item ul{
+        margin: 0;
+    }
+    .benefits-section .benefits-section-inner .section-inner-content .benefits-item{
+        margin-top: 0;
+    }
+
+    .benefits-section .benefits-section-inner .section-inner-content .benefits-item ul li{
+        margin-left: 0;
+        padding-left: 60px;
+        margin-bottom: 32px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .benefits-section .benefits-section-inner .section-inner-content .benefits-item ul li::before{
+        width: 34px;
+        height: 34px;
+        background-size: contain;
+        top: -6px;
+    }
+    .section-white-lable-page .why_choose_us-section .why_choose_us-banner .why_choose_us-banner-left{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 0;
+    }
+    .section-white-lable-page .why_choose_us-section .why_choose_us-banner .why_choose_us-banner-right{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .why_choose_us-section .reasons-list .reasons-items{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 24px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .section-white-lable-page .why_choose_us-section .reasons-list{
+        padding: 0;
+    }
+    .why_choose_us-section .reasons-list .reasons-items div:nth-child(n+1){
+        margin-bottom: 0;
+    }
+    .why_choose_us-section .reasons-list .reasons-items .title p, .why_choose_us-section .reasons-list .reasons-items .number p{
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .bottom_panel_banner-section .wapper .bottom_panel_banner-title{
+        margin-bottom: 8px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .bottom_panel_banner-section .wapper .bottom_panel_banner-description{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .bottom_panel_banner-section .wapper .button-more a{
+        min-width: fit-content;
+        max-width: 217px;
+        width: 100%;
+    }
+    .section-white-lable-page .why_choose_us-section .why_choose_us-title{
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .our_services_and_techs-section .tech-list{
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 576px){
+    .section-white-lable-page .our_services_and_techs-section .services-list .services-item{
+        padding: 0 4px;
+    }
+    .our_services_and_techs-section .tech-list .tech-item .box-icon img{
+        max-height: 38px;
+        object-fit: cover;
+    }
+    .our_services_and_techs-section .services-list .services-item .wapper .box-icon img{
+        object-fit: contain;
+        width: 47px;
+        height: 49px;
+    }
+    .our_services_and_techs-section .services-list .services-item .wapper .button-link{
+        margin-top: 16px;
+    }
+}
+@media (max-width: 490px){
+    .section-white-lable-page .section-banner-white-lable .section-banner .banner-title{
+        padding: 0;
+    }
+    .section-banner-white-lable .section-banner .banner-title h1{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .our_services_and_techs-section .tech-list .tech-item{
+        padding: 0 21px;
+    }
+    .section-white-lable-page .why_choose_us-section .why_choose_us-title{
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
