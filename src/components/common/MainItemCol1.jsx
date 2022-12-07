@@ -16,6 +16,11 @@ const MainItemCol1 = ({ data, number }) => {
                     <span>{number}</span>
                 </div>
             )}
+            <div className="totalNumber">
+                {
+                    data.totalNumber && <h3>{data.totalNumber}</h3>
+                }
+            </div>
             <div className="content-title">
                 {data.title && (
                     <div className="title">

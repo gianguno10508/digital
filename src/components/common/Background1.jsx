@@ -9,6 +9,7 @@ const Background1 = ({ data }) => {
                 <div className="container">
                     <Markup content={data.title} />
                     <Markup content={data.content || data.description} />
+
                 </div>
             </div>
 

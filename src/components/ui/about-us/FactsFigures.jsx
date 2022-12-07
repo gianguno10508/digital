@@ -1,10 +1,10 @@
 import React from 'react';
-import { itemOurVision, itemsFact } from '../../../asset/fakedata/aboutus/itemsAboutus';
-import LeftRightCol from '../../common/LeftRightCol';
+// import { itemOurVision, itemsFact } from '../../../asset/fakedata/aboutus/itemsAboutus';
 import MainItemCol from '../../common/MainItemCol';
+import MainItemCol1 from '../../common/MainItemCol1';
 
 
-function FactsFigures(props) {
+function FactsFigures({ figures }) {
     return (
         <div className='facts_figures-content'>
             <div className='facts_figures-title'>
@@ -13,9 +13,9 @@ function FactsFigures(props) {
             <div className='facts_figures-list'>
                 <div className='wapper'>
                     {
-                        itemsFact.map((item, index) => (
+                        figures.map((item, index) => (
                             <div className='facts_figures-item' key={index}>
-                                <MainItemCol data={item} />
+                                <MainItemCol1 data={item} />
                             </div>
                         ))
                     }

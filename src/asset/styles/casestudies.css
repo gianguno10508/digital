@@ -1,0 +1,171 @@
+/* ____bannerCaseStudies____ */
+.case-studies-section .case-studies-banner .section-banner {
+    position: relative;
+}
+
+.case-studies-section .case-studies-banner .top-banner .image-banner .image {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.case-studies-section .case-studies-banner .top-banner .image-banner .image picture,
+.case-studies-section .case-studies-banner .top-banner .image-banner .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 460px;
+}
+
+.case-studies-section .case-studies-banner .section-banner .banner-title {
+    padding: 0 25px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.case-studies-section .case-studies-banner .section-banner .banner-title span h1 {
+    margin-bottom: 22px;
+    text-align: left;
+    max-width: 750px;
+    margin-left: 0;
+
+    font-family: 'myfont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #FFCD06;
+}
+
+/* ____bannerCaseStudiesEND____ */
+
+/* ___case-studies-page____ */
+.case-studies-section .case-studies-page {
+    overflow: hidden;
+    display: block;
+}
+
+.case-studies-section .case-studies-page .case-studies-list-category ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    padding: 64px 0;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 4%);
+    background: #fff;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.case-studies-page .case-studies-list-category ul .case-studies-item-category {
+    margin: 0 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'myfont';
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.case-studies-page .case-studies-list-category ul .active {
+    color: #FFCD06;
+    font-family: 'myfont';
+
+}
+
+.case-studies-section .case-studies-page .container {
+    max-width: 1290px;
+}
+
+.case-studies-section .case-studies-page .case-studies-list-items {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 64px 0 97px;
+}
+
+.case-studies-page .case-studies-list-items .case-studies-item {
+    padding: 0 15px 17px 15px;
+    width: calc(100% / 4);
+}
+
+.case-studies-page .case-studies-list-items .case-studies-item .case-studies-inner {
+    padding-bottom: 15px;
+}
+
+.case-studies-page .case-studies-list-items .case-studies-item .case-studies-inner .case-studies-image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background: #ccc;
+    position: relative;
+    margin: 0;
+}
+
+.case-studies-page .case-studies-item .case-studies-inner .case-studies-image .image {
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    object-position: center;
+    object-fit: cover;
+    background-color: transparent
+}
+
+.case-studies-page .case-studies-item .case-studies-inner .case-studies-image .image picture {
+    position: static;
+}
+
+.case-studies-item .case-studies-inner .case-studies-image .image img {
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    object-position: center;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.case-studies-item .case-studies-inner .category {
+    padding: 24px 0 0;
+    color: #FFCD06;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.case-studies-item .case-studies-inner .infor {
+    padding: 5px 0;
+}
+
+.case-studies-item .case-studies-inner .infor .title {
+    height: auto !important;
+
+    font-family: 'myfont';
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0 24px 0;
+
+    font-size: 20px;
+    line-height: 1.2em;
+    color: #183B56;
+    background-color: transparent;
+}
+
+.case-studies-item .case-studies-inner .infor .title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ___case-studies-pageEnd____ */
