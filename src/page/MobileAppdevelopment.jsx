@@ -8,6 +8,7 @@ import OurTechnologyStack from '../components/ui/mobile-app-development/OurTechn
 import AppFeatures from '../components/ui/mobile-app-development/AppFeatures';
 import Madp from '../components/ui/mobile-app-development/Madp';
 import BottomPanel from '../components/ui/mobile-app-development/BottomPanel';
+import ScrollEffect from '../components/common/ScrollEffect';
 
 function MobileAppdevelopment() {
     return (
@@ -19,7 +20,7 @@ function MobileAppdevelopment() {
             <div className='mobile-service-section'>
                 <div className='container'>
                     <div className='mobile-service-heder'>
-                        <h2>Our services </h2>
+                        <ScrollEffect children={<h2>Our services </h2>} />
                     </div>
                     <div className='mobile-service-content'>
                         <MobileServiceTop />

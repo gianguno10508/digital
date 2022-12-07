@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Header />
       {/* <HireDevelopers /> */}
-      {/* <WebDevelopment />s */}
+      {/* <WebDevelopment /> */}
       {/* <Homepage /> */}
       {/* <WhiteLabelSoftware /> */}
       {/* <MobileAppdevelopment /> */}

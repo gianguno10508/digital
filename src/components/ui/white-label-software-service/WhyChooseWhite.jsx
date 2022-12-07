@@ -26,7 +26,7 @@ const WhyChooseWhite = () => {
           <div className="row">
             {reasonsItems.map((item, index) => (
               <div className="reasons-items" key={index}>
-                <MainItemCol data={item} number={`0${index+1}`} />
+                <MainItemCol data={item} number={`0${index+1}`} onEffect={false}/>
               </div>
             ))}
           </div>
