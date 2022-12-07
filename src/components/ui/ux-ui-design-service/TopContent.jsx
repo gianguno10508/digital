@@ -1,10 +1,11 @@
 import React from 'react';
 import { itemDesign } from '../../../asset/fakedata/uxuidesign/itemuxui';
 import LeftRightCol from '../../common/LeftRightCol';
+import MainItemCol from '../../common/MainItemCol';
+import MainItemCol1 from '../../common/MainItemCol1';
 
 
-
-function TopContent() {
+function TopContent({ data }) {
     return (
         <div className='top-content'>
             <div className='top-content-title'>
@@ -22,9 +23,10 @@ function TopContent() {
             <div className='top-content-list-design '>
                 <div className='list-design'>
                     {
-                        itemDesign.map((item, index) => (
-                            <div className='design-item'>
-                                <LeftRightCol data={item} />
+                        data.map((item, index) => (
+                            <div className='design-item' key={index}>
+                                <MainItemCol1 data={item} />
+
                             </div>
                         ))
                     }

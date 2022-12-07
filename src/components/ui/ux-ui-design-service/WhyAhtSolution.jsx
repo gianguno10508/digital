@@ -1,23 +1,23 @@
+import { Markup } from 'interweave';
 import React from 'react';
-import { itemSolution } from '../../../asset/fakedata/uxuidesign/itemuxui';
+// import { itemSolution } from '../../../asset/fakedata/uxuidesign/itemuxui';
 import LeftRightCol from '../../common/LeftRightCol';
 
 
 
-function WhyAhtSolution() {
+function WhyAhtSolution({ whychoose }) {
     return (
         <div className='why-aht-solution-content'>
             <div className='top-content'>
-                <div className='title'>  Why ONextDigital  Solution</div>
-                <h2>Why choose us</h2>
+                <Markup content={whychoose.title} />
             </div>
 
             <div className='solution-list'>
                 {
-                    itemSolution.map((item, index) => (
+                    whychoose.services && whychoose.services.map((item, index) => (
                         <div className='solution-item' key={index}>
                             <div className='number'>
-                                {item.id}
+                                {`${index + 1}`}
                             </div>
                             <LeftRightCol data={item} />
                         </div>

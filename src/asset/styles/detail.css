@@ -1,0 +1,147 @@
+.detail-section {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.detail-section .container {
+    max-width: 1290px;
+    padding: 50px 25px 0px;
+}
+
+.detail-section .post-content img {
+    width: 100%;
+}
+
+.detail-section .post-content .entry-header {
+    display: block;
+    padding: 80px 0px 0px;
+}
+
+.detail-section .post-content .entry-header .entry-header-inner {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.post-content .entry-header .entry-header-inner .entry-title {
+    margin: 0;
+    color: #183B56;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.detail-section .post-content .post-inner {
+    padding: 80px 0px 0px;
+}
+
+.detail-section .post-content .post-inner .entry-content span h3:first-child {
+    margin: 0px 0px 30px;
+}
+
+.detail-section .post-content .post-inner .entry-content span h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 60px 0px 30px;
+
+}
+
+.detail-section .post-content .post-inner .entry-content span p,
+.detail-section .post-content .post-inner .entry-content span ul {
+    margin: 0px 0px 22.5px;
+    line-height: 1.476;
+}
+
+.detail-section .post-content .post-inner .entry-content span .alignnone {
+    margin: 40px 0px 20px 0px;
+    height: auto;
+}
+
+.detail-section .post-content .post-inner .entry-content span ul li {
+    list-style: disc;
+    margin: 5px 0px 0px 20px
+}
+
+/* ____Righr____ */
+
+.detail-section .sidebar {
+    margin-top: 60px;
+    padding: 0px 15px;
+}
+
+.detail-section .sidebar .widget_media_image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.detail-section .sidebar .widget_categories {
+    margin-top: 30px;
+}
+
+.detail-section .sidebar .widget_categories .widget-content h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.detail-section .sidebar .widget_categories .widget-content ul {
+    line-height: 1.8;
+}
+
+.detail-section .sidebar .widget_categories .widget-content .cat-item {
+    width: 100%;
+}
+
+.detail-section .sidebar .widget_categories .widget-content .cat-item a {
+    line-height: 1.5;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+
+.detail-section .sidebar .widget_categories .widget-content .cat-item a:hover {
+    text-decoration: underline;
+}
+
+.detail-section .widget_recent_entries {
+    margin-top: 30px;
+}
+
+.detail-section .widget_recent_entries .widget-content h2 {
+    line-height: 1.2em;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #183B56;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.detail-section .widget_recent_entries .widget-content ul li a {
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #183B56;
+    font-weight: 500;
+}
+
+.detail-section .widget_recent_entries .widget-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.detail-section .widget_recent_entries .widget-content ul li {
+    margin-bottom: 20px
+}
+
+/* ____RighrEND____ */
+@media screen and (max-width:768px) {
+    .detail-section .sidebar {
+        width: 100%;
+    }
+}

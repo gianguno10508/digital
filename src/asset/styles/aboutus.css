@@ -39,20 +39,20 @@
     padding: 0 25px;
 }
 
-.about-us-section .about-us-banner-top .section-banner .banner-title .title,
-.about-us-section .about-us-banner-top .section-banner .banner-title .description {
+.about-us-section .about-us-banner-top .section-banner .banner-title h1,
+.about-us-section .about-us-banner-top .section-banner .banner-title p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.about-us-section .about-us-banner-top .section-banner .banner-title .title {
+.about-us-section .about-us-banner-top .section-banner .banner-title h1 {
 
     max-width: 750px;
     margin-bottom: 22px;
 }
 
-.about-us-section .about-us-banner-top .section-banner .banner-title .title h1 {
+.about-us-section .about-us-banner-top .section-banner .banner-title h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 46px;
@@ -62,7 +62,7 @@
     color: #FFCD06;
 }
 
-.about-us-section .about-us-banner-top .section-banner .banner-title .description {
+.about-us-section .about-us-banner-top .section-banner .banner-title p {
     color: #fff;
     max-width: 625px;
     font-weight: 400;
@@ -71,8 +71,310 @@
     text-transform: inherit;
 }
 
-.about-us-section .about-us-banner-top .section-banner .banner-title .description a:hover {
+.about-us-section .about-us-banner-top .section-banner .banner-title p a:hover {
     text-decoration: underline;
 }
 
 /* ______BannerTopEND____ */
+
+/* ____facts_figures-list___ */
+.about-us-section .facts_figures-section {
+    padding: 5rem 0;
+    display: block;
+}
+
+.facts_figures-section .facts_figures-content .facts_figures-title h2 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 71px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.facts_figures-section .facts_figures-content {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 43px;
+}
+
+.facts_figures-section .facts_figures-content .wapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+}
+
+.facts_figures-section .facts_figures-content .facts_figures-item {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-top: 61px;
+    padding-bottom: 85px;
+    border-right: 1px solid rgb(224 224 224 / 50%);
+}
+
+.facts_figures-section .facts_figures-content .facts_figures-item:last-child {
+    border-color: transparent;
+}
+
+.facts_figures-section .facts_figures-content .facts_figures-item .title {
+    height: 53px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    place-items: flex-start;
+
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.facts_figures-section .facts_figures-content .facts_figures-item .title h2 {
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.facts_figures-section .facts_figures-content .facts_figures-item .description p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #183B56;
+}
+
+/* ____facts_figures-listEnd___ */
+/* _____our_vision-section_____ */
+.about-us-section .our_vision-section {
+    padding: 5rem 0;
+}
+
+.about-us-section .our_vision-section .item-inner {
+    align-items: center;
+}
+
+.about-us-section .our_vision-section .item-inner .image-feature {
+    padding-right: 7.2rem;
+}
+
+.about-us-section .our_vision-section .item-inner .image-feature img {
+    width: 100%;
+}
+
+.about-us-section .our_vision-section .item-inner .content-right {
+    padding-left: 8.2rem;
+}
+
+.about-us-section .our_vision-section .item-inner .content-right .title {
+    margin-bottom: 45px;
+}
+
+.about-us-section .our_vision-section .item-inner .content-right .title h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin: 0 0 24px 0;
+}
+
+/* _____our_vision-sectionEND_____ */
+
+/* our_technological_expertise-section___ */
+.about-us-section .our_technological_expertise-section {
+    padding: 50px 0;
+}
+
+.about-us-section .our_technological_expertise-section img {
+    width: 100%;
+}
+
+.about-us-section .our_technological_expertise-section .section-banner h2 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 71px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-us-section .our_technological_expertise-section .expertise-list {}
+
+.about-us-section .our_technological_expertise-section .expertise-list .expertise-item {
+    /* position: relative; */
+    margin-bottom: 48px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.our_technological_expertise-section .expertise-list .expertise-item .img-wapper {
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.our_technological_expertise-section .expertise-list .expertise-item .img-wapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all .3s;
+}
+
+.our_technological_expertise-section .expertise-list .expertise-item:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* our_technological_expertise-sectionEND___ */
+
+/* __why-choose-us-section____ */
+.about-us-section .why-choose-us-section {
+    padding: 50px 0;
+}
+
+.why-choose-us-section .why-choose-title h2 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 71px;
+    text-transform: capitalize;
+    color: #183B56;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.why-choose-us-section .why-choose-us-content .list-content {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+.why-choose-us-section .why-choose-us-content .content-item:first-child {
+    margin: 0 0 47px;
+    padding: 31px 76.5px 8px 35px;
+    border-right: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.why-choose-us-section .why-choose-us-content .content-item {
+    border-right: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.why-choose-us-section .why-choose-us-content .content-item {
+    padding: 31px 76.5px 8px;
+    margin: 0 0 47px;
+
+}
+
+.why-choose-us-section .why-choose-us-content .content-item .number {
+    margin-top: 26px;
+}
+
+.why-choose-us-section .why-choose-us-content .content-item .number span {
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #FFCD06;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.why-choose-us-section .why-choose-us-content .content-item .title {
+    margin: 0 0 24px 0;
+}
+
+.why-choose-us-section .why-choose-us-content .content-item .title h2 {
+    color: #183B56;
+    text-transform: initial;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+}
+
+.why-choose-us-section .why-choose-us-content .content-item .description p {
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #183B56;
+}
+
+.why-choose-us-section .why-choose-us-content .content-item:nth-child(3n),
+.why-choose-us-section .why-choose-us-content .content-item:last-child {
+    border-color: transparent;
+}
+
+/* __why-choose-us-sectionEND____ */
+
+/* __-why-choose-us-banner-bottom___ */
+.about-us-section .why-choose-us-banner-bottom {
+    padding: 7.2rem 0;
+}
+
+.about-us-section .why-choose-us-banner-bottom .background-img {
+    background-image: url(https://onextdigital.com/wp-content/uploads/2022/09/MEM_9830-scaled.jpg);
+    padding: 55px 260px 72px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.about-us-section .why-choose-us-banner-bottom .background-img h2 {
+    text-align: center;
+    margin-bottom: 41px;
+    color: #FFCD06;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 64px;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.about-us-section .why-choose-us-banner-bottom .background-img .button-more {
+    text-align: center;
+
+}
+
+.about-us-section .why-choose-us-banner-bottom .background-img .button-more a {
+    max-width: none;
+    width: auto;
+    background: #FFCD06;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #183B56;
+    text-transform: capitalize;
+    height: 55px;
+    padding: 15px 30px;
+    border: 1px solid;
+    text-decoration: none;
+    transition: all .3s;
+    line-height: 32px;
+
+}
+
+/* __-why-choose-us-banner-bottomEND___ */

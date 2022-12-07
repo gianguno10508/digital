@@ -84,7 +84,7 @@ function WhiteLabelSoftware() {
                             {
                                 reasonsItems.map((item, index) => (
                                     <div className='reasons-items' key={index}>
-                                        <MainItemCol data={item} />
+                                        <MainItemCol data={item} number={`0${index + 1}`} />
                                     </div>
                                 ))
                             }
