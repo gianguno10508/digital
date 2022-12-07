@@ -5,7 +5,7 @@ const BannerBottomHire = () =>{
     return(
         <div className="section-bottom-hire">
             <div className="container">
-                <ItemHasBackground data={bannerBottomHireDeveloper} />
+                <ItemHasBackground data={bannerBottomHireDeveloper} onEffectTitle={true} />
             </div>
         </div>
     )

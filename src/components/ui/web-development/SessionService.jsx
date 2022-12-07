@@ -1,6 +1,7 @@
 import LeftRightCol from "../../../components/common/LeftRightCol";
 import contentLeftRight from "../../../asset/fakedata/webdevelopment/contentLeftRight";
 import { Markup } from "interweave";
+import ScrollEffect from "../../common/ScrollEffect";
 
 const SessionService = ({data}) =>{
     console.log(data);
@@ -9,7 +10,7 @@ const SessionService = ({data}) =>{
         <div className="section-service">
             <div className="container">
                 {data.map((item, index)=>(
-                    <LeftRightCol data={item} />
+                    <ScrollEffect children={<LeftRightCol data={item} />} />
                 ))}
                 {/* <Markup content={data.image.sourceUrl} /> */}
                 {/* <Markup content={data} /> */}

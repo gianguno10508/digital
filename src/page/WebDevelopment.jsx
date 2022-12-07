@@ -5,17 +5,21 @@ import ChooseUsWeb from "../components/ui/web-development/ChooseUsWeb";
 import SessionBottom from "../components/ui/web-development/SessionBottom";
 import { useEffect, useState } from "react";
 import { getContentWebDevelopment } from "../gql/web-development";
+import ScrollEffect from "../components/common/ScrollEffect";
 
 function WebDevelopment() {
-  const [banner, setBanner] = useState([]);
+  const [banner, setBanner] = useState({});
   const [services, setServices] = useState([]);
   useEffect(() => {
     try {
       getContentWebDevelopment().then(function (res) {
+        console.log(res);
         setServices(res.page.webdevelopment.services);
         const bannerWebdevelop = {
-          content: res.page.content,
-          img: res.page.featuredImage.node.sourceUrl
+          title: res.page.content,
+          image: {
+            sourceUrl :res.page.featuredImage.node.sourceUrl
+          }
         }
         setBanner(bannerWebdevelop);
       })
@@ -25,10 +29,10 @@ function WebDevelopment() {
   }, [])
   return (
     <div className="web-develop">
-      <BackgroundItem data={banner} />
+      {banner.title && <BackgroundItem data={banner} />}
       <SessionService data={services} />
       <ChooseUsWeb />
-      <SessionBottom />
+      <ScrollEffect children={<SessionBottom />}/>
     </div>
   )
 }

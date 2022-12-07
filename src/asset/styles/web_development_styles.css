@@ -39,7 +39,7 @@
     max-width: 750px;
     margin-left: 0;
 }
-.web-develop .section-banner .banner-title .title h1{
+.web-develop .section-banner .banner-title .title span .line-split{
     font-weight: 700;
     font-size: 46px;
     line-height: 60px;
@@ -47,7 +47,7 @@
     color: #FFCD06;
     font-family: 'myfont';
 }
-.web-develop .section-banner .banner-title .description{
+.web-develop .section-banner .banner-title .subtitle p{
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
