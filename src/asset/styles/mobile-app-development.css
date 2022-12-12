@@ -32,7 +32,7 @@
     width: 100%;
 }
 
-.mobile-app-development-banner .section-banner .banner-title .title h1 {
+.mobile-app-development-banner .section-banner .banner-title span h1 {
     margin-bottom: 22px;
     text-align: left;
     max-width: 750px;
@@ -46,13 +46,13 @@
     color: #FFCD06;
 }
 
-.mobile-app-development-banner .section-banner .banner-title .description {
+.mobile-app-development-banner .section-banner .banner-title p {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     text-align: left;
     width: 625px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     text-transform: inherit;
 
     color: #fff;
@@ -210,7 +210,7 @@
     margin-bottom: 13px;
 }
 
-.our_technology_stack-section .section-banner .banner-title .title h2 {
+.our_technology_stack-section .section-banner .banner-title span h2 {
     font-size: 46px;
     line-height: 74px;
     font-style: normal;
@@ -220,7 +220,7 @@
     margin: 0 0 24px 0;
 }
 
-.our_technology_stack-section .section-banner .banner-title .description {
+.our_technology_stack-section .section-banner .banner-title .container div {
     width: 100%;
     max-width: 565px;
     margin-left: auto;
@@ -228,7 +228,7 @@
     margin-bottom: 54px;
 }
 
-.our_technology_stack-section .section-banner .banner-title .description span {
+.our_technology_stack-section .section-banner .banner-title span div {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -255,12 +255,12 @@
     padding: 301px 0px 50px;
 }
 
-.app_features-section .banner-title .title {
+.app_features-section .banner-title {
     margin-bottom: 43px;
     text-align: center;
 }
 
-.app_features-section .banner-title .title h2 {
+.app_features-section .banner-title span h2 {
     font-size: 46px;
     line-height: 74px;
     font-style: normal;
@@ -270,7 +270,7 @@
     margin: 0 0 24px 0;
 }
 
-.app_features-section .banner-title .description {
+.app_features-section .banner-title span div {
     max-width: 1032px;
     margin: auto;
     color: #5A7184;
@@ -365,20 +365,20 @@
     max-width: 1264px;
 }
 
-.madp-section .banner-title .title {
+.madp-section .banner-title span h2 {
     margin-top: 3px;
     line-height: 53px;
     margin: 0 0 24px 0;
 }
 
-.madp-section .banner-title .title h2 {
+.madp-section .banner-title span h2 {
     color: #FFCD06;
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
 }
 
-.madp-section .banner-title .description span {
+.madp-section .banner-title span {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

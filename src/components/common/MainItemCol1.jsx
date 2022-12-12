@@ -4,13 +4,21 @@ const MainItemCol1 = ({ data, number }) => {
     return (
         <>
             {data.square && <div className="square" style={{ backgroundColor: data.square }}></div>}
-            {data.image && (
-                <div className="box-icon">
+            {
+                data.image && <div className="box-icon">
                     <span>
                         <img src={data.image.sourceUrl} alt='' />
                     </span>
                 </div>
-            )}
+            }
+
+            {
+                data.sourceUrl && <div className="box-icon">
+                    <span>
+                        <img src={data.sourceUrl} alt='' />
+                    </span>
+                </div>
+            }
             {number && (
                 <div className="number">
                     <span>{number}</span>
@@ -34,11 +42,13 @@ const MainItemCol1 = ({ data, number }) => {
                 )}
             </div>
 
-            {data.url && (
-                <div className="button-link">
-                    <a href={data.url} className="button">{data.button}</a>
-                </div>
-            )}
+            {
+                data.url && (
+                    <div className="button-link">
+                        <a href={data.url} className="button">{data.button}</a>
+                    </div>
+                )
+            }
         </>
 
     )

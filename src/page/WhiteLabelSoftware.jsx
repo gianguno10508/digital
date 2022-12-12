@@ -1,21 +1,56 @@
-import React from "react";
-import bannerWhiteLabel from "../asset/fakedata/whitelabelsSoftware/banner";
+import React, { useEffect, useState } from "react";
+// import bannerWhiteLabel from "../asset/fakedata/whitelabelsSoftware/banner";
 import BackgroundItem from "../components/common/BackgroundItem";
 import "../asset/styles/white_label_sofware.css";
 import Benefits from "../components/ui/white-label-software-service/Benefist";
-import benefits from "../asset/fakedata/whitelabelsSoftware/benefits";
+// import benefits from "../asset/fakedata/whitelabelsSoftware/benefits";
 import TimeLine from "../components/ui/white-label-software-service/TimeLine";
 import timeLine from "../asset/fakedata/whitelabelsSoftware/timeLine";
 import OurServiceWhitePage from "../components/ui/white-label-software-service/OurService";
 import WhyChooseWhite from "../components/ui/white-label-software-service/WhyChooseWhite";
 import BottomPanelBannerWhite from "../components/ui/white-label-software-service/BottomPanelBannerWhite";
 import { Fade } from "react-reveal";
+import { getContentWhiteLabelSoftware } from "../gql/white-label-software-service";
+import Background1 from "../components/common/Background1";
 function WhiteLabelSoftware() {
+  const [bannerWhiteLabel, setBannerWhiteLabel] = useState([]);
+  const [ourServiceWhite, setOurServiceWhite] = useState([]);
+  const [digital, setDigital] = useState([]);
+  const [whyChooseUs, setWhyChooseUs] = useState([]);
+  // console.log(whyChooseUs);
+  useEffect(() => {
+    try {
+      getContentWhiteLabelSoftware().then(function (res) {
+        // console.log(res);
+        setOurServiceWhite(res.page.whiteLabelSoftwareService.ourServices)
+        setWhyChooseUs(res.page.whiteLabelSoftwareService.whyChooseUs)
+        const banner = {
+          title: res.page.title,
+          content: res.page.content,
+          image: res.page.featuredImage.node,
+        }
+        const itemDigital = {
+          title: res.page.whiteLabelSoftwareService.digital.title,
+          img: res.page.whiteLabelSoftwareService.digital.image.sourceUrl,
+          content: res.page.whiteLabelSoftwareService.digital.digital,
+        }
+        setBannerWhiteLabel(banner)
+        setDigital(itemDigital)
+      })
+    }
+    catch (error) {
+      console.log(error);
+    }
+  }, [])
+
   return (
     <div className="section-white-lable-page">
       <div className="section-banner-white-lable">
         <Fade bottom>
-          {/* <BackgroundItem data={bannerWhiteLabel} /> */}
+          {
+            bannerWhiteLabel && <Background1 data={bannerWhiteLabel} />
+          }
+
         </Fade>
       </div>
 
@@ -43,16 +78,19 @@ function WhiteLabelSoftware() {
         </div>
       </div>
 
-      <OurServiceWhitePage />
+      <OurServiceWhitePage ourServiceWhite={ourServiceWhite} />
 
       <div className="benefits-section">
         <div className="container">
           <div className="benefits-section-inner">
-            <Benefits data={benefits} />
+            {
+              digital && <Benefits data={digital} />
+            }
+
           </div>
         </div>
       </div>
-      <WhyChooseWhite />
+      <WhyChooseWhite whyChooseUs={whyChooseUs} />
       <BottomPanelBannerWhite />
     </div>
   );
