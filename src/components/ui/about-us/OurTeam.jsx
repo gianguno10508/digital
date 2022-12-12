@@ -2,7 +2,7 @@ import React from 'react';
 import { itemExpertise } from '../../../asset/fakedata/aboutus/itemsAboutus';
 
 
-function OurTeam(props) {
+function OurTeam({ ourTeam }) {
     return (
         <div className='container'>
             <div className='section-banner'>
@@ -10,10 +10,10 @@ function OurTeam(props) {
             </div>
             <div className='expertise-list row'>
                 {
-                    itemExpertise.map((item, index) => (
+                    ourTeam.map((item, index) => (
                         <div className='expertise-item' key={index}>
                             <div className='img-wapper'>
-                                <img src={item.img} alt=''></img>
+                                <img src={item.sourceUrl} alt=''></img>
                             </div>
                         </div>
                     ))
