@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-// import { bannerAboutus } from '../asset/fakedata/aboutus/banneraboutus';
-import { itemOurVision } from '../asset/fakedata/aboutus/itemsAboutus';
+import { Fade } from 'react-reveal';
 import '../asset/styles/aboutus.css';
 import BackgroundItem from '../components/common/BackgroundItem';
-import LeftRightCol from '../components/common/LeftRightCol';
 import BannerBottom from '../components/ui/about-us/BannerBottom';
 import FactsFigures from '../components/ui/about-us/FactsFigures';
 import OurTeam from '../components/ui/about-us/OurTeam';
@@ -12,7 +10,6 @@ import WhyChooseUs from '../components/ui/about-us/WhyChooseUs';
 import { getContentAboutUs } from '../gql/about-us';
 function AboutUs() {
     const [bannerAboutus, setBannerAboutUs] = useState([]);
-    // console.log(bannerAboutus);s
     const [figures, setFigures] = useState([]);
     const [ourVision, setOurVision] = useState([]);
     const [ourTeam, setOurTeam] = useState([]);
@@ -42,9 +39,11 @@ function AboutUs() {
         <div className='about-us-section'>
             <div className='about-us-banner-top'>
                 {
-                    bannerAboutus.image && <BackgroundItem data={bannerAboutus} />
+                    bannerAboutus.image && 
+                    <Fade bottom>
+                        <BackgroundItem data={bannerAboutus} />
+                    </Fade>
                 }
-
             </div>
             <div className='facts_figures-section'>
                 <div className='container'>
