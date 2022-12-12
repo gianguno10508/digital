@@ -4,7 +4,7 @@ import { itemCaseStudies, listCategory } from '../asset/fakedata/casestudies/ite
 import '../asset/styles/casestudies.css';
 import Background1 from '../components/common/Background1';
 import MainItems from '../components/ui/casestudies/MainItems';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 // const allCategories = ['All', ...new Set(listCategory.map((p) => p.category))]
 const allCategories = [...new Set(listCategory.map((p) => p.category))]
