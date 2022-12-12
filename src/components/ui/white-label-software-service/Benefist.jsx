@@ -1,6 +1,7 @@
 //img, listUl
 
 const Benefits = ({ data }) => {
+    // console.log(data);
     return (
         <div className="row">
             <div className="col-md-12 col-lg-6 section-inner-banner">
@@ -16,7 +17,7 @@ const Benefits = ({ data }) => {
                         <ul>
                             {data.content.map((item, index) => (
                                 <li key={index}>
-                                    {item.title_content}
+                                    {item.title}
                                 </li>
                             ))}
                         </ul>

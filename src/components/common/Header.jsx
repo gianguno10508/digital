@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import logoB from '../../asset/img/LOGO_brown.png';
 import logoW from '../../asset/img/LOGO_WHITE.png'
 import '../../asset/styles/header.css';
+import $ from 'jquery';
 function Header() {
     const [top, setTop] = useState('');
 
@@ -28,6 +30,18 @@ function Header() {
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
     }
+
+
+
+    $(document).ready(function () {
+        var selector = '.header-navigation-wrapper li';
+
+        $(selector).on('click', function () {
+            $(selector).removeClass('active');
+            $(this).addClass('active');
+        });
+    })
+
     return (
 
         <div className={`header-main ${top}`}>
@@ -40,23 +54,23 @@ function Header() {
 
                 {/* _______NAVIGATION______ */}
                 <ul ref={navRef} className='header-navigation-wrapper'>
-                    <li><a href='#'>home</a></li>
+                    <li className='active'><Link to='/' >home</Link></li>
                     <li >
-                        <a href='#'>Services</a>
+                        <Link to='/web-development'>Services</Link>
                         <span><i className="fa-solid fa-chevron-down"></i></span>
                         {/* _______SUB-Menu______ */}
                         <ul className='header-sub-menu'>
-                            <li><a href='#'>Web Development</a></li>
-                            <li><a href='#'>White label software service</a></li>
-                            <li><a href='#'>UX/UI Design Service</a></li>
-                            <li><a href='#'>Mobile App Development</a></li>
-                            <li><a href='#'>Hire developers</a></li>
+                            <li><Link to='/web-development'>Web Development</Link></li>
+                            <li><Link to='/white-label-software-service'>White label software service</Link></li>
+                            <li><Link to='/ux-ui-design-service'>UX/UI Design Service</Link></li>
+                            <li><Link to='/mobile-app-development'>Mobile App Development</Link></li>
+                            <li><Link to='/hire-developers'>Hire developers</Link></li>
                         </ul>
                     </li>
-                    <li><a href='#'>Our solutions</a></li>
-                    <li><a href='#'>Case studies</a></li>
-                    <li><a href='#'>About Us</a></li>
-                    <li className='get-in'><a href='#'>GET IN TOUch</a></li>
+                    <li><Link to='/our-solution'>Our solutions</Link></li>
+                    <li><Link to='/case-studies'>Case studies</Link></li>
+                    <li><Link to='/about-us'>About Us</Link></li>
+                    <li className='get-in'><Link to='/contact'>GET IN TOUch</Link></li>
 
                     {/* _______ICON-MOBI_________ */}
 

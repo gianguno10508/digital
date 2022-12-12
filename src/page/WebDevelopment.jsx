@@ -18,7 +18,7 @@ function WebDevelopment() {
         const bannerWebdevelop = {
           title: res.page.content,
           image: {
-            sourceUrl :res.page.featuredImage.node.sourceUrl
+            sourceUrl: res.page.featuredImage.node.sourceUrl
           }
         }
         setBanner(bannerWebdevelop);
@@ -32,7 +32,7 @@ function WebDevelopment() {
       {banner.title && <BackgroundItem data={banner} />}
       <SessionService data={services} />
       <ChooseUsWeb />
-      <ScrollEffect children={<SessionBottom />}/>
+      <ScrollEffect children={<SessionBottom />} />
     </div>
   )
 }

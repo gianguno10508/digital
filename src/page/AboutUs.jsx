@@ -12,11 +12,12 @@ import WhyChooseUs from '../components/ui/about-us/WhyChooseUs';
 import { getContentAboutUs } from '../gql/about-us';
 function AboutUs() {
     const [bannerAboutus, setBannerAboutUs] = useState([]);
+    // console.log(bannerAboutus);s
     const [figures, setFigures] = useState([]);
     const [ourVision, setOurVision] = useState([]);
     const [ourTeam, setOurTeam] = useState([]);
     const [items, setItems] = useState([]);
-    console.log(items);
+    // console.log(items);
     useEffect(() => {
         try {
             getContentAboutUs().then(function (res) {
@@ -26,9 +27,9 @@ function AboutUs() {
                 setOurTeam(res.page.aboutUs.ourTeam)
                 setItems(res.page.aboutUs.items)
                 const banner = {
-                    content: res.page.content,
+                    description: res.page.content,
                     title: res.page.title,
-                    img: res.page.featuredImage.node.sourceUrl
+                    image: res.page.featuredImage.node
                 }
                 setBannerAboutUs(banner);
             })
@@ -40,7 +41,10 @@ function AboutUs() {
     return (
         <div className='about-us-section'>
             <div className='about-us-banner-top'>
-                <BackgroundItem data={bannerAboutus} />
+                {
+                    bannerAboutus.image && <BackgroundItem data={bannerAboutus} />
+                }
+
             </div>
             <div className='facts_figures-section'>
                 <div className='container'>

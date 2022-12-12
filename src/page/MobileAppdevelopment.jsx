@@ -1,20 +1,20 @@
 import React from 'react';
 import { bannerMobileapp } from '../asset/fakedata/mobileapp/bannerMobileapp';
-import BackgroundItem from '../components/common/BackgroundItem';
 import '../asset/styles/mobile-app-development.css';
-import MobileServiceTop from '../components/ui/mobile-app-development/MobileServiceTop';
-import MobileServiceBottom from '../components/ui/mobile-app-development/MobileServiceBottom';
-import OurTechnologyStack from '../components/ui/mobile-app-development/OurTechnologyStack';
-import AppFeatures from '../components/ui/mobile-app-development/AppFeatures';
-import Madp from '../components/ui/mobile-app-development/Madp';
-import BottomPanel from '../components/ui/mobile-app-development/BottomPanel';
+import Background1 from '../components/common/Background1';
 import ScrollEffect from '../components/common/ScrollEffect';
+import AppFeatures from '../components/ui/mobile-app-development/AppFeatures';
+import BottomPanel from '../components/ui/mobile-app-development/BottomPanel';
+import Madp from '../components/ui/mobile-app-development/Madp';
+import MobileServiceBottom from '../components/ui/mobile-app-development/MobileServiceBottom';
+import MobileServiceTop from '../components/ui/mobile-app-development/MobileServiceTop';
+import OurTechnologyStack from '../components/ui/mobile-app-development/OurTechnologyStack';
 
 function MobileAppdevelopment() {
     return (
         <div className='section-mobile-app-development'>
             <div className='mobile-app-development-banner'>
-                <BackgroundItem data={bannerMobileapp} />
+                <Background1 data={bannerMobileapp} />
             </div>
 
             <div className='mobile-service-section'>
@@ -24,7 +24,7 @@ function MobileAppdevelopment() {
                     </div>
                     <div className='mobile-service-content'>
                         <MobileServiceTop />
-                        {/* <MobileServiceBottom /> */}
+                        <MobileServiceBottom />
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@ function MobileAppdevelopment() {
                 <Madp />
             </div>
 
-            <div className='bottom_panel_banner-section'>
+            <div className='bottom_panel_banner-section' >
                 <BottomPanel />
             </div>
 

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import './asset/styles/common_styles.css';
 import Footer from './components/common/Footer';
@@ -18,17 +19,19 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <HireDevelopers /> */}
-      {/* <WebDevelopment /> */}
-      {/* <Homepage /> */}
-      {/* <WhiteLabelSoftware /> */}
-      {/* <MobileAppdevelopment /> */}
-      {/* <AboutUs /> */}
-      <UxUiDesignService />
-      {/* <OurSolution /> */}
-      {/* <Contact /> */}
-      {/* <Detail /> */}
-      {/* <CaseStudies /> */}
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/web-development' element={<WebDevelopment />} />
+        <Route path='/white-label-software-service' element={<WhiteLabelSoftware />} />
+        <Route path='/ux-ui-design-service' element={<UxUiDesignService />} />
+        <Route path='/mobile-app-development' element={<MobileAppdevelopment />} />
+        <Route path='/hire-developers' element={<HireDevelopers />} />
+        <Route path='/our-solution' element={<OurSolution />} />
+        <Route path='/case-studies' element={<CaseStudies />} />
+        <Route path='/about-us' element={<AboutUs />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/detail' element={<Detail />} />
+      </Routes>
       <Footer />
     </div>
   );
