@@ -23,7 +23,10 @@ const Background1 = ({ data }) => {
                                     srcset={data.img_responsive}
                                 />
                             )}
-                            <img src={data.image.sourceUrl} alt="" className="banner-image" />
+                            {
+                                data.image && <img src={data.image.sourceUrl} alt="" className="banner-image" />
+                            }
+
                         </picture>
                     </div>
                 </div>

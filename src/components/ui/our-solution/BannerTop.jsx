@@ -1,12 +1,12 @@
 import React from 'react';
 import { bannerSoluition } from '../../../asset/fakedata/oursolution/banner';
-import BackgroundItem from '../../common/BackgroundItem';
+import Background1 from '../../common/Background1';
 
 
 function BannerTop() {
     return (
         <div className='banner-our-solution'>
-            <BackgroundItem data={bannerSoluition} />
+            <Background1 data={bannerSoluition} />
             <div className='list-plaform'>
                 <div className='platform_represent-border'>
                     <div className='plaform_1'>

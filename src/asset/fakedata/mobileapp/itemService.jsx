@@ -2,33 +2,35 @@ const itemService = [
     {
         id: 1,
         square: null,
-        img: 'https://onextdigital.com/wp-content/uploads/2022/07/Frame-10981.png',
+        image: {
+            sourceUrl: 'https://onextdigital.com/wp-content/uploads/2022/07/Frame-10981.png'
+        },
         number: null,
-        title: "IOS Mobile App Development",
-        type_title: 'h2',
+        title: "<h2>IOS Mobile App Development</h2>",
         description: "We are experts in developing fully-fledged iOS mobile apps that are stable, scalable, and compatible with iPhone, iPad, Apple TV, and more ",
         url: null
     },
     {
         id: 2,
         square: null,
-        img: 'https://onextdigital.com/wp-content/uploads/2022/07/Frame-10982.png',
+        image: {
+            sourceUrl: 'https://onextdigital.com/wp-content/uploads/2022/07/Frame-10982.png'
+        },
         number: null,
-        title: "Android Mobile App Development",
-        type_title: 'h2',
+        title: "<h2>Android Mobile App Development</h2>",
         description: "Our mobile applications for Android are designed with stunning visuals, smooth interfaces, and powerful features",
         url: null
     },
 ]
 
 const itemServiceLeft = {
-    title: 'Cross-platform App Development ',
+    title: '<h2>Cross-platform App Development</h2>',
     description: 'Cross-platform mobile apps are developed to function for multiple mobile platforms like iOS, Android, etc. without changing the codebase.We develop cross-platform applications which provide the same user experience across all devices & platforms.',
-    type_title: 'h2',
-    img: 'https://onextdigital.com/wp-content/uploads/2022/07/Group-60.png',
-    order: 0,
-    piece_col_left: 5,
-    piece_col_right: 7
+    image: {
+        sourceUrl: 'https://onextdigital.com/wp-content/uploads/2022/07/Group-60.png'
+    },
+    location: "Right",
+    columnLeft: 5,
 }
 
 const itemAppFeatures = [
@@ -37,8 +39,7 @@ const itemAppFeatures = [
         square: '#0149ab',
         img: null,
         number: null,
-        title: "Scalability and Flexibility",
-        type_title: 'h2',
+        title: "<h2>Scalability and Flexibility</h2>",
         description: " By using micro- service architecture, we develop apps that are easily extensible and scalable",
         url: null
     },
@@ -47,8 +48,7 @@ const itemAppFeatures = [
         square: '#1f9beb',
         img: null,
         number: null,
-        title: "Appealing design",
-        type_title: 'h2',
+        title: "<h2>Appealing design</h2>",
         description: "With a team of highly-trained UI/UX designers, we aim in creating mobile app solutions with aesthetically appealing and interactive features.",
         url: null
     },
@@ -57,8 +57,7 @@ const itemAppFeatures = [
         square: '#ffcd06',
         img: null,
         number: null,
-        title: "Strict Security",
-        type_title: 'h2',
+        title: "<h2>Strict Security</h2>",
         description: "We use the best security features to strengthen safety for our software products",
         url: null
     }, {
@@ -66,8 +65,7 @@ const itemAppFeatures = [
         square: '#0149ab',
         img: null,
         number: null,
-        title: "Speed performance",
-        type_title: 'h2',
+        title: "<h2>Speed performance</h2>",
         description: "Our experts build robust mobile apps with speedy and seamless performance",
         url: null
     }, {
@@ -75,8 +73,7 @@ const itemAppFeatures = [
         square: '#1f9beb',
         img: null,
         number: null,
-        title: "Smooth Navigation",
-        type_title: 'h2',
+        title: "<h2>Smooth Navigation</h2>",
         description: "With extensive experience, we aid you to develop mobile apps with smooth search features, allowing users to navigate it effortlessly.",
         url: null
     },

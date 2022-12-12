@@ -16,7 +16,7 @@ function Homepage() {
     <div className="section-home-page">
       <div className="banner-main">
         <picture>
-          <source media="(max-width:767px)" srcset="https://onextdigital.com/wp-content/uploads/2022/11/mb_banner1.png"/>
+          <source media="(max-width:767px)" srcset="https://onextdigital.com/wp-content/uploads/2022/11/mb_banner1.png" />
           <img src={img} alt=""></img>
         </picture>
       </div>

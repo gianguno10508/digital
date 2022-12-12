@@ -1,6 +1,7 @@
 import React from "react";
 import { itemService } from "../../../asset/fakedata/mobileapp/itemService";
 import MainItemCol from "../../common/MainItemCol";
+import MainItemCol1 from "../../common/MainItemCol1";
 import ScrollEffect from "../../common/ScrollEffect";
 
 function MobileServiceTop() {
@@ -15,7 +16,7 @@ function MobileServiceTop() {
       <div className="service-top-col-items">
         {itemService.map((item, index) => (
           <div className="inner-service" key={index}>
-            <MainItemCol data={item}/>
+            <MainItemCol1 data={item} />
           </div>
         ))}
       </div>

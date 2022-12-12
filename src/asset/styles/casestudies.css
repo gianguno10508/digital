@@ -169,3 +169,28 @@
 }
 
 /* ___case-studies-pageEnd____ */
+
+@media screen and (max-width:1366px) {
+    .case-studies-page .case-studies-list-items .case-studies-item {
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width:991px) {
+    .case-studies-page .case-studies-list-items .case-studies-item {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .case-studies-page .case-studies-list-category ul .case-studies-item-category {
+        margin: 0 20px 20px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .case-studies-page .case-studies-list-items .case-studies-item {
+        width: calc(100% / 1);
+        padding: 0;
+    }
+}

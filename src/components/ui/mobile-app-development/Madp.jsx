@@ -1,6 +1,7 @@
 import React from 'react';
 import { bannerMadp } from '../../../asset/fakedata/mobileapp/bannerMobileapp';
 import { itemMadp } from '../../../asset/fakedata/mobileapp/itemService';
+import Background1 from '../../common/Background1';
 import BackgroundItem from '../../common/BackgroundItem';
 import MadpContent from './MadpContent';
 
@@ -8,7 +9,7 @@ import MadpContent from './MadpContent';
 function Madp() {
     return (
         <div className='container'>
-            <BackgroundItem data={bannerMadp} />
+            <Background1 data={bannerMadp} />
             <div className='madp-content'>
                 <div className='madp-list row'>
                     {
