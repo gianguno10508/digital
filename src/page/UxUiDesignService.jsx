@@ -11,9 +11,12 @@ import ScrollEffect from "../components/common/ScrollEffect";
 
 function UxUiDesignService() {
   const [onextDigital, setOnextDigital] = useState([]);
-  const [banner, setBanner] = useState([]);
+  const [banner, setBanner] = useState({});
   const [bannerBottomUxUi, setbannerBottomUxUi] = useState([]);
+<<<<<<< HEAD
   // console.log(banner);
+=======
+>>>>>>> d9d6ad414cab22c6a5ac04671a280d723c90ebe1
   const [whychoose, setWhyChoose] = useState([]);
   // console.log(onextDigital);
   useEffect(() => {
