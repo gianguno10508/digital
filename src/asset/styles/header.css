@@ -1,6 +1,11 @@
-.scroll-header {
+.hide {
     transform: translateY(-100%);
 }
+
+.header {
+    background-color: transparent !important;
+}
+
 
 .header-main {
     position: fixed;
@@ -9,13 +14,21 @@
     padding: 11.5px;
     transition: all .3s;
     z-index: 12;
-    background-color: transparent;
 }
 
 
 
-.header-main:hover {
+.header.down {
+    top: -6rem;
+}
+
+
+.show {
     background-color: #fff;
+}
+
+.header:hover {
+    background-color: #fff !important;
 }
 
 .header-wapper {
@@ -34,13 +47,26 @@
 }
 
 .header-wapper .header-logo-wapper .LOGO_brown,
-.header-main:hover .LOGO_WHITE {
+.show .header-logo-wapper .LOGO_WHITE,
+.header .header-wapper .header-logo-wapper .LOGO_brown {
     display: none;
 }
 
-.header-main:hover .LOGO_brown {
+.header:hover .LOGO_WHITE {
+    display: none !important;
+}
+
+
+.show .header-logo-wapper .LOGO_brown,
+.header .header-wapper .header-logo-wapper .LOGO_WHITE {
     display: block;
 }
+
+.header:hover .LOGO_brown {
+    display: block !important;
+}
+
+
 
 /* ___LogoEnd_____ */
 
@@ -54,8 +80,13 @@
     align-items: center;
 }
 
-.header-main:hover .header-wapper .header-navigation-wrapper li a,
-.header-main:hover .header-wapper .header-navigation-wrapper li:nth-child(2) span i {
+.header:hover .header-wapper .header-navigation-wrapper li a,
+.header:hover .header-wapper .header-navigation-wrapper li:nth-child(2) span i {
+    color: #5A7184 !important;
+}
+
+.show .header-wapper .header-navigation-wrapper li a,
+.show .header-wapper .header-navigation-wrapper li:nth-child(2) span i {
     color: #5A7184;
 }
 
@@ -64,11 +95,16 @@
     margin: 0px 17.5px;
 }
 
-.header-wapper .header-navigation-wrapper li a {
+.header-wapper .header-navigation-wrapper li a,
+.header .header-wapper .header-navigation-wrapper li a {
     font-size: 18px;
     color: #fff;
-    text-transform: capitalize;
     font-weight: 600;
+    text-transform: capitalize;
+}
+
+.header .header-wapper .header-navigation-wrapper li:nth-child(2) span i {
+    color: #fff;
 }
 
 .header-wapper .header-navigation-wrapper li a:hover::before {
@@ -97,7 +133,7 @@
 }
 
 .header-wapper .header-navigation-wrapper .get-in a {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
     background: #FFCD06;
     border: 1px solid #FFCD06;
     padding: 5px 15px;
@@ -182,7 +218,7 @@
 }
 
 @media screen and (max-width: 1095px) {
-    /* .scroll-header {
+    /* header {
         transform: none !important;
     } */
 

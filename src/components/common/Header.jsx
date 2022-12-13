@@ -4,15 +4,16 @@ import logoB from '../../asset/img/LOGO_brown.png';
 import logoW from '../../asset/img/LOGO_WHITE.png'
 import '../../asset/styles/header.css';
 import $ from 'jquery';
+import useScrollDirection from './useScrollDirection';
 function Header() {
-    const [top, setTop] = useState('');
+    const [top, setTop] = useState('header');
 
     const navRef = useRef();
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY >= 150) {
-                setTop('scroll-header')
+            if (window.scrollY < 150) {
+                setTop('header')
             }
             else {
                 setTop('')
@@ -25,7 +26,6 @@ function Header() {
         }
 
     }, [])
-    // console.log(top);
 
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
@@ -42,14 +42,15 @@ function Header() {
         });
     })
 
+    const scrollDirection = useScrollDirection();
     return (
 
-        <div className={`header-main ${top}`}>
+        <div className={`header-main ${scrollDirection === "down" ? "hide" : "show"} ${top}`}>
             <div className='header-wapper section-inner'>
                 {/* _______LOGO______ */}
                 <div className='header-logo-wapper'>
-                    <img className='LOGO_brown' src={logoB} alt='LOGO_brown'></img>
-                    <img className='LOGO_WHITE' src={logoW} alt='LOGO_WHITE'></img>
+                    <Link to='/'><img className='LOGO_brown' src={logoB} alt='LOGO_brown'></img></Link>
+                    <Link to='/'><img className='LOGO_WHITE' src={logoW} alt='LOGO_WHITE'></img></Link>
                 </div>
 
                 {/* _______NAVIGATION______ */}

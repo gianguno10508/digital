@@ -20,7 +20,7 @@ const Background1 = ({ data }) => {
                             {data.img_responsive && (
                                 <source
                                     media="(max-width: 767px)"
-                                    srcset={data.img_responsive}
+                                    srcSet={data.img_responsive}
                                 />
                             )}
                             {
