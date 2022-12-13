@@ -60,7 +60,7 @@
     line-height: 28px;
     text-align: left;
     max-width: 625px;
-    margin-left: 8px;
+    /* margin-left: 8px; */
     text-transform: inherit;
     color: #fff;
 }
@@ -179,8 +179,7 @@
     display: block;
     height: auto;
     max-width: 100%;
-    object-fit: cover;
-
+    min-height: unset;
 }
 
 .section-uxui-design-service .design-services-section .section-banner .top-banner .image-banner .image {
@@ -256,18 +255,18 @@
 
 }
 
-.why-aht-solution-section .why-aht-solution-content .solution-list .solution-item:nth-child(odd) {
+.why-aht-solution-section .why-aht-solution-content .solution-list .animated:nth-child(odd) .solution-item {
     background: #EFF9FF;
     border-radius: 12px;
 }
 
-.why-aht-solution-section .why-aht-solution-content .solution-list .solution-item:nth-child(even) {
+.why-aht-solution-section .why-aht-solution-content .solution-list .animated:nth-child(even) .solution-item {
     margin-left: 31px;
     background: #FBFBFB;
     border-radius: 12px;
 }
 
-.why-aht-solution-content .solution-list .solution-item:nth-child(odd) .number {
+.why-aht-solution-content .solution-list .animated:nth-child(odd) .solution-item .number {
     width: 67px;
     height: 67px;
     position: absolute;
@@ -287,7 +286,7 @@
     display: inline-grid;
 }
 
-.why-aht-solution-content .solution-list .solution-item:nth-child(even) .number {
+.why-aht-solution-content .solution-list .animated:nth-child(even) .solution-item .number {
     width: 67px;
     height: 67px;
     position: absolute;
@@ -371,7 +370,7 @@
     padding: 75px 100px;
 }
 
-.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title .title h2 {
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title span h2 {
     width: 100%;
     font-style: normal;
     font-weight: 700;
@@ -379,15 +378,16 @@
     line-height: 64px;
     text-transform: capitalize;
     color: #FFCD06;
+    margin-bottom: 10px;
 }
 
-.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title .description span p {
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title span p {
     color: #fff;
     width: 100%;
     margin-bottom: 25px;
 }
 
-.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title .description span a {
+.section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title span a {
     max-width: none;
     width: auto;
     background: #FFCD06;
@@ -409,9 +409,40 @@
 
 /* ___why-aht-solution-bottom-sectionEND___ */
 
+@media screen and (max-width:1400px) {
+    .section-uxui-design-service .section-banner .banner-title .title {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .section-uxui-design-service .design-services-section .top-content .top-content-title h2 {
+        font-size: 30px;
+        line-height: 46px;
+    }
+}
+
 @media screen and (max-width:1200px) {
     .top-content .top-content-list-design .list-design .design-item .content-right .description span {
         padding: 0;
+    }
+
+    .section-uxui-design-service .design-services-section .section-banner .banner-title span h2 {
+        font-size: 24px;
+        line-height: 28px;
+        max-width: 190px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .top-content .top-content-list-design .list-design .design-item .content-title .description p {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title span h2 {
+        font-size: 24px;
+        line-height: 28px;
     }
 }
 
@@ -459,5 +490,127 @@
     .section-uxui-design-service .design-services-section .section-banner .banner-title .title {
         top: -403px;
         left: 13%;
+    }
+
+    .why-aht-solution-content .solution-list .solution-item .item-inner .image-feature {
+        order: 2 !important;
+    }
+
+    .why-aht-solution-content .solution-list .solution-item .item-inner {
+        text-align: center;
+        align-items: center;
+    }
+
+    .section-uxui-design-service .section-banner .banner-title .title {
+        font-size: 24px;
+        line-height: 26.4px;
+    }
+
+    .section-uxui-design-service p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .top-content .top-content-list-design .list-design .content-title .title span h3 {
+        font-size: 16px;
+        line-height: 25.5px;
+        margin-bottom: 5px;
+    }
+
+    .top-content .top-content-list-design .list-design .design-item .box-icon img {
+        width: 26px;
+    }
+
+    .why-aht-solution-content .solution-list .solution-item .item-inner .content-right span h3 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 25.2px;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    .why-aht-solution-content .solution-list .solution-item .item-inner .content-right .description span {
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+    .why-aht-solution-content .solution-list .animated:nth-child(odd) .solution-item .number {
+        width: 32px;
+        height: 32px;
+        right: -15px;
+        top: -15px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .why-aht-solution-content .solution-list .animated:nth-child(even) .solution-item .number {
+        width: 32px;
+        height: 32px;
+        left: -15px;
+        top: -17px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .section-uxui-design-service .why-aht-solution-section .top-content .title {
+        padding-bottom: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .section-uxui-design-service .why-aht-solution-section .top-content h2 {
+        font-size: 24px;
+        line-height: 26.4px;
+        color: #183B56;
+    }
+
+    .section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title {
+        text-align: center;
+    }
+
+    .section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title span h2 {
+        color: #FFCD06;
+        text-align: center;
+        font-size: 24px;
+        line-height: 26.4px;
+    }
+
+    .section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title span p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 19.4px;
+        margin-bottom: 25px;
+    }
+
+    .section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title span a {
+        text-align: center;
+        display: block;
+        width: 220px;
+        margin: 0 auto;
+        height: 53px;
+        padding: 14px 20px;
+    }
+
+    .why-aht-solution-section .why-aht-solution-content .solution-list .solution-item {
+        padding: 22px 22px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-left: 19px;
+        margin-bottom: 34px;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+    .section-uxui-design-service .why-aht-solution-bottom-section .section-banner .banner-title {
+        padding: 20px;
+    }
+
+    .why-aht-solution-content .solution-list .solution-item .item-inner .image-feature .image img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
