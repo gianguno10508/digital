@@ -13,21 +13,23 @@ function UxUiDesignService() {
   const [onextDigital, setOnextDigital] = useState([]);
   const [banner, setBanner] = useState({});
   const [bannerBottomUxUi, setbannerBottomUxUi] = useState([]);
+<<<<<<< HEAD
+  // console.log(banner);
+=======
+>>>>>>> d9d6ad414cab22c6a5ac04671a280d723c90ebe1
   const [whychoose, setWhyChoose] = useState([]);
   // console.log(onextDigital);
   useEffect(() => {
     try {
       getContentUxUiDesign().then(function (res) {
-        // console.log(res);s
+        console.log(res);
         setOnextDigital(res.page.uxUiDesign.onextdigital.items);
         setWhyChoose(res.page.uxUiDesign.whyChooseUs);
         setbannerBottomUxUi(res.page.uxUiDesign.toolsItems);
         const bannerUxUi = {
           title: res.page.title,
-          // description: res.page.content,
-          image: {
-            sourceUrl: res.page.featuredImage.node.sourceUrl,
-          },
+          description: res.page.content,
+          image: res.page.featuredImage.node
         };
         setBanner(bannerUxUi);
       });
@@ -37,11 +39,10 @@ function UxUiDesignService() {
   }, []);
   return (
     <div className="section-uxui-design-service">
-      {banner.title && (
-        <Fade bottom>
-          <BackgroundItem data={banner} />
-        </Fade>
-      )}
+      <Fade bottom>
+        {banner.image && <BackgroundItem data={banner} />}
+
+      </Fade>
 
       <div className="design-services-section">
         <div className="container">
