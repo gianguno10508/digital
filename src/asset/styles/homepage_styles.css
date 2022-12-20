@@ -165,7 +165,8 @@
     overflow-y: hidden;
     position: relative;
 }
-.home-our-services-list .our-services-item .animated{
+
+.home-our-services-list .our-services-item .animated {
     height: 100%;
 }
 
@@ -186,14 +187,18 @@
     object-fit: cover;
 }
 
-.home-our-services-list .our-services-item .title p {
+.home-our-services-list .our-services-item .title {
+    margin: 0;
+    padding: 62px 0px 33px;
+}
+
+.home-our-services-list .our-services-item .title span {
     font-style: normal;
     font-weight: 400;
     font-size: 34.47px;
     line-height: 42px;
     color: #3FA9F5;
-    margin: 0;
-    padding: 62px 0px 33px;
+
     letter-spacing: 0;
 }
 
@@ -314,7 +319,7 @@
     border-right: none;
 }
 
-.section-home-page .facts-figures-list .facts-figures-item .title {
+.section-home-page .facts-figures-list .facts-figures-item .totalNumber {
     height: 53px;
     overflow: hidden;
     display: flex;
@@ -323,14 +328,15 @@
     margin-top: 32px;
 }
 
-.section-home-page .facts-figures-list .facts-figures-item .title p {
+.section-home-page .facts-figures-list .facts-figures-item .totalNumber h3,
+.section-home-page .facts-figures-list .facts-figures-item .totalNumber h3 span {
     font-size: 48px;
     line-height: 53px;
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 8px;
     font-weight: 700;
-    color: #183B56;
+    color: #183B56 !important;
     margin: 0 0 24px 0;
 }
 
@@ -538,12 +544,16 @@
     align-items: center;
 }
 
-.section-home-page .home-home-insights .insights-items .title p {
+.section-home-page .home-home-insights .insights-items .title {
+    text-align: left;
     margin: 32px 0 16px;
+}
+
+.section-home-page .home-home-insights .insights-items .title span {
+
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
-    text-align: left;
     text-transform: capitalize;
     color: #183b56;
 }
@@ -612,63 +622,79 @@
 
 /* _____home-home-contact-us END____ */
 @media screen and (max-width: 1440px) {
+
     .home-our-services h2,
     .section-home-page .section-facts-figures h2,
     .section-home-page .section-home-features h2,
     .section-home-page .home-home-insights h2,
-    .section-home-page .home-home-contact-us .contact-us-title h2{
+    .section-home-page .home-home-contact-us .contact-us-title h2 {
         font-size: 36px;
         line-height: 61px;
     }
+
     .home-our-services .services-we-offer .sub-heading,
-    .section-home-page .home-home-insights .sub-heading span{
+    .section-home-page .home-home-insights .sub-heading span {
         padding: 11px;
         font-size: 16px;
     }
-    
+
 }
-@media screen and (min-width: 768px) and (max-width: 1200px){
-    .section-about-main .description p{
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .section-about-main .description p {
         font-size: 18px;
         line-height: 25px;
     }
-    .section-about-main .sub-content-second{
+
+    .section-about-main .sub-content-second {
         font-size: 22px;
     }
-    .home-our-services h2, .section-home-page .section-facts-figures h2, .section-home-page .section-home-features h2, .section-home-page .home-home-insights h2, .section-home-page .home-home-contact-us .contact-us-title h2{
+
+    .home-our-services h2,
+    .section-home-page .section-facts-figures h2,
+    .section-home-page .section-home-features h2,
+    .section-home-page .home-home-insights h2,
+    .section-home-page .home-home-contact-us .contact-us-title h2 {
         font-size: 36px;
         line-height: 60px;
     }
-    .home-our-services-list .our-services-item .hover .title p{
+
+    .home-our-services-list .our-services-item .hover .title p {
         line-height: 37px;
     }
-    .home-our-services-list .our-services-item .title p{
+
+    .home-our-services-list .our-services-item .title sp {
         font-size: 30px;
         line-height: 37px;
     }
-    .section-home-page .section-home-features .latest-list .latest-items .section-banner .top-banner .image{
+
+    .section-home-page .section-home-features .latest-list .latest-items .section-banner .top-banner .image {
         height: 250px;
     }
 }
+
 @media screen and (max-width: 1024px) {
-    .home-our-services-list .our-services-item .title p{
+    .home-our-services-list .our-services-item .title span {
         padding: 100px 0px 100px;
     }
-}
-@media screen and (max-width: 990px) {
+
     .home-our-services-list {
         height: auto;
     }
+}
+
+@media screen and (max-width: 990px) {
+
 
     .home-our-services-list .our-services-item .wapper {
         padding: 34px 10px 20px;
     }
 
-    .home-our-services-list .our-services-item .title p {
+    .home-our-services-list .our-services-item .title span {
         font-size: 25px;
     }
 
-    .home-our-services-list .our-services-item .hover .description p {
+    .home-our-services-list .our-services-item .hover .daescription p {
         width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -686,16 +712,19 @@
 
 
 }
+
 @media screen and (max-width: 767px) {
     .home-our-services .services-we-offer::after {
         width: calc(100% - 91px);
         height: 1px;
     }
-    .section-home-page .section-home-features .latest-list .latest-items .banner-title{
+
+    .section-home-page .section-home-features .latest-list .latest-items .banner-title {
         padding: 0px 0px 20px;
     }
+
     .section-about-main .sub-heading span,
-    .home-our-services .services-we-offer .sub-heading span{
+    .home-our-services .services-we-offer .sub-heading span {
         display: inline-block;
         line-height: 36px;
         font-weight: 600;
@@ -703,20 +732,28 @@
         padding: 8px 16px;
         min-width: 0;
     }
-    .section-about-main .description p{
+
+    .section-about-main .description p {
         font-size: 14px;
         line-height: 19.7px;
         margin-bottom: 19px;
     }
-    .section-about-main .sub-content-second{
+
+    .section-about-main .sub-content-second {
         font-size: 16px;
         line-height: 25px;
         padding: 0 10px;
     }
-    .home-our-services h2{
+
+    .home-our-services h2 {
         margin-bottom: 40px;
     }
-    .home-our-services h2, .section-home-page .section-facts-figures h2, .section-home-page .section-home-features h2, .section-home-page .home-home-insights h2, .section-home-page .home-home-contact-us .contact-us-title h2{
+
+    .home-our-services h2,
+    .section-home-page .section-facts-figures h2,
+    .section-home-page .section-home-features h2,
+    .section-home-page .home-home-insights h2,
+    .section-home-page .home-home-contact-us .contact-us-title h2 {
         font-size: 24px;
         line-height: 26px;
         max-width: 300px;
@@ -724,11 +761,13 @@
         margin-right: auto;
         text-align: center;
     }
+
     .home-our-services-list .our-services-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .home-our-services .description p{
+
+    .home-our-services .description p {
         padding: 0 17px;
         font-size: 14px;
         line-height: 19.7px;
@@ -739,7 +778,8 @@
         border-radius: 20px;
         padding: 29px 40px 20px;
     }
-    .section-home-page .section-home-features .latest-list .latest-items{
+
+    .section-home-page .section-home-features .latest-list .latest-items {
         max-width: 100%;
         flex: 0 0 100%;
     }
@@ -748,7 +788,7 @@
         max-height: 51px;
     }
 
-    .home-our-services-list .our-services-item .title p {
+    .home-our-services-list .our-services-item .title span {
         padding: 30px 0px 33px;
         font-size: 21px;
     }
@@ -765,59 +805,73 @@
     .section-home-page .facts-figures-list .facts-figures-item:nth-child(2) {
         border-color: transparent;
     }
-    .section-home-page .section-home-features .latest-list .latest-items .banner-title{
+
+    .section-home-page .section-home-features .latest-list .latest-items .banner-title {
         text-align: left;
         margin: 6px 0 22px;
     }
-    .home-home-insights{
+
+    .home-home-insights {
         padding: 128px 0 29px;
     }
-    .section-home-page .home-home-insights .sub-heading{
+
+    .section-home-page .home-home-insights .sub-heading {
         justify-content: center;
     }
-    .section-home-page .home-home-insights .insights-items, .section-home-page .home-home-insights .fist-item-insights{
+
+    .section-home-page .home-home-insights .insights-items,
+    .section-home-page .home-home-insights .fist-item-insights {
         padding-right: 30px;
         padding-left: 30px;
         margin-bottom: 30px;
     }
-    .home-our-services .services-we-offer .sub-heading, .section-home-page .home-home-insights .sub-heading span{
+
+    .home-our-services .services-we-offer .sub-heading,
+    .section-home-page .home-home-insights .sub-heading span {
         padding: 0px 24px;
         display: inline-block;
         line-height: 36px;
         font-weight: 600;
         font-size: 14px;
     }
-    .section-home-page .home-home-insights .insights-items .title p{
+
+    .section-home-page .home-home-insights .insights-items .title span {
         margin: 32px 0 16px;
         font-size: 18px;
         line-height: 24px;
     }
-    .section-home-page .home-home-insights .insights-items .description p{
+
+    .section-home-page .home-home-insights .insights-items .description p {
         font-size: 14px;
         line-height: 20px;
     }
-    .section-home-page .home-home-contact-us .contact-us-title .button-more a{
+
+    .section-home-page .home-home-contact-us .contact-us-title .button-more a {
         padding: 14px 65px;
         height: 48px;
         min-width: 0;
         font-size: 14px;
         line-height: 20px;
     }
-    .section-home-page .facts-figures-list .facts-figures-item{
+
+    .section-home-page .facts-figures-list .facts-figures-item {
         padding-top: 45px;
         padding-bottom: 30px;
     }
-    .section-home-page .facts-figures-list .facts-figures-item .box-icon img{
+
+    .section-home-page .facts-figures-list .facts-figures-item .box-icon img {
         max-width: 70px;
         max-height: 70px;
     }
-    .section-home-page .facts-figures-list .facts-figures-item .title p{
+
+    .section-home-page .facts-figures-list .facts-figures-item .title p {
         font-size: 32px;
         line-height: 35px;
         height: 35px;
         margin-top: 15px;
     }
-    .section-home-page .facts-figures-list .facts-figures-item .description p{
+
+    .section-home-page .facts-figures-list .facts-figures-item .description p {
         font-size: 14px;
         line-height: 18px;
     }
@@ -853,7 +907,8 @@
         padding: 30px 0;
         position: relative;
     }
-    .section-home-page .facts-figures-list .facts-figures-item .title{
+
+    .section-home-page .facts-figures-list .facts-figures-item .title {
         margin-top: 5px;
     }
 
@@ -871,7 +926,8 @@
     .home-our-services .description p {
         font-size: 14px;
     }
-/* 
+
+    /* 
     .home-our-services h2,
     .section-home-page .section-facts-figures h2,
     .section-home-page .home-home-insights h2,
@@ -887,7 +943,7 @@
     /* .section-home-page .home-home-insights .insights-items .description p {
         font-size: 16px;
     } */
-    .section-home-page .facts-figures-list .facts-figures-item:not(:last-child)::after{
+    .section-home-page .facts-figures-list .facts-figures-item:not(:last-child)::after {
         position: absolute;
         content: '';
         bottom: 0;
@@ -896,8 +952,11 @@
         border-bottom: 1px solid #E0E0E0;
     }
 }
+
 @media screen and (max-width: 480px) {
-    .section-about-main .sub-heading span, .home-our-services .services-we-offer .sub-heading span{
+
+    .section-about-main .sub-heading span,
+    .home-our-services .services-we-offer .sub-heading span {
         font-size: 14px;
         padding: 0px 16px;
         height: 36px;
@@ -905,11 +964,17 @@
         border-radius: 57px;
         min-width: 0;
     }
-    .home-our-services h2, .section-home-page .section-facts-figures h2, .section-home-page .section-home-features h2, .section-home-page .home-home-insights h2, .section-home-page .home-home-contact-us .contact-us-title h2{
+
+    .home-our-services h2,
+    .section-home-page .section-facts-figures h2,
+    .section-home-page .section-home-features h2,
+    .section-home-page .home-home-insights h2,
+    .section-home-page .home-home-contact-us .contact-us-title h2 {
         font-size: 24px;
         line-height: 31px;
     }
-    .home-our-services-list .our-services-item .title p{
+
+    .home-our-services-list .our-services-item .title span {
         padding: 16px 0px 16px;
         font-size: 16px;
     }

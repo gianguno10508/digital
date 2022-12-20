@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ScrollEffect from "./ScrollEffect";
 
 //img, title, description, button link, number, url, span square
@@ -49,11 +50,17 @@ const MainItemCol = ({ data, number, onEffect }) => {
           <p>{data.description}</p>
         </div>
       )}
-      {data.url && (
+      {data.url ? (
         <div className="button-link">
-          <a href={data.url} className="button">
+          <Link to={`/${data.url}`} className="button">
             {data.button}
-          </a>
+          </Link>
+        </div>
+      ) : (
+        <div className="button-link">
+          <Link to='/' className="button">
+            {data.button}
+          </Link>
         </div>
       )}
     </>

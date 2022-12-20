@@ -51,6 +51,12 @@ export const getContentWhiteLabelSoftware = async () => {
                 }
               }
             }
+            timeLine {
+              listTimeLine {
+                title
+              }
+              timeLineResult
+            }
           }
         }
       }

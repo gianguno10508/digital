@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const MainItems = ({ data }) => {
     return (
 
@@ -22,7 +24,7 @@ const MainItems = ({ data }) => {
             }
             <div className="infor">
                 {
-                    data.title && <h4 className="title">{data.title}</h4>
+                    data.title && <Link to={`/${data.title}`}><h4 className="title">{data.title}</h4></Link>
                 }
             </div>
         </div>

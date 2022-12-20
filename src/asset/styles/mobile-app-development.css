@@ -3,9 +3,16 @@
     position: relative;
 }
 
-.section-mobile-app-development .mobile-app-development-banner .section-banner .top-banner .image img {
-    width: 100%;
+.section-mobile-app-development .mobile-app-development-banner .section-banner .top-banner .image {
+    height: 100vh;
+}
+
+.section-mobile-app-development .mobile-app-development-banner .section-banner .top-banner .image img,
+.section-mobile-app-development .mobile-app-development-banner .section-banner .top-banner .image picture {
     height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 460px;
 }
 
 .mobile-app-development-banner .section-banner .banner-title {
@@ -260,7 +267,7 @@
     text-align: center;
 }
 
-.app_features-section .banner-title span h2 {
+.app_features-section .banner-title .title span h2 {
     font-size: 46px;
     line-height: 74px;
     font-style: normal;
@@ -270,7 +277,7 @@
     margin: 0 0 24px 0;
 }
 
-.app_features-section .banner-title span div {
+.app_features-section .banner-title .content {
     max-width: 1032px;
     margin: auto;
     color: #5A7184;
@@ -540,3 +547,235 @@
 }
 
 /* ___bottom_panel_banner-sectionEND___ */
+
+@media screen and (max-width: 1780px) {
+    .app_features-section .app_features-content .app_features-list {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .app_features-section .app_features-content .app_features-list .wapper {
+        padding: 40px;
+    }
+
+    .app_features-section .app_features-content .app_features-list .app_features-items {
+        margin-top: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .mobile-service-content .mobile-service-top .service-top-col-meta,
+    .mobile-service-content .mobile-service-top .service-top-col-items {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .mobile-service-content .mobile-service-top .service-top-col-items {
+        margin: 0;
+    }
+
+    .madp-section .madp-content .madp-list .madp-col-meta {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .madp-section .madp-content .madp-col-meta .madp-step::after {
+        width: 36.5vw;
+    }
+
+    .madp-section .madp-content .madp-col-meta:nth-child(even) .madp-step::after {
+        content: none;
+    }
+
+    .mobile-service-bottom .item-inner .image-feature {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .mobile-service-bottom .item-inner .content-right {
+        flex: 0 0 100%;
+        width: 100%;
+        padding-left: 25px;
+    }
+
+    .mobile-app-development-banner .section-banner .banner-title span h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+
+    .mobile-app-development-banner .section-banner .banner-title p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .mobile-service-section .mobile-service-heder h2,
+    .mobile-service-top .service-top-col-meta .vcenter-item h2,
+    .our_technology_stack-section .section-banner .banner-title span h2,
+    .app_features-section .banner-title .title span h2 {
+
+
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .bottom_panel_banner-section .border-bottom-banner {
+        padding: 35px 180px 52px;
+    }
+
+    .madp-section .madp-content .madp-col-meta .madp-sttl span {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-app-development-banner .section-banner .banner-title span h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .mobile-app-development-banner .section-banner .banner-title p,
+    .mobile-service-bottom .item-inner .content-right .description span,
+    .our_technology_stack-section .section-banner .banner-title .container div,
+    .app_features-section .banner-title .content span,
+    .bottom_panel_banner-section .border-bottom-banner .description {
+
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .mobile-service-section .mobile-service-heder h2,
+    .our_technology_stack-section .section-banner .banner-title span h2,
+    .app_features-section .banner-title .title span h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .mobile-service-top .service-top-col-meta .vcenter-item h2,
+    .mobile-service-bottom .item-inner .content-right h2 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .mobile-service-top .service-top-col-items .inner-service .title h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .madp-section .banner-title span h2,
+    .bottom_panel_banner-section .border-bottom-banner h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .mobile-service-top .service-top-col-items .inner-service {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .mobile-service-top .service-top-col-items .inner-service .content-title {
+        padding-left: 27px;
+    }
+
+    .mobile-service-top .service-top-col-items .inner-service .title::before {
+        content: none;
+    }
+
+    .app_features-section .app_features-content .app_features-list .app_features-items {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .madp-section .madp-content .madp-list .madp-col-meta {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .madp-section .madp-content .madp-col-meta .madp-step {
+        max-width: 80px;
+        flex-shrink: 0;
+        font-size: 16px;
+        padding: 6.5px 14px;
+        height: fit-content;
+    }
+
+    .madp-section .madp-content .madp-col-meta .madp-step::after {
+        top: 51px;
+        height: 145px;
+        width: 1px;
+        left: 50%;
+        border-left: 1px dashed #FFCD06;
+    }
+
+    .madp-section .madp-content .madp-col-meta:nth-child(even) .madp-step::after {
+        content: '';
+    }
+
+    .madp-section .madp-content .madp-col-meta .madp-sttl {
+        width: 100%;
+        margin-left: 8px;
+        margin-top: 0;
+        min-height: 135px;
+    }
+
+    .madp-section .madp-content .madp-col-meta:last-child .madp-step::after {
+        content: none;
+    }
+
+    .bottom_panel_banner-section .border-bottom-banner {
+        padding: 35px 30px 52px;
+    }
+
+    .section-mobile-app-development .bottom_panel_banner-section {
+        padding: 40px 0;
+    }
+
+    .mobile-app-development-banner .section-banner .banner-title p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .app_features-section .app_features-content .app_features-list .wapper .title h2 {
+        font-size: 16px;
+    }
+
+    .app_features-section .app_features-content .app_features-list .wapper .description p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .mobile-service-top .service-top-col-items .inner-service .content-title {
+        padding-left: 0;
+    }
+
+    .madp-section .banner-title span h2,
+    .bottom_panel_banner-section .border-bottom-banner h2,
+    .app_features-section .banner-title .title span h2,
+    .our_technology_stack-section .section-banner .banner-title span h2,
+    .mobile-service-section .mobile-service-heder h2 {
+
+
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .mobile-app-development-banner .section-banner .banner-title span h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .app_features-section .app_features-content .app_features-list .wapper .square {
+        width: 17px;
+        height: 17px;
+    }
+}

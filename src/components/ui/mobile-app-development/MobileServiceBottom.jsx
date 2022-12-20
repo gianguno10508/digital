@@ -1,13 +1,16 @@
 import React from 'react';
-import { itemServiceLeft } from '../../../asset/fakedata/mobileapp/itemService';
+// import { itemServiceLeft } from '../../../asset/fakedata/mobileapp/itemService';
 import LeftRightCol from '../../common/LeftRightCol';
 
 
 
-function MobileServiceBottom() {
+function MobileServiceBottom({ data }) {
     return (
         <div className='mobile-service-bottom' >
-            <LeftRightCol data={itemServiceLeft} />
+            {
+                data.image && <LeftRightCol data={data} />
+            }
+
         </div>
     );
 }

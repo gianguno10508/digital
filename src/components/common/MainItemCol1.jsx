@@ -2,10 +2,10 @@ import { Markup } from "interweave";
 import NumberRun from "./NumberRun";
 
 const MainItemCol1 = ({ data, number }) => {
-    if(data.totalNumber){
+    if (data.totalNumber) {
         var leng = data.totalNumber.length;
     }
-    
+
     return (
         <>
             {data.square && <div className="square" style={{ backgroundColor: data.square }}></div>}
@@ -32,11 +32,11 @@ const MainItemCol1 = ({ data, number }) => {
             <div className="totalNumber">
                 {
                     data.totalNumber &&
-                    data.totalNumber[leng-1] == "%" ? 
-                    <h3><NumberRun number={data.totalNumber.slice(0, leng-1)} />%</h3>
-                    : data.totalNumber && data.totalNumber[0] == "+" ?
-                    <h3>+<NumberRun number={data.totalNumber.slice(1)} /></h3>
-                    : null
+                        data.totalNumber[leng - 1] == "%" ?
+                        <h3><NumberRun number={data.totalNumber.slice(0, leng - 1)} />%</h3>
+                        : data.totalNumber && data.totalNumber[0] == "+" ?
+                            <h3>+<NumberRun number={data.totalNumber.slice(1)} /></h3>
+                            : null
                 }
             </div>
             <div className="content-title">

@@ -260,6 +260,14 @@
         color: #fff;
     }
 
+    .show .header-wapper .nav-btn i {
+        color: #7d7d7d;
+    }
+
+    .header .header-wapper .nav-btn i {
+        color: #fff !important;
+    }
+
     .header-main:hover .header-wapper .nav-btn i {
         color: #5A7184;
     }

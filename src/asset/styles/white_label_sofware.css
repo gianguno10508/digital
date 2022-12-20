@@ -66,58 +66,92 @@
 /* ______section-banner-white-lable END____ */
 
 /* ______section-introduce______ */
-.section-white-lable-page .section-introduce {
-    background: #292A39;
-    text-align: center;
-    padding: 0px 0 59px 0;
-    margin-top: -1px;
-    position: relative;
-    z-index: 2;
+.section-introduce-inner {
+    background-color: #292A39;
+    padding: 0px 0px 59px;
 }
 
-.section-white-lable-page .questions-section .container {
-    max-width: 757px;
+/* introduce section */
+.section-introduce-inner .questions-section .container {
+    max-width: 757px !important;
+    padding: 0 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-.section-white-lable-page .questions-section .question:first-child {
+.section-introduce-inner.questions-section {
+    /* margin: 400px 0; */
+}
+
+.section-introduce-inner .question {
+    padding-top: 215px;
+}
+
+.section-introduce-inner .question:first-child {
     padding-top: 182px;
 }
 
-.section-white-lable-page .questions-section .question:last-child {
+.section-introduce-inner .question:last-child {
+    padding-top: 215px;
     padding-bottom: 262px;
 }
 
-.section-white-lable-page .questions-section .question {
+.section-introduce-inner .question {
     font-weight: 700;
     font-size: 24px;
     line-height: 26px;
     text-align: center;
     text-transform: capitalize;
     color: #FFCD06;
-    padding-top: 215px;
 }
 
-.section-white-lable-page .questions-section .question .item {
+.section-introduce-inner .question .item span {
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    transform: translate3d(0, 100px, 0);
+}
+
+.section-introduce-inner .question.show-content .item span {
+    opacity: 1;
+    transition: all ease-in-out .3s;
+    transform: translateZ(0);
+}
+
+.section-introduce-inner .item {
     position: relative;
 }
 
-.section-white-lable-page .questions-section .question .item::after {
-    height: 150px;
-    transition: all ease-in-out .5s;
+.section-introduce-inner .question .item::after {
+    content: '';
+    position: absolute;
+    height: 0;
     width: 3px;
     background: #fff;
     top: -182px;
     left: 50%;
     transform: translateX(-50%);
+    transition: all ease-in-out .5s;
+}
+
+.section-introduce-inner .question.run-line .item::after {
+    height: 150px;
+    transition: all ease-in-out .5s;
+}
+
+.section-introduce-inner .question .item::after {
     content: '';
     position: absolute;
+    height: 0;
+    width: 3px;
+    background: #fff;
+    top: -182px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all ease-in-out .5s;
 }
 
-.section-white-lable-page .section-introduce-inner .container {
-    max-width: 1557px;
-}
-
-.section-white-lable-page .section-introduce-inner .introduce-inner {
+.section-introduce-inner .introduce-inner {
     border-radius: 12px;
     padding: 60px 25px 23px 25px;
     font-weight: 400;
@@ -127,26 +161,60 @@
     color: #FFCD06;
     position: relative;
     border: 1px solid;
+    position: relative;
+    /* margin-top: 250px; */
 }
 
-.section-white-lable-page .section-introduce-inner .introduce-inner.run-line::before {
+.section-introduce-inner .introduce-inner.run-line::before {
     height: 215px;
     transition: all ease-in-out .5s;
+}
+
+.section-introduce-inner .introduce-inner::before {
+    content: '';
+    position: absolute;
+    height: 0;
     width: 3px;
     background: #fff;
     top: -230px;
     left: 50%;
     transform: translateX(-50%);
-    content: '';
-    position: absolute;
+    transition: all ease-in-out .5s;
 }
 
-.section-white-lable-page .section-introduce-inner .introduce-inner.run-line .circle {
+.section-introduce-inner .introduce-inner.show-content .cicle {
     transform: translate(-50%, 0);
+}
+
+.section-introduce-inner.introduce-inner .cicle {
+    opacity: 0;
+    transform: translate(-50%, 100px);
+}
+
+.section-introduce-inner .introduce-inner.show-content .cicle,
+.section-introduce-inner .introduce-inner.show-content .content {
     opacity: 1;
     transition: all ease-in-out .3s;
+}
+
+.section-introduce-inner .introduce-inner.show-content .content {
+    transform: unset;
+}
+
+.section-introduce-inner .introduce-inner .content {
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    transform: translate3d(0, 100px, 0);
+}
+
+.section-introduce-inner .introduce-inner .content {
+    transform: translateZ(0);
+}
+
+.section-introduce-inner .introduce-inner .cicle {
     position: absolute;
     left: 50%;
+    transform: translateX(-50%);
     top: -32.5px;
     background: #FFCD06;
     width: 65px;
@@ -158,14 +226,53 @@
     margin: 0 auto;
 }
 
-.section-white-lable-page .section-introduce-inner .introduce-inner.run-line .circle::before {
+.section-introduce-inner .introduce-inner .cicle::before {
     content: '';
     display: inline-block;
     left: 50%;
     width: 33px;
     height: 35px;
+    background: url('https://onextdigital.com/wp-content/themes/ahtsolution/assets/images/fluent_star-16-filled.svg');
+    background-size: auto;
     background-size: contain;
-    background-image: url('https://onextdigital.com/wp-content/themes/ahtsolution/assets/images/fluent_star-16-filled.svg');
+}
+
+.section-introduce-inner .introduce-inner .content {
+    max-width: 1207px;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFCD06;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-introduce-inner .introduce-inner .content p {
+    color: #FFCD06;
+}
+
+.section-introduce-inner .introduce-inner tr,
+th,
+td {
+    border: none;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    text-align: inherit;
+}
+
+.section-introduce-inner .introduce-inner .content {
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    transform: translate3d(0, 100px, 0);
+}
+
+.section-introduce-inner .introduce-inner .cicle {
+    transform: translate(-50%, 100px);
 }
 
 /* _____section-introduce END_____ */
@@ -200,6 +307,10 @@
     padding-left: 15px;
     padding-right: 15px;
 
+}
+
+.section-white-lable-page .our_services_and_techs-section .services-list .wapper {
+    justify-content: center;
 }
 
 .our_services_and_techs-section .services-list .services-item .wapper .button-link a.button:hover {
@@ -315,7 +426,7 @@
     line-height: 28px;
     color: #5A7184;
     margin-bottom: 25px;
-    font-family: 'myfont ';
+    font-family: 'myfont';
 }
 
 .benefits-section .benefits-section-inner .section-inner-content .benefits-item ul li::before {
@@ -590,9 +701,18 @@
         padding-left: 60px;
         margin-left: 15px;
     }
+
+    .section-banner-white-lable .section-banner .banner-title h1 {
+        font-size: 56px;
+    }
 }
 
 @media (max-width: 1024px) {
+    .section-banner-white-lable .section-banner .banner-title h1 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+
     .section-white-lable-page .section-introduce-inner .introduce-inner .content {
         max-width: 1207px;
         margin: 0 auto;
@@ -642,10 +762,17 @@
         padding-top: 20px;
     }
 
-    .section-white-lable-page .why_choose_us-section .why_choose_us-title {
+    .section-white-lable-page .why_choose_us-section .why_choose_us-title,
+    .section-white-lable-page .our_services_and_techs-section .section-title {
         font-size: 36px;
         line-height: 45px;
     }
+
+    .benefits-section .benefits-section-inner .section-inner-content h3 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
 }
 
 @media screen and (max-width: 990px) {
@@ -684,6 +811,89 @@
     .section-white-lable-page .why_choose_us-section {
         padding: 50px 0px 20px;
     }
+
+    .our_services_and_techs-section .services-list .services-item .wapper .title p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-banner-white-lable .section-banner .banner-title h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .section-banner-white-lable .section-banner .banner-title h6 {
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+    .section-introduce-inner .question,
+    .section-white-lable-page .section-introduce-inner .introduce-inner .content p {
+        font-size: 18px;
+    }
+
+    .section-white-lable-page .our_services_and_techs-section .section-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .our_services_and_techs-section .tech-list .tech-item .box-icon img {
+        max-height: 50px;
+        object-fit: cover;
+    }
+
+    .benefits-section .benefits-section-inner .section-inner-content h3 {
+        font-size: 22px;
+        line-height: 28px;
+
+    }
+
+    .benefits-section .benefits-section-inner .section-inner-content .benefits-item ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .benefits-section .benefits-section-inner .section-inner-content .benefits-item ul li::before {
+        width: 34px;
+        height: 34px;
+        background-size: contain;
+    }
+
+    .section-white-lable-page .why_choose_us-section .why_choose_us-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .why_choose_us-section .reasons-list .reasons-items .title span,
+    .why_choose_us-section .reasons-list .reasons-items .number p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .why_choose_us-section .reasons-list .reasons-items .description p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .why_choose_us-section .reasons-list .reasons-items div:nth-child(n+1) {
+        margin-bottom: 15px;
+    }
+
+    .bottom_panel_banner-section .wapper .bottom_panel_banner-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .bottom_panel_banner-section .wapper .bottom_panel_banner-description {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .bottom_panel_banner-section .wapper .button-more a {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -704,4 +914,58 @@
         margin: 0px;
     }
 
+    .our_services_and_techs-section .tech-list .tech-item .box-icon img {
+        max-height: 38px;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+
+    .section-banner-white-lable .section-banner .banner-title h1,
+    .section-white-lable-page .our_services_and_techs-section .section-title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .section-introduce-inner .question,
+    .section-white-lable-page .section-introduce-inner .introduce-inner .content p,
+    .bottom_panel_banner-section .wapper .bottom_panel_banner-description {
+        font-size: 14px;
+    }
+
+    .section-introduce-inner .introduce-inner::before,
+    .section-introduce-inner .question .item::after {
+        width: 1.5px;
+    }
+
+    .our_services_and_techs-section .services-list .services-item .wapper .title p {
+        font-size: 18px;
+    }
+
+    .benefits-section .benefits-section-inner .section-inner-content h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .section-white-lable-page .why_choose_us-section .why_choose_us-title {
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+    }
+
+    .bottom_panel_banner-section .wapper .bottom_panel_banner-title {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .bottom_panel_banner-section .wapper .button-more a {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .bottom_panel_banner-section .wapper .button-more a {
+        height: 40px;
+    }
 }

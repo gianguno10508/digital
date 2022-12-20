@@ -7,8 +7,14 @@ const Background1 = ({ data }) => {
         <div className="section-banner">
             <div className="banner-title">
                 <div className="container">
-                    <Markup content={data.title} />
-                    <Markup content={data.content || data.description} />
+                    <div className="title">
+                        <Markup content={data.title} />
+                    </div>
+
+                    <div className="content">
+                        <Markup content={data.content || data.description} />
+                    </div>
+
 
                 </div>
             </div>
