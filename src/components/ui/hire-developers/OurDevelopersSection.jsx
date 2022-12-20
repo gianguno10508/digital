@@ -1,12 +1,12 @@
-import DataOurDevelopersSection from "../../../asset/fakedata/hiredevelopers/dataOurDevelopersSection";
+// import DataOurDevelopersSection from "../../../asset/fakedata/hiredevelopers/dataOurDevelopersSection";
 import LeftRightCol from "../../common/LeftRightCol";
 
-const OurDevelopersSection = () =>{
-    return(
+const OurDevelopersSection = ({ ourDeveloper }) => {
+    return (
         <div className="section-our-developers">
             <div className="container">
-                {DataOurDevelopersSection.map((item, index)=>(
-                    <LeftRightCol data={item} />
+                {ourDeveloper.map((item, index) => (
+                    <LeftRightCol key={index} data={item} />
                 ))}
             </div>
         </div>

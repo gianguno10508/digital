@@ -5,7 +5,7 @@ import "../asset/styles/white_label_sofware.css";
 import Benefits from "../components/ui/white-label-software-service/Benefist";
 // import benefits from "../asset/fakedata/whitelabelsSoftware/benefits";
 import TimeLine from "../components/ui/white-label-software-service/TimeLine";
-import timeLine from "../asset/fakedata/whitelabelsSoftware/timeLine";
+// import timeLine from "../asset/fakedata/whitelabelsSoftware/timeLine";
 import OurServiceWhitePage from "../components/ui/white-label-software-service/OurService";
 import WhyChooseWhite from "../components/ui/white-label-software-service/WhyChooseWhite";
 import BottomPanelBannerWhite from "../components/ui/white-label-software-service/BottomPanelBannerWhite";
@@ -17,13 +17,18 @@ function WhiteLabelSoftware() {
   const [ourServiceWhite, setOurServiceWhite] = useState([]);
   const [digital, setDigital] = useState([]);
   const [whyChooseUs, setWhyChooseUs] = useState([]);
-  // console.log(whyChooseUs);
+  const [timeLine, setTimeLine] = useState([]);
+  // console.log(timeLine);
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   useEffect(() => {
     try {
       getContentWhiteLabelSoftware().then(function (res) {
         // console.log(res);
         setOurServiceWhite(res.page.whiteLabelSoftwareService.ourServices)
         setWhyChooseUs(res.page.whiteLabelSoftwareService.whyChooseUs)
+        setTimeLine(res.page.whiteLabelSoftwareService.timeLine)
         const banner = {
           title: res.page.title,
           content: res.page.content,
@@ -53,33 +58,11 @@ function WhiteLabelSoftware() {
 
         </Fade>
       </div>
-
-      <div className="section-introduce">
-        <TimeLine data={timeLine} />
-        <div className="section-introduce-inner">
-          <div className="container">
-            <div className="introduce-inner run-line show-content">
-              <div className="circle"></div>
-              <div className="content">
-                <p>
-                  <strong>ONextDigital</strong> will help your business solve
-                  all challenges by offering comprehensive outsourcing IT
-                  service with seamless incorporation of cutting-edge technology
-                  and skilled resources. Possessing 12 years of experience in
-                  offering first-rate IT white label software service to a wide
-                  range of clients across the globe, we have helped many
-                  agencies reduce business expenses, expand portfolios, and
-                  build company reputation while enjoying complete ownership
-                  safeguarded by strict NDAs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {
+        timeLine && <TimeLine data={timeLine} />
+      }
 
       <OurServiceWhitePage ourServiceWhite={ourServiceWhite} />
-
       <div className="benefits-section">
         <div className="container">
           <div className="benefits-section-inner">

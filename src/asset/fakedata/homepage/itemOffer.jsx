@@ -10,7 +10,7 @@ const itemOffer = [
             square: null,
             title: 'Web development',
             description: 'We specialize in designing and developing innovative websites that optimize your brand message and differentiate your brand from your competitors. Our web development team can deliver comprehensive and scalable web solutions that meet your business needs, whether a CMS, eCommerce or web application.',
-            url: 'https://onextdigital.com/web-development/'
+            url: 'mobile-app-development'
         }
 
     },

@@ -7,7 +7,7 @@ const SessionAbout = ({ data }) => {
       <div className="sub-heading">
         <span>
           <ScrollEffect
-            children={<div className="line-split">{data.sub_heading}</div>}
+            children={<div className="line-split">{data.subHeading}</div>}
           />
         </span>
       </div>
@@ -15,10 +15,10 @@ const SessionAbout = ({ data }) => {
       <div className="description">
         <ScrollEffect children={<p>{data.description}</p>} />
       </div>
-      {data.sub_content_second && (
+      {data.subContentSecond && (
         <ScrollEffect
           children={
-            <p className="sub-content-second">{data.sub_content_second}</p>
+            <p className="sub-content-second">{data.subContentSecond}</p>
           }
         />
       )}

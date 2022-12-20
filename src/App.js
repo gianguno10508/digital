@@ -10,6 +10,7 @@ import Contact from './page/Contact';
 import Detail from './page/Detail';
 import HireDevelopers from './page/HireDevelopers';
 import Homepage from './page/Homepage';
+import ListContentCategory from './page/ListContentCategory';
 import MobileAppdevelopment from './page/MobileAppdevelopment';
 import OurSolution from './page/OurSolution';
 import UxUiDesignService from './page/UxUiDesignService';
@@ -18,9 +19,8 @@ import WhiteLabelSoftware from './page/WhiteLabelSoftware';
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      <OurSolution />
-      {/* <Routes>
+      <Header />
+      <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/web-development' element={<WebDevelopment />} />
         <Route path='/white-label-software-service' element={<WhiteLabelSoftware />} />
@@ -31,9 +31,10 @@ function App() {
         <Route path='/case-studies' element={<CaseStudies />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/detail' element={<Detail />} />
-      </Routes> */}
-      {/* <Footer /> */}
+        <Route path='/:title' element={<Detail />} />
+        <Route path='/category/:category' element={<ListContentCategory />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
