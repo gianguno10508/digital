@@ -1,6 +1,6 @@
 import { Markup } from "interweave";
 
-const LeftDetail = ({ data, dataLastestNew }) => {
+const LeftDetail = ({ data, dataLastestNew, filteredArray }) => {
     // console.log(dataLastestNew);
     return (
         <div className="post-content col-md-8 col-12">
@@ -15,6 +15,15 @@ const LeftDetail = ({ data, dataLastestNew }) => {
                         <h1 className="entry-title">{dataLastestNew.title}</h1>
                     }
 
+                    {
+                        filteredArray &&
+                        filteredArray.map((p, index) => (
+                            p.list.map((item, i) => (
+                                <h1 className="entry-title">{item.title}</h1>
+                            ))
+                        ))
+                    }
+
                 </div>
 
             </div>
@@ -26,7 +35,14 @@ const LeftDetail = ({ data, dataLastestNew }) => {
                     {
                         dataLastestNew.content && <Markup content={dataLastestNew.content} />
                     }
-
+                    {
+                        filteredArray &&
+                        filteredArray.map((p, index) => (
+                            p.list.map((item, i) => (
+                                <Markup key={i} content={item.content} />
+                            ))
+                        ))
+                    }
                 </div>
             </div>
         </div>

@@ -31,6 +31,7 @@ export const getContentCaseStudies = async () => {
                   sourceUrl
                 }
                 description
+                content
               }
               category
             }

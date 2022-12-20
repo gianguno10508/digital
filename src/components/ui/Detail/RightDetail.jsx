@@ -5,9 +5,6 @@ import LastestNew from './LastestNew';
 
 
 function RightDetail({ listCategory, lastestNews }) {
-    // console.log(listCategory);
-    // const allListCategory = [...new Set(listCategory.map((p) => p.category))]
-    // console.log(allListCategory);
 
     // let count = [];
     // listCategory.forEach(function (element) {
