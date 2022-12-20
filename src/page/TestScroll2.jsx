@@ -57,39 +57,32 @@
 import React, { useState } from "react";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
-import ContentOurSolution from "../../../asset/fakedata/oursolution/contentOursolution";
-import LeftRightCol from "../../common/LeftRightCol";
+import ContentOurSolution from "../asset/fakedata/oursolution/contentOursolution";
+import LeftRightCol from "../components/common/LeftRightCol";
 import $ from "jquery";
 
-const ScrollTime = () => {
+const SlideContainer = () => {
+  const [state] = useState({
+    sections: [
+      { id: 1, imgSrc: "https://placehold.it/1920x1080" },
+      { id: 2, imgSrc: "https://placehold.it/1920x1080" },
+      { id: 3, imgSrc: "https://placehold.it/1920x1080" },
+      { id: 4, imgSrc: "https://placehold.it/1920x1080" },
+    ],
+  });
+
   const tweenPercentage = 100 - 100 / ContentOurSolution.length;
   return (
     <Controller>
       <Scene triggerHook="onLeave" duration={"500%"} pin>
         {(progress) => (
           <div className="pin-container" style={styles.pinContainer}>
-            {/* <div className="platform-inner tab-bar">
-              <div className="s_list selector">
-                <div className="item current">
-                  <span>Magento</span>
-                </div>
-                <div className="item">
-                  <span>Shopify</span>
-                </div>
-                <div className="item">
-                  <span>Wordpress</span>
-                </div>
-                <div className="item">
-                  <span>Headless solution</span>
-                </div>
-              </div>
-            </div> */}
             <Timeline
               totalProgress={progress}
               paused
               target={
                 <div
-                  id="slideContainer"
+                  className="slide-container"
                   style={{
                     ...styles.slideContainer,
                     width: ContentOurSolution.length + "00%",
@@ -97,7 +90,7 @@ const ScrollTime = () => {
                 >
                   {ContentOurSolution.map((section) => (
                     <div
-                      className="solution panel"
+                      className="panel"
                       key={section.id}
                       style={styles.panel}
                     >
@@ -107,7 +100,7 @@ const ScrollTime = () => {
                 </div>
               }
             >
-              <Tween to={{ x: "-" + 75 + "%" }}></Tween>
+              <Tween to={{ x: "-" + 50 + "%" }}></Tween>
             </Timeline>
           </div>
         )}
@@ -143,4 +136,4 @@ const styles = {
   },
 };
 
-export default ScrollTime;
+export default SlideContainer;

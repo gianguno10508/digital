@@ -18,8 +18,9 @@ import WhiteLabelSoftware from './page/WhiteLabelSoftware';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Routes>
+      {/* <Header /> */}
+      <OurSolution />
+      {/* <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/web-development' element={<WebDevelopment />} />
         <Route path='/white-label-software-service' element={<WhiteLabelSoftware />} />
@@ -31,8 +32,8 @@ function App() {
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/detail' element={<Detail />} />
-      </Routes>
-      <Footer />
+      </Routes> */}
+      {/* <Footer /> */}
     </div>
   );
 }
