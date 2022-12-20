@@ -164,52 +164,24 @@
     color: #FFCD06;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
-
-.our-solution-section .content_2 {
-    margin-top: 0px;
-    top: 625px;
-    display: flex;
-    height: 80vh;
-    width: 400%;
-    position: fixed;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: #292a39;
+.our-solution-section .scrollmagic-pin-spacer{
+    background-color: #292A39;
 }
-.our-solution-section .content_2 .solution.panel{
-    height: 100%;
-    width: 25%;
-    float: left;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
+.our-solution-section > .scrollmagic-pin-spacer{
+    padding-bottom: 20px !important;
 }
 
-.our-solution-section .content_2 .solution.panel .solution-inner{
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    min-height: 0;
-    margin-left: 120px;
-    margin-top: 20px;
-    overflow: auto;
-    padding-bottom: 50px;
-}
-.our-solution-section .content_2 .solution.panel:last-child .solution-inner{
-    margin-left: 0px;
-}
-
-.our-solution-section .content_2 .solution.panel .solution-inner p{
+.our-solution-section .scrollmagic-pin-spacer .solution.panel p{
     color: #fff;
     margin-bottom: 29px;
 }
-.our-solution-section .content_2 .solution.panel .solution-inner .services{
+.our-solution-section .scrollmagic-pin-spacer .solution.panel .services{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     margin: 0;
 }
-.our-solution-section .content_2 .solution.panel .solution-inner .services li{
+.our-solution-section .scrollmagic-pin-spacer .solution.panel .services li{
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -223,7 +195,7 @@
     margin-bottom: 25px;
     padding-right: 15px;
 }
-.our-solution-section .content_2 .solution.panel .solution-inner .services li::before{
+.our-solution-section .scrollmagic-pin-spacer .solution.panel .services li::before{
     content: '';
     width: 35px;
     height: 41px;
@@ -234,17 +206,17 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-.our-solution-section .content_2 .solution.panel .title h3{
+.our-solution-section .scrollmagic-pin-spacer .solution.panel .title h3{
     font-size: 40px;
     line-height: 120%;
     color: #FFCD06;
     margin-bottom: 24px
 }
-.our-solution-section .content_2 .solution.panel .description{
+.our-solution-section .scrollmagic-pin-spacer .solution.panel .description{
     padding-right: 19%;
     letter-spacing: -0.2px;
 }
-.our-solution-section .content_2 .solution.panel .service-headding{
+.our-solution-section .scrollmagic-pin-spacer .solution.panel .service-headding{
     color: #5A7184;
     margin-bottom: 41px;
     font-weight: 700;
@@ -253,12 +225,69 @@
     margin: 0 0 24px 0;
     text-transform: capitalize;
 }
-.our-solution-section .content_2 .image-feature .image img{
+.our-solution-section .scrollmagic-pin-spacer .image-feature .image img{
     width: 100%;
 }
-
-
-
+.our-solution-section .platform-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-solution-section .platform-inner .s_list.selector{
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    text-align: center;
+    gap: 39px;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.our-solution-section .platform-inner .s_list .item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: 'myfont';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+}
+.our-solution-section .platform-inner .s_list .item span{
+    border: 1px dashed #FFFFFF;
+    border-radius: 9px;
+    padding: 7px 16px;
+    gap: 8px;
+    transition: all .4s;
+}
+.our-solution-section .platform-inner .s_list .item::before{
+    margin-right: 39px;
+    vertical-align: middle;
+    margin-top: 22px;
+    transition: all .4s;
+    content: "";
+    width: 70px;
+    height: 0px;
+    border-bottom: 1px dashed #fff;
+}
+.our-solution-section .platform-inner .s_list .item::after{
+    height: 0px;
+    border-bottom: 1px dashed #FFCD06;
+    position: absolute;
+    left: 0;
+    top: 22px;
+    transition: all .4s;
+    content: "";
+}
 
 /* introduce-sectionEND___ */
 
@@ -271,83 +300,91 @@
 /* _____END */
 
 
+/*Start banner bottom*/
+.our-solution-section .section-bottom-solution{
+    padding: 5rem 0;
+}
+.our-solution-section .section-bottom-solution .inner-block{
+    background-color: #183B56;
+    border-radius: 16px;
+    padding: 35px 260px 52px;
+    background-size: cover;
+    background-position: center;
+}
+.our-solution-section .section-bottom-solution .inner-block h2{
+    color: #FFCD06;
+    margin-bottom: 21px;
+    text-align: center;
+    font-size: 39px;
+    line-height: 50px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    font-family: "myfont";
+}
+.our-solution-section .section-bottom-solution .inner-block .description{
+    text-align: center;
+    font-family: "myfont";
+    color: #FFF;
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+.our-solution-section .section-bottom-solution .inner-block .button-link{
+    text-align: center;
+}
+.our-solution-section .section-bottom-solution .inner-block .button-link a.button{
+    border: 1px solid;
+    text-decoration: none;
+    transition: all .3s;
+    line-height: 32px;
+    color: #183B56;
+    text-transform: capitalize;
+    height: 55px;
+    padding: 15px 30px;
+    max-width: none;
+    width: auto;
+    background: #FFCD06;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+/*End banner bottom*/
 
-.scrollmagic-pin-space-offset{
-    height: 1154px !important;
-    padding-top: 0.399952px !important;
-    padding-bottom: 5769.6px !important;
-}
-.pos-fixed{
-    position: fixed !important;
-}
 
-.content_1 {
-  height: 100vh;
-  width: 100vw;
+@media (max-width: 1440px){
+    .our-solution-section .scrollmagic-pin-spacer .pin-container{
+        height: auto !important;
+    }
+    .our-solution-section .scrollmagic-pin-spacer .solution.panel .title h3{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .our-solution-section .scrollmagic-pin-spacer .solution.panel p{
+        margin-bottom: 20px;
+    }
 }
-
-.content_1 {
-  background-color: black;
-  color: white;
+@media (max-width: 1024px){
+    .our-solution-section .introduce-section .introduce-inner .content p{
+        font-size: 18px;
+    }
 }
-
-.content_1 h1 {
-  font-size: 200px;
-  text-align: center;
-}
-
-.content_3 {
-  font-size: 20px;
-}
-
-.scrollmagic-pin-space{
-    inset: auto;
-    margin: 0px;
-    display: block;
-    position: relative;
-    box-sizing: content-box;
-    width: 100%;
-    min-height: 1154px;
-    height: auto;
-    padding-top: 0px;
-    padding-bottom: 5770px;
-}
-.scrollmagic-pin-space #pinContainer{
-    position: relative;
-    margin: auto;
-    inset: 0px auto auto 0px;
-    box-sizing: border-box;
-    padding-top: 0;
-    width: 100% !important;
-    height: 100vh;
-    overflow: hidden;
-    -webkit-perspective: 1000;
-}
-.scrollmagic-pin-space #pinContainer #slideContainer{
-    width: 400%;
-    height: 100%;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-}
-.scrollmagic-pin-space #pinContainer #slideContainer .panel{
-    height: 100%;
-    width: 25%;
-    float: left;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-}
-.scrollmagic-pin-space #pinContainer #slideContainer .panel .solution-inner{
-    min-height: 0;
-    height: calc(100% - 110px);
-    max-height: calc(100% - 110px);
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    position: absolute;
-    margin-top: 20px;
-    overflow: auto;
-    padding-bottom: 50px;
-    margin-right: -20px;
-    padding-right: 20px;
+@media (max-width: 768px){
+    .our-solution-section .banner-our-solution .section-banner .banner-title span h1{
+        margin-bottom: 22px;
+        text-align: left;
+        max-width: 500px;
+        margin-left: 0;
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .our-solution-section .introduce-section .introduce-inner{
+        padding: 54px 29px 45px 29px;
+    }
+    .our-solution-section .introduce-section .introduce-inner .content p{
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
