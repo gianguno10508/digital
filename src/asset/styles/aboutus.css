@@ -136,6 +136,11 @@
     text-align: center;
     text-transform: capitalize;
     font-weight: 700;
+
+}
+
+.facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3 span {
+    color: #183B56 !important;
 }
 
 .facts_figures-section .facts_figures-content .facts_figures-item .description p {
@@ -180,6 +185,12 @@
     text-transform: capitalize;
     color: #183B56;
     margin: 0 0 24px 0;
+}
+
+.about-us-section .our_vision-section .item-inner .content-right .description p {
+    color: #183B56;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* _____our_vision-sectionEND_____ */
@@ -460,14 +471,16 @@
     }
 
     .facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3,
+    .facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3 span,
     .about-us-section .our_technological_expertise-section .section-banner h2,
     .about-us-section .our_vision-section .item-inner .content-right .title h2,
     .facts_figures-section .facts_figures-content .facts_figures-title h2 {
-        font-size: 35px;
+        font-size: 35px !important;
     }
 
     .about-us-section .about-us-banner-top .section-banner .banner-title p {
         font-size: 14px;
+        line-height: 20px;
     }
 
     .about-us-section .facts_figures-section {
@@ -494,7 +507,7 @@
     }
 
     .why-choose-us-section .why-choose-title h2 {
-        font-size: 35px;
+        font-size: 24px;
     }
 
     .why-choose-us-section .why-choose-us-content .content-item,

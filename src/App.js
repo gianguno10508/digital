@@ -10,6 +10,7 @@ import Contact from './page/Contact';
 import Detail from './page/Detail';
 import HireDevelopers from './page/HireDevelopers';
 import Homepage from './page/Homepage';
+import ListContentCategory from './page/ListContentCategory';
 import MobileAppdevelopment from './page/MobileAppdevelopment';
 import OurSolution from './page/OurSolution';
 import UxUiDesignService from './page/UxUiDesignService';
@@ -30,7 +31,8 @@ function App() {
         <Route path='/case-studies' element={<CaseStudies />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/detail' element={<Detail />} />
+        <Route path='/:title' element={<Detail />} />
+        <Route path='/category/:category' element={<ListContentCategory />} />
       </Routes>
       <Footer />
     </div>

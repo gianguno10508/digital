@@ -3,7 +3,7 @@ import ScrollEffect from "./ScrollEffect";
 
 //Img, title, description, button, tag title
 const BackgroundItem = ({ data, onEffectTitle }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="section-banner">
       <div className="banner-title">

@@ -117,7 +117,7 @@ const itemMadp = [
         title: 'Deployment'
     }, {
         id: 7,
-        step: '7',
+        step: '8',
         img: 'https://onextdigital.com/wp-content/uploads/2022/07/fluent_lightbulb-circle-20-regular-7.svg',
         title: 'Training & Support'
     },

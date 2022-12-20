@@ -1,29 +1,34 @@
 /*Session Banner*/
-.web-develop .section-banner{
+.web-develop .section-banner {
     position: relative;
 }
-.web-develop .section-banner .top-banner{
+
+.web-develop .section-banner .top-banner {
     opacity: 1;
     transform: translateZ(0);
 }
-.web-develop .section-banner .top-banner .image{
+
+.web-develop .section-banner .top-banner .image {
     z-index: 0;
     height: 100vh;
     overflow: hidden;
 }
-.web-develop .section-banner .top-banner .image picture{
+
+.web-develop .section-banner .top-banner .image picture {
     height: 100%;
     object-fit: cover;
     width: 100%;
     min-height: 460px;
 }
-.web-develop .section-banner .top-banner .image picture img{
+
+.web-develop .section-banner .top-banner .image picture img {
     height: 100%;
     object-fit: cover;
     width: 100%;
     min-height: 460px;
 }
-.web-develop .section-banner .banner-title{
+
+.web-develop .section-banner .banner-title {
     position: absolute;
     top: 50%;
     left: 0;
@@ -33,13 +38,15 @@
     z-index: 1;
     padding: 0 25px;
 }
-.web-develop .section-banner .banner-title .title{
+
+.web-develop .section-banner .banner-title .title {
     margin-bottom: 22px;
     text-align: left;
     max-width: 750px;
     margin-left: 0;
 }
-.web-develop .section-banner .banner-title .title span .line-split{
+
+.web-develop .section-banner .banner-title .title span .line-split {
     font-weight: 700;
     font-size: 46px;
     line-height: 60px;
@@ -47,7 +54,8 @@
     color: #FFCD06;
     font-family: 'myfont';
 }
-.web-develop .section-banner .banner-title .subtitle p{
+
+.web-develop .section-banner .banner-title .subtitle p {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -57,17 +65,20 @@
     text-transform: inherit;
     color: #fff;
 }
-.web-develop .section-banner .banner-title .description a{
+
+.web-develop .section-banner .banner-title .description a {
     color: #007bff;
     text-decoration: none;
     background-color: transparent;
     transition: all 0.2s;
 }
-.web-develop .section-banner .banner-title .description a:hover{
+
+.web-develop .section-banner .banner-title .description a:hover {
     color: #0056b3;
     text-decoration: underline;
     transition: all 0.2s;
 }
+
 /*End Session Banner*/
 
 
@@ -75,31 +86,37 @@
 
 
 /*Section Service*/
-.web-develop .section-service{
+.web-develop .section-service {
     background: #fff;
     padding-top: 80px;
     padding-bottom: 80px;
     overflow: hidden;
 }
-.web-develop .section-service .image-feature img.banner-image{
+
+.web-develop .section-service .image-feature img.banner-image {
     max-width: 100%;
 }
-.web-develop .section-service .content-right{
+
+.web-develop .section-service .content-right {
     max-width: 100%;
     padding-left: 36px;
     padding-top: 5px;
 }
-.web-develop .section-service .item-inner{
+
+.web-develop .section-service .item-inner {
     align-items: center;
+    padding: 0px 15px;
 }
-.web-develop .section-service .item-inner:nth-child(2) .content-right{
+
+.web-develop .section-service .item-inner:nth-child(2) .content-right {
     flex: 0 0 57%;
     max-width: 57%;
     padding-top: 36px;
     margin-left: 0;
     padding-left: 92.5px;
 }
-.web-develop .section-service .content-right h2{
+
+.web-develop .section-service .content-right h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
@@ -109,18 +126,20 @@
     margin: 0 0 24px 0;
     font-family: 'myfont';
 }
-.web-develop .section-service .content-right .description p{
+
+.web-develop .section-service .content-right .description span {
     max-width: 660px;
     padding-bottom: 6px;
     color: #183B56;
     font-family: 'myfont';
     font-size: 18px;
     line-height: 26px;
-}
-.web-develop .section-service .content-right .description p{ 
     margin-bottom: 28px;
 }
-.web-develop .section-service .content-right h5{
+
+
+
+.web-develop .section-service .content-right h5 {
     color: #5A7184;
     margin: 0 0 15px 0;
     font-weight: 700;
@@ -130,28 +149,32 @@
     text-transform: capitalize;
     font-family: 'myfont';
 }
-.web-develop .section-service .content-right .logos{
+
+.web-develop .section-service .content-right .logos {
     display: flex;
     align-items: center;
 }
-.web-develop .section-service .content-right .logos .image-logo{
+
+.web-develop .section-service .content-right .logos .image-logo {
     box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
     border-radius: 50%;
     width: 25%;
     max-width: 127px;
 }
-.web-develop .section-service .content-right .logos .image-logo:not(:last-child){
+
+.web-develop .section-service .content-right .logos .image-logo:not(:last-child) {
     margin-right: 48px;
 }
 
-.web-develop .section-service .content-right .logos .image-logo .image{
+.web-develop .section-service .content-right .logos .image-logo .image {
     position: relative;
     padding-bottom: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.web-develop .section-service .content-right .logos .image-logo .image img{
+
+.web-develop .section-service .content-right .logos .image-logo .image img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -162,6 +185,7 @@
     display: block;
     height: auto;
 }
+
 /*End Section Service*/
 
 
@@ -170,10 +194,11 @@
 
 /*Why choose us*/
 .web-develop .why-choose-us .sub-title,
-.web-develop .why-choose-us .title{
+.web-develop .why-choose-us .title {
     text-align: center;
 }
-.web-develop .why-choose-us .sub-title{
+
+.web-develop .why-choose-us .sub-title {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -184,7 +209,8 @@
     margin-bottom: 14px;
     font-family: 'myfont';
 }
-.web-develop .why-choose-us .title{
+
+.web-develop .why-choose-us .title {
     font-weight: 700;
     font-size: 46px;
     line-height: 72px;
@@ -192,7 +218,8 @@
     color: #183B56;
     text-align: center;
 }
-.web-develop .why-choose-us .why-choose-us-list{
+
+.web-develop .why-choose-us .why-choose-us-list {
     display: flex;
     margin-top: 50px;
     justify-content: center;
@@ -201,17 +228,20 @@
     margin-right: -15px;
     margin-left: -15px;
 }
-.web-develop .why-choose-us .why-choose-us-list .item{
+
+.web-develop .why-choose-us .why-choose-us-list .item {
     border-right: 1px solid #E0E0E0;
     box-sizing: border-box;
     padding: 22px 76.5px;
     margin-bottom: 16px;
 }
-.web-develop .why-choose-us .why-choose-us-list .item:nth-child(3n), 
-.web-develop .why-choose-us .why-choose-us-list .item:last-child{
+
+.web-develop .why-choose-us .why-choose-us-list .item:nth-child(3n),
+.web-develop .why-choose-us .why-choose-us-list .item:last-child {
     border-right: 0;
 }
-.web-develop .why-choose-us .why-choose-us-list .box-icon{
+
+.web-develop .why-choose-us .why-choose-us-list .box-icon {
     border: 2px solid #FFCD06;
     border-radius: 50%;
     width: 78px;
@@ -223,7 +253,8 @@
     box-sizing: border-box;
     margin-bottom: 26px;
 }
-.web-develop .why-choose-us .why-choose-us-list .box-icon::before{
+
+.web-develop .why-choose-us .why-choose-us-list .box-icon::before {
     content: '';
     border-radius: 50%;
     width: 100%;
@@ -234,7 +265,8 @@
     left: 11px;
     top: 6px;
 }
-.web-develop .why-choose-us .why-choose-us-list .number{
+
+.web-develop .why-choose-us .why-choose-us-list .number {
     font-size: 20px;
     line-height: 120%;
     text-transform: capitalize;
@@ -243,7 +275,8 @@
     display: inline-block;
     font-family: 'myfont';
 }
-.web-develop .why-choose-us .why-choose-us-list .title p{
+
+.web-develop .why-choose-us .why-choose-us-list .title p {
     text-align: left;
     color: #183B56;
     margin: 0 0 24px 0;
@@ -253,9 +286,11 @@
     font-size: 24px;
     line-height: 31px;
 }
-.web-develop .why-choose-us .why-choose-us-list .description{
+
+.web-develop .why-choose-us .why-choose-us-list .description {
     color: #183B56;
 }
+
 /*End why choose*/
 
 
@@ -263,14 +298,15 @@
 
 
 /*Session bottom*/
-.web-develop .section-bottom .content{
+.web-develop .section-bottom .content {
     background: #5A7184;
     border-radius: 12px;
     position: relative;
     display: flex;
     align-items: center;
 }
-.web-develop .section-bottom .content .content-left{
+
+.web-develop .section-bottom .content .content-left {
     position: absolute;
     top: 49%;
     transform: translateY(-50%);
@@ -281,7 +317,8 @@
     padding-top: 40px;
     padding-bottom: 50px;
 }
-.web-develop .section-bottom .content .content-left h2{
+
+.web-develop .section-bottom .content .content-left h2 {
     margin-bottom: 19px;
     color: #FFCD06;
     width: 100%;
@@ -293,7 +330,8 @@
     margin: 0 0 24px 0;
     font-family: 'myfont';
 }
-.web-develop .section-bottom .content .content-left .description{
+
+.web-develop .section-bottom .content .content-left .description {
     color: #fff;
     width: 100%;
     margin-bottom: 37px;
@@ -302,7 +340,8 @@
     line-height: 28px;
     font-family: 'myfont';
 }
-.web-develop .section-bottom .content .content-left .button-link .button{
+
+.web-develop .section-bottom .content .content-left .button-link .button {
     max-width: none;
     width: auto;
     background: #FFCD06;
@@ -320,7 +359,8 @@
     font-family: 'myfont';
     transition: opacity 0.15s linear;
 }
-.web-develop .section-bottom .content .image-right{
+
+.web-develop .section-bottom .content .image-right {
     flex: 0 0 38%;
     max-width: 553px;
     position: relative;
@@ -328,11 +368,13 @@
     height: 100%;
     padding: 0;
 }
-.web-develop .section-bottom .content .image-right .image{
+
+.web-develop .section-bottom .content .image-right .image {
     position: relative;
     min-height: 330px;
 }
-.web-develop .section-bottom .content .image-right .image img{
+
+.web-develop .section-bottom .content .image-right .image img {
     max-width: 100%;
     position: absolute;
     top: 0;
@@ -342,108 +384,131 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
 .web-develop .section-bottom {
     padding-bottom: 80px;
 }
+
 /*End Session bottom*/
 
 
-@media(max-width: 1024px){
-    .web-develop .section-banner .banner-title{
+@media(max-width: 1024px) {
+    .web-develop .section-banner .banner-title {
         padding: 0;
     }
-    .web-develop .section-banner .banner-title .title{
+
+    .web-develop .section-banner .banner-title .title {
         max-width: 620px;
     }
-    .web-develop .section-banner .banner-title .title h1{
+
+    .web-develop .section-banner .banner-title .title span .line-split {
         font-size: 40px;
         line-height: 46px;
     }
-    .web-develop .section-service .content-right h2{
+
+    .web-develop .section-service .content-right h2 {
         font-size: 36px;
         line-height: 45px;
     }
-    .web-develop .section-service .content-right .logos .image-logo:not(:last-child){
+
+    .web-develop .section-service .content-right .logos .image-logo:not(:last-child) {
         margin-right: 25px;
     }
-    .web-develop .section-service .content-right h5{
+
+    .web-develop .section-service .content-right h5 {
         font-size: 20px;
         line-height: 24px;
     }
-    .web-develop .section-service .item-inner:nth-child(2) .content-right{
+
+    .web-develop .section-service .item-inner:nth-child(2) .content-right {
         padding-left: 15px;
         padding-right: 30px;
     }
 
 
 
-    .web-develop .why-choose-us .title{
+    .web-develop .why-choose-us .title {
         font-size: 42px;
         line-height: 56px;
     }
-    .web-develop .why-choose-us .why-choose-us-list .item{
+
+    .web-develop .why-choose-us .why-choose-us-list .item {
         padding: 20px 30px;
     }
 
 
-    .web-develop .section-bottom .content .content-left h2{
+    .web-develop .section-bottom .content .content-left h2 {
         font-size: 24px;
         line-height: 28px;
     }
+
+    .web-develop .section-banner .banner-title .subtitle {
+        margin-left: 0px
+    }
 }
 
-@media(max-width: 767px){
-    .web-develop .section-banner .banner-title .title{
+@media(max-width: 767px) {
+    .web-develop .section-banner .banner-title .title {
         max-width: 420px;
     }
-    .web-develop .section-banner .banner-title .title h1{
+
+    .web-develop .section-banner .banner-title .title span .line-split {
         font-size: 30px;
         line-height: 38px;
     }
-    .web-develop .section-banner .banner-title .description p{
+
+    .web-develop .section-banner .banner-title .description p {
         font-size: 14px;
         line-height: 20px;
     }
 
-    .web-develop .section-service{
+    .web-develop .section-service {
         padding-top: 64px;
     }
-    .web-develop .section-service .image-feature{
+
+    .web-develop .section-service .image-feature {
         order: 2 !important;
     }
-    .web-develop .section-service .content-right h2{
+
+    .web-develop .section-service .content-right h2 {
         font-size: 16px;
         line-height: 25px;
         margin-bottom: 7px;
     }
-    .web-develop .section-service .content-right{
+
+    .web-develop .section-service .content-right {
         padding-left: 0;
     }
-    .web-develop .section-service .content-right .description p{
+
+    .web-develop .section-service .content-right .description span {
         font-size: 14px;
         line-height: 20px;
     }
-    .web-develop .section-service .content-right h5{
+
+    .web-develop .section-service .content-right h5 {
         font-size: 18px;
         line-height: 25px;
     }
 
-    .web-develop .section-service .item-inner:nth-child(2) .content-right{
+    .web-develop .section-service .item-inner:nth-child(2) .content-right {
         max-width: 100%;
         flex: 100%;
     }
-    .web-develop .why-choose-us .why-choose-us-list{
+
+    .web-develop .why-choose-us .why-choose-us-list {
         margin-top: 33px;
         margin-bottom: 20px;
     }
-    .web-develop .why-choose-us .why-choose-us-list .item{
+
+    .web-develop .why-choose-us .why-choose-us-list .item {
         border-bottom: 1px solid #E0E0E0;
         padding: 20px 0px 40px 0;
         border-right: 0;
         margin-bottom: 33px;
         text-align: center;
     }
-    .web-develop .why-choose-us .why-choose-us-list .box-icon{
+
+    .web-develop .why-choose-us .why-choose-us-list .box-icon {
         padding: 9px;
         margin-bottom: 17px;
         margin-left: auto;
@@ -451,70 +516,84 @@
         width: 60px;
         height: 60px;
     }
-    .web-develop .why-choose-us .why-choose-us-list .title p{
+
+    .web-develop .why-choose-us .why-choose-us-list .title p {
         text-align: center;
         margin-bottom: 7px;
         font-size: 16px;
         line-height: 25px;
     }
-    .web-develop .why-choose-us .why-choose-us-list .description p{
+
+    .web-develop .why-choose-us .why-choose-us-list .description p {
         font-size: 14px;
         line-height: 20px;
-    } 
-    .web-develop .section-bottom .content{
+    }
+
+    .web-develop .section-bottom .content {
         background: transparent;
     }
-    .web-develop .section-bottom .content .content-left{
+
+    .web-develop .section-bottom .content .content-left {
         top: 50%;
         width: 100%;
         text-align: center;
     }
-    .web-develop .section-bottom .content .image-right{
+
+    .web-develop .section-bottom .content .image-right {
         max-width: 100%;
         flex: 100%;
     }
-    .web-develop .section-bottom .content .image-right .image img{
+
+    .web-develop .section-bottom .content .image-right .image img {
         width: 100%;
         position: relative;
     }
-    .web-develop .section-bottom .content .content-left h2{
+
+    .web-develop .section-bottom .content .content-left h2 {
         font-size: 24px;
         line-height: 26.4px;
         margin-bottom: 10px;
     }
-    .web-develop .section-bottom .content .content-left .description p{
+
+    .web-develop .section-bottom .content .content-left .description p {
         font-size: 14px;
         line-height: 19.4px;
         margin-bottom: 25px;
     }
-    .web-develop .section-bottom .content .content-left .button-link .button{
+
+    .web-develop .section-bottom .content .content-left .button-link .button {
         padding: 16px 60px;
     }
 }
-@media(max-width: 490px){
-    .web-develop .section-banner .banner-title .title{
+
+@media(max-width: 490px) {
+    .web-develop .section-banner .banner-title .title {
         max-width: 370px;
     }
-    .web-develop .section-banner .banner-title .title h1{
+
+    .web-develop .section-banner .banner-title .title span .line-split {
         font-size: 24px;
         line-height: 32px;
     }
-    .web-develop .section-service .content-right h5{
+
+    .web-develop .section-service .content-right h5 {
         font-size: 18px;
         line-height: 25px;
     }
 
-    .web-develop .why-choose-us .sub-title{
+    .web-develop .why-choose-us .sub-title {
         font-size: 14px;
         line-height: 120%;
         margin-bottom: 7px;
     }
-    .web-develop .why-choose-us .sub-title{
+
+    .web-develop .why-choose-us .sub-title {
         font-size: 14px;
         line-height: 120%;
         margin-bottom: 7px;
     }
-    .web-develop .why-choose-us .title{
+
+    .web-develop .why-choose-us .title {
         font-size: 22px;
         line-height: 30px;
     }
