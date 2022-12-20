@@ -100,7 +100,7 @@ const SlideContainer = () => {
                 </div>
               }
             >
-              <Tween to={{ x: "-" + 50 + "%" }}></Tween>
+              <Tween to={{ x: "-" + 500000 + "%" }}></Tween>
             </Timeline>
           </div>
         )}
