@@ -111,9 +111,11 @@
     width: 50%;
 }
 
-.header-wapper .header-navigation-wrapper .active a::before {
+.header-wapper .header-navigation-wrapper .active::before {
     width: 50%;
 }
+
+
 
 .header-wapper .header-navigation-wrapper li a::before {
     content: "";

@@ -57,12 +57,12 @@
 import React, { useState } from "react";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
-import ContentOurSolution from "../../../asset/fakedata/oursolution/contentOursolution";
+// import ContentOurSolution from "../../../asset/fakedata/oursolution/contentOursolution";
 import LeftRightCol from "../../common/LeftRightCol";
 import $ from "jquery";
 
-const ScrollTime = () => {
-  const tweenPercentage = 100 - 100 / ContentOurSolution.length;
+const ScrollTime = ({ scrollTime }) => {
+  const tweenPercentage = 100 - 100 / scrollTime.length;
   return (
     <Controller>
       <Scene triggerHook="onLeave" duration={"500%"} pin>
@@ -92,10 +92,10 @@ const ScrollTime = () => {
                   id="slideContainer"
                   style={{
                     ...styles.slideContainer,
-                    width: ContentOurSolution.length + "00%",
+                    width: scrollTime.length + "00%",
                   }}
                 >
-                  {ContentOurSolution.map((section) => (
+                  {scrollTime.map((section) => (
                     <div
                       className="solution panel"
                       key={section.id}

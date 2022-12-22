@@ -5,6 +5,7 @@ import "../asset/styles/detail.css";
 import Loading from "../components/common/Loading";
 import LeftDetail from "../components/ui/Detail/LeftDetail";
 import RightDetail from "../components/ui/Detail/RightDetail";
+import { getContentBlog } from "../gql/blog";
 import { getContentCaseStudies } from "../gql/case-studies";
 
 function Detail() {
@@ -12,6 +13,7 @@ function Detail() {
   const [caseList, setCaseList] = useState([]);
   const [listCategory, setListcategory] = useState([]);
   const [lastestNews, setLastestNews] = useState([]);
+  const [listItems, setlistItems] = useState([]);
   // console.log(listCategory);
   useEffect(() => {
     try {
@@ -28,11 +30,28 @@ function Detail() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    try {
+      getContentBlog().then(function (res) {
+        // console.log(res);
+        setlistItems(res.page.blog.listBlog)
+
+      })
+    } catch (error) {
+      console.log(error);
+    }
+  }, [])
   const thisContent =
     caseList.find((product) => String(product.title) === title) || {};
   const thisLastestNew =
     lastestNews.find((product) => String(product.title) === title) || {};
   // console.log(thisLastestNew);
+  const thisListItems = listItems.find((product) => String(product.title) === title) || {};
+  // console.log(thisListItems);
+  var filteredArray = listCategory.map((element) => {
+    return { ...element, list: element.list.filter((subElement) => subElement.title === title) }
+  })
   return (
     <Loading
       arrayCheck={lastestNews}
@@ -44,6 +63,8 @@ function Detail() {
                 <LeftDetail
                   data={thisContent}
                   dataLastestNew={thisLastestNew}
+                  filteredArray={filteredArray}
+                  thisListItems={thisListItems}
                 />
               )}
               {listCategory && (
