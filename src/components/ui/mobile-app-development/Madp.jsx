@@ -14,7 +14,6 @@ function Madp({ banner, items }) {
                 <div className='madp-list row'>
                     {
                         items.map((item, index) => (
-
                             <MadpContent data={item} key={index} step={`${index + 1}`} />
                         ))
                     }

@@ -88,7 +88,27 @@ img {
     vertical-align: middle;
     border-style: none;
 }
-
+.loading{
+    margin: 0 auto;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: #fff;
+    height: auto !important;
+    width: auto !important;
+}
+.loading svg{
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    margin: 0 auto;
+    left: 50%;
+    position: relative;
+    top: 50%;
+}
 .row {
     display: flex;
     flex-wrap: wrap;

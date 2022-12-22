@@ -26,7 +26,6 @@ function TopContent({ data }) {
                         data.map((item, index) => (
                             <div className='design-item' key={index}>
                                 <MainItemCol1 data={item} />
-
                             </div>
                         ))
                     }
