@@ -6,6 +6,7 @@ import Footer from './components/common/Footer';
 import Header from './components/common/Header';
 import AboutUs from './page/AboutUs';
 import Blog from './page/Blog';
+import Career from './page/Career';
 import CaseStudies from './page/CaseStudies';
 import Contact from './page/Contact';
 import Detail from './page/Detail';
@@ -35,6 +36,7 @@ function App() {
         <Route path='/:title' element={<Detail />} />
         <Route path='/category/:category' element={<ListContentCategory />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/career' element={<Career />} />
       </Routes>
       <Footer />
     </div>
