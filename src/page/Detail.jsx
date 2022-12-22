@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import '../asset/styles/detail.css';
 import LeftDetail from '../components/ui/Detail/LeftDetail';
 import RightDetail from '../components/ui/Detail/RightDetail';
+import { getContentBlog } from '../gql/blog';
 import { getContentCaseStudies } from '../gql/case-studies';
 
 function Detail() {
@@ -13,8 +14,12 @@ function Detail() {
     const [caseList, setCaseList] = useState([]);
     const [listCategory, setListcategory] = useState([]);
     const [lastestNews, setLastestNews] = useState([]);
-    // console.log(title);
+    const [listItems, setlistItems] = useState([]);
+    // console.log(listItems);
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     useEffect(() => {
         try {
             getContentCaseStudies().then(function (res) {
@@ -28,12 +33,22 @@ function Detail() {
     }, [])
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        try {
+            getContentBlog().then(function (res) {
+                // console.log(res);
+                setlistItems(res.page.blog.listBlog)
+
+            })
+        } catch (error) {
+            console.log(error);
+        }
     }, [])
+
+
     const thisContent = caseList.find((product) => String(product.title) === title) || {};
     const thisLastestNew = lastestNews.find((product) => String(product.title) === title) || {};
-
-
+    const thisListItems = listItems.find((product) => String(product.title) === title) || {};
+    // console.log(thisListItems);
     var filteredArray = listCategory.map((element) => {
         return { ...element, list: element.list.filter((subElement) => subElement.title === title) }
     })
@@ -51,6 +66,7 @@ function Detail() {
                             data={thisContent}
                             dataLastestNew={thisLastestNew}
                             filteredArray={filteredArray}
+                            thisListItems={thisListItems}
                         />
                     }
                     {

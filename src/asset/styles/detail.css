@@ -77,6 +77,28 @@
     text-decoration: underline;
 }
 
+
+.detail-section pre,
+.detail-section fieldset,
+.detail-section input,
+.detail-section textarea,
+.detail-section table,
+.detail-section table *,
+.detail-section hr {
+    border-color: #dcd7ca;
+}
+
+.detail-section th,
+.detail-section td,
+.detail-section pre {
+    border: 0.1rem solid #dcd7ca;
+    line-height: 1.4;
+    margin: 0;
+    overflow: visible;
+    padding: 0.5em;
+}
+
+
 /* ____Righr____ */
 
 .detail-section .sidebar {
@@ -147,6 +169,8 @@
 .detail-section .widget_recent_entries .widget-content ul li {
     margin-bottom: 20px
 }
+
+
 
 /* ____RighrEND____ */
 @media screen and (max-width:768px) {

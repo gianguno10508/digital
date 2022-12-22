@@ -14,6 +14,11 @@ function AboutUs() {
     const [ourVision, setOurVision] = useState([]);
     const [ourTeam, setOurTeam] = useState([]);
     const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     // console.log(items);
     useEffect(() => {
         try {
@@ -39,7 +44,7 @@ function AboutUs() {
         <div className='about-us-section'>
             <div className='about-us-banner-top'>
                 {
-                    bannerAboutus.image && 
+                    bannerAboutus.image &&
                     <Fade bottom>
                         <BackgroundItem data={bannerAboutus} />
                     </Fade>

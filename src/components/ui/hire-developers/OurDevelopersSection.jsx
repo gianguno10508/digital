@@ -2,6 +2,7 @@
 import LeftRightCol from "../../common/LeftRightCol";
 
 const OurDevelopersSection = ({ ourDeveloper }) => {
+    console.log(ourDeveloper);
     return (
         <div className="section-our-developers">
             <div className="container">

@@ -34,7 +34,7 @@ function Header() {
 
 
     $(document).ready(function () {
-        var selector = '.header-navigation-wrapper li';
+        var selector = '.header-navigation-wrapper li a';
 
         $(selector).on('click', function () {
             $(selector).removeClass('active');
@@ -43,6 +43,8 @@ function Header() {
     })
 
     const scrollDirection = useScrollDirection();
+
+
     return (
 
         <div className={`header-main ${scrollDirection === "down" ? "hide" : "show"} ${top}`}>
@@ -55,7 +57,7 @@ function Header() {
 
                 {/* _______NAVIGATION______ */}
                 <ul ref={navRef} className='header-navigation-wrapper'>
-                    <li className='active'><Link to='/' >home</Link></li>
+                    <li className='active'><Link to='/' className='active'>home</Link></li>
                     <li >
                         <Link to='/web-development'>Services</Link>
                         <span><i className="fa-solid fa-chevron-down"></i></span>
@@ -83,6 +85,7 @@ function Header() {
 
             </div>
         </div>
+
 
     );
 }

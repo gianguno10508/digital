@@ -8,6 +8,9 @@ import ContentOurSolution from "../asset/fakedata/oursolution/contentOursolution
 import LeftRightCol from "../components/common/LeftRightCol";
 import ScrollTime from "../components/ui/our-solution/ScrollTime";
 import BannerBottomSolution from "../components/ui/our-solution/BannerBottomSolution";
+import { useEffect } from "react";
+import { getContentOurSolution } from "../gql/our-solution";
+import { useState } from "react";
 function OurSolution() {
   // window.addEventListener("scroll", function () {
   //   var scrolledY = window.scrollY;
@@ -53,11 +56,41 @@ function OurSolution() {
 
   // });
 
+  const [bannerTop, setBannerTop] = useState([]);
+  const [plafrom, setPlafrom] = useState([]);
+  const [introduce, setIntroduce] = useState([]);
+  const [scrollTime, setScrollTime] = useState([]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
+    try {
+      getContentOurSolution().then(function (res) {
+        // console.log(res.page.ourSolution);
+        setPlafrom(res.page.ourSolution.listImage);
+        setIntroduce(res.page.ourSolution.introduce);
+        setScrollTime(res.page.ourSolution.scrollTime)
+        const banner = {
+          content: res.page.content,
+          title: null
+        }
+        setBannerTop(banner)
+      })
+    }
+    catch (error) {
+      console.log(error);
+    }
+  }, [])
   return (
     <div className="our-solution-section">
-      <BannerTop />
-      <Introduce />
-      <ScrollTime />
+      <BannerTop bannerTop={bannerTop} plafrom={plafrom} />
+      <Introduce introduce={introduce} />
+      {
+        scrollTime && <ScrollTime scrollTime={scrollTime} />
+      }
+
       <BannerBottomSolution />
     </div>
   );
