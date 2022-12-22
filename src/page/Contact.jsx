@@ -6,7 +6,6 @@ function Contact() {
     return (
         <div className='contact-section'>
             <BackgroundItem data={bannerContact} />
-
             <div className='contact-section-form'>
                 <div className='container'>
                     <div className='contact-main'>

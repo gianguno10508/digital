@@ -76,7 +76,8 @@
 /* ______BannerTopEND____ */
 
 /* ____facts_figures-list___ */
-.about-us-section .facts_figures-section {
+.about-us-section .facts_figures-section,
+.section-home-page .facts_figures-section {
     padding: 5rem 0;
     display: block;
 }
@@ -91,7 +92,8 @@
     text-align: center;
 }
 
-.facts_figures-section .facts_figures-content {
+.facts_figures-section .facts_figures-content,
+.section-home-page .facts_figures-content {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
@@ -99,7 +101,8 @@
     margin-top: 43px;
 }
 
-.facts_figures-section .facts_figures-content .wapper {
+.facts_figures-section .facts_figures-content .wapper,
+.section-home-page .facts_figures-content .wapper {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -107,7 +110,8 @@
     justify-content: center;
 }
 
-.facts_figures-section .facts_figures-content .facts_figures-item {
+.facts_figures-section .facts_figures-content .facts_figures-item,
+.section-home-page .facts_figures-content .facts_figures-item {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     padding-top: 61px;
@@ -115,22 +119,24 @@
     border-right: 1px solid rgb(224 224 224 / 50%);
 }
 
-.facts_figures-section .facts_figures-content .facts_figures-item:last-child {
+.facts_figures-section .facts_figures-content .facts_figures-item:last-child,
+.section-home-page .facts_figures-content .facts_figures-item:last-child {
     border-color: transparent;
 }
 
-.facts_figures-section .facts_figures-content .facts_figures-item .totalNumber {
+.facts_figures-section .facts_figures-content .facts_figures-item .totalNumber,
+.section-home-page .facts_figures-content .facts_figures-item .totalNumber {
     height: 53px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     place-items: flex-start;
-
     margin-top: 32px;
     margin-bottom: 8px;
 }
 
-.facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3 {
+.facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3,
+.section-home-page .facts_figures-content .facts_figures-item .totalNumber h3{
     font-size: 48px;
     line-height: 53px;
     text-align: center;
@@ -139,11 +145,13 @@
 
 }
 
-.facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3 span {
+.facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3 span,
+.section-home-page .facts_figures-content .facts_figures-item .totalNumber h3 span {
     color: #183B56 !important;
 }
 
-.facts_figures-section .facts_figures-content .facts_figures-item .description p {
+.facts_figures-section .facts_figures-content .facts_figures-item .description p,
+.section-home-page .facts_figures-content .facts_figures-item .description p {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -407,7 +415,8 @@
 }
 
 @media screen and (max-width:769px) {
-    .about-us-section .facts_figures-section {
+    .about-us-section .facts_figures-section,
+    .section-home-page .facts_figures-section {
         padding-bottom: 0px;
     }
 
@@ -415,7 +424,8 @@
         font-size: 35px;
     }
 
-    .facts_figures-section .facts_figures-content .facts_figures-item {
+    .facts_figures-section .facts_figures-content .facts_figures-item,
+    .section-home-page .facts_figures-content .facts_figures-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -472,6 +482,8 @@
 
     .facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3,
     .facts_figures-section .facts_figures-content .facts_figures-item .totalNumber h3 span,
+    .section-home-page .facts_figures-content .facts_figures-item .totalNumber h3,
+    .section-home-page .facts_figures-content .facts_figures-item .totalNumber h3 span,
     .about-us-section .our_technological_expertise-section .section-banner h2,
     .about-us-section .our_vision-section .item-inner .content-right .title h2,
     .facts_figures-section .facts_figures-content .facts_figures-title h2 {
@@ -491,10 +503,18 @@
         margin-bottom: 30px;
     }
 
-    .facts_figures-section .facts_figures-content .facts_figures-item {
+    .facts_figures-section .facts_figures-content .facts_figures-item,
+    .section-home-page .facts_figures-content .facts_figures-item {
         border-right: none;
         flex: 0 0 100%;
         max-width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .facts_figures-section .facts_figures-content .facts_figures-item .totalNumber,
+    .section-home-page .facts_figures-content .facts_figures-item .totalNumber{
+        margin-top: 5px;
+        margin-bottom: 0px;
     }
 
     .facts_figures-section .facts_figures-content .facts_figures-item:nth-child(2) {

@@ -10,7 +10,7 @@ const SessionService = ({data}) =>{
         <div className="section-service">
             <div className="container">
                 {data.map((item, index)=>(
-                    <ScrollEffect children={<LeftRightCol data={item} />} />
+                    <ScrollEffect children={<LeftRightCol key={index} data={item} />} />
                 ))}
                 {/* <Markup content={data.image.sourceUrl} /> */}
                 {/* <Markup content={data} /> */}
