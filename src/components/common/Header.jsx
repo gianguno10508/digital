@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import logoB from '../../asset/img/LOGO_brown.png';
 import logoW from '../../asset/img/LOGO_WHITE.png'
 import '../../asset/styles/header.css';
@@ -44,10 +44,11 @@ function Header() {
 
     const scrollDirection = useScrollDirection();
 
+    const { pathname } = useLocation();
 
     return (
 
-        <div className={`header-main ${scrollDirection === "down" ? "hide" : "show"} ${top}`}>
+        <div className={`header-main ${scrollDirection === "down" ? "hide" : "show"} ${top} ${pathname === '/our-solution' ? 'done' : ''}`} >
             <div className='header-wapper section-inner'>
                 {/* _______LOGO______ */}
                 <div className='header-logo-wapper'>

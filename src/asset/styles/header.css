@@ -6,6 +6,9 @@
     background-color: transparent !important;
 }
 
+.done {
+    background-color: #fff !important;
+}
 
 .header-main {
     position: fixed;
