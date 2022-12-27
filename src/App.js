@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useParams } from 'react-router-dom';
 import './App.css';
 import './asset/styles/common_styles.css';
 import Footer from './components/common/Footer';
@@ -18,7 +18,8 @@ import OurSolution from './page/OurSolution';
 import UxUiDesignService from './page/UxUiDesignService';
 import WebDevelopment from './page/WebDevelopment';
 import WhiteLabelSoftware from './page/WhiteLabelSoftware';
-function App() {
+function App(props) {
+
   return (
     <div className="App">
       <Header />

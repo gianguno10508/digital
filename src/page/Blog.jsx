@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import Background1 from '../components/common/Background1';
 import ListItems from '../components/ui/blog/ListItems';
@@ -7,14 +7,11 @@ import '../asset/styles/blog.css';
 import '../asset/styles/web_development_styles.css';
 import SessionBottom from '../components/ui/web-development/SessionBottom';
 import ScrollEffect from '../components/common/ScrollEffect';
+import Loading from '../components/common/Loading';
 
 function Blog() {
     const [bannerTop, setBannerTop] = useState([]);
     const [listItems, setlistItems] = useState([]);
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
 
     useEffect(() => {
         try {
@@ -47,43 +44,62 @@ function Blog() {
         .map((item, index) => (
             <ListItems item={item} index={index} />
         ))
-    console.log(listItems);
+    // console.log(listItems);
+    useEffect(() => {
+        window.scrollTo(
+            {
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            }
+        )
+    }, [])
+
+
     return (
-        <div className='section-blog-page'>
-            <div className='banner-blog'>
-                <Background1 data={bannerTop} />
-            </div>
-            <div className='container'>
-                <div className='list-blog'>
-                    {displayUsers}
+        <Loading
+            arrayCheck={bannerTop}
+            children={
+                <div className='section-blog-page'>
+                    <div className='banner-blog'>
+                        <Background1 data={bannerTop} />
+                    </div>
+                    <div className='container'>
+                        <div className='list-blog'>
+                            {displayUsers}
+                        </div>
+                    </div>
+                    <div className='pagination-wrapper section-pagination-inner'>
+                        <div className='navigation-pagination'
+                            onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
+                        >
+                            {
+                                listItems.length > usersperPage ? (
+                                    <ReactPaginate
+                                        previousLabel={<i className="fa-solid fa-arrow-left"></i>}
+                                        nextLabel={<i className="fa-solid fa-arrow-right"></i>}
+                                        pageCount={pageCount}
+                                        onPageChange={onPageChange}
+                                        containerClassName={'paginationBttns'}
+                                        previousLinkClassName={'previousBttn'}
+                                        nextLinkClassName={'nextBttn'}
+                                        disabledClassName={'paginationDisabled'}
+                                        activeClassName={'paginationActive'}
+                                    />
+                                ) : null
+                            }
+                        </div>
+
+                    </div>
+                    <div className='web-develop '>
+                        <ScrollEffect children={<SessionBottom />} />
+                    </div>
+
+
                 </div>
-            </div>
-            <div className='pagination-wrapper section-pagination-inner'>
-                <div className='navigation-pagination'>
-                    {
-                        listItems.length > usersperPage ? (
-                            <ReactPaginate
-                                previousLabel={<i className="fa-solid fa-arrow-left"></i>}
-                                nextLabel={<i className="fa-solid fa-arrow-right"></i>}
-                                pageCount={pageCount}
-                                onPageChange={onPageChange}
-                                containerClassName={'paginationBttns'}
-                                previousLinkClassName={'previousBttn'}
-                                nextLinkClassName={'nextBttn'}
-                                disabledClassName={'paginationDisabled'}
-                                activeClassName={'paginationActive'}
-                            />
-                        ) : null
-                    }
-                </div>
+            }
+        />
 
-            </div>
-            <div className='web-develop '>
-                <ScrollEffect children={<SessionBottom />} />
-            </div>
-
-
-        </div>
     );
 }
 

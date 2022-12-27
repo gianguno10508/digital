@@ -14,6 +14,7 @@ function Detail() {
   const [listCategory, setListcategory] = useState([]);
   const [lastestNews, setLastestNews] = useState([]);
   const [listItems, setlistItems] = useState([]);
+  const [items, setItems] = useState([]);
   // console.log(listCategory);
   useEffect(() => {
     try {
@@ -42,8 +43,7 @@ function Detail() {
       console.log(error);
     }
   }, [])
-  const thisContent =
-    caseList.find((product) => String(product.title) === title) || {};
+  const thisContent = caseList.find((product) => String(product.title) === title) || {};
   const thisLastestNew =
     lastestNews.find((product) => String(product.title) === title) || {};
   // console.log(thisLastestNew);

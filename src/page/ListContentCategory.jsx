@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, useParams } from 'react-router-dom';
 import { getContentCaseStudies } from '../gql/case-studies';
 import '../asset/styles/list_category.css';
+import Loading from '../components/common/Loading';
 
 
 function ListContentCategory() {
@@ -31,48 +32,53 @@ function ListContentCategory() {
     // console.log(jsonContent);
 
     return (
-        <div className='list-category'>
-            <div className='header-post'>
-                <div className='header-post-main'>
-                    <h1>
-                        <span className='color-acent'>Category:</span>
-                        <span>&nbsp;{category}</span>
-                    </h1>
-                </div>
+        <Loading
+            arrayCheck={listCategory}
+            children={
+                <div className='list-category'>
+                    <div className='header-post'>
+                        <div className='header-post-main'>
+                            <h1>
+                                <span className='color-acent'>Category:</span>
+                                <span>&nbsp;{category}</span>
+                            </h1>
+                        </div>
 
-            </div>
+                    </div>
 
-            <div className='container'>
-                <div className=' post-listing'>
-                    {jsonContent &&
-                        jsonContent.map((item, index) => (
-                            <div className='post-item' key={index}>
-                                <div className='post-image '>
-                                    <div className='post-image-main'>
-                                        {
-                                            item.image &&
-                                            <Link to={`/${item.title}`}>
-                                                <img src={item.image.sourceUrl} alt='img' />
-                                            </Link>
-                                        }
+                    <div className='container'>
+                        <div className=' post-listing'>
+                            {jsonContent &&
+                                jsonContent.map((item, index) => (
+                                    <div className='post-item' key={index}>
+                                        <div className='post-image '>
+                                            <div className='post-image-main'>
+                                                {
+                                                    item.image &&
+                                                    <Link to={`/${item.title}`}>
+                                                        <img src={item.image.sourceUrl} alt='img' />
+                                                    </Link>
+                                                }
+                                            </div>
+                                        </div>
+
+                                        <div className='post-content'>
+                                            <h4 className='post-title'>
+                                                <Link to={`/${item.title}`}>{item.title}</Link>
+                                            </h4>
+                                            <div className='post-description'>
+                                                <p>{item.description}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                ))}
+                        </div>
+                    </div>
 
-                                <div className='post-content'>
-                                    <h4 className='post-title'>
-                                        <Link to={`/${item.title}`}>{item.title}</Link>
-                                    </h4>
-                                    <div className='post-description'>
-                                        <p>{item.description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
                 </div>
-            </div>
+            }
+        />
 
-
-        </div>
     );
 }
 
