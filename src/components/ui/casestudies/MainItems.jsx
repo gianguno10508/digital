@@ -24,7 +24,7 @@ const MainItems = ({ data }) => {
             }
             <div className="infor">
                 {
-                    data.title && <Link to={`/${data.title}`}><h4 className="title">{data.title}</h4></Link>
+                    data.title && <Link to={`/detail/${data.title}`}><h4 className="title">{data.title}</h4></Link>
                 }
             </div>
         </div>
