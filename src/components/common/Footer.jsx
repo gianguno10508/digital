@@ -5,6 +5,7 @@ import img1 from '../../asset/img/aht-tech-jsc.png';
 import img2 from '../../asset/img/mage-solution.png';
 import img3 from '../../asset/img/onnet-consulting.png';
 import '../../asset/styles/footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -54,21 +55,21 @@ function Footer() {
                         <div className='footer-services'>
                             <h5>Services</h5>
                             <ul>
-                                <li><a href='#'>Web Development</a></li>
-                                <li><a href='#'>Mobile App Development</a></li>
-                                <li><a href='#'>UX/UI Design Service</a></li>
-                                <li><a href='#'>Headless Commerce Development</a></li>
-                                <li><a href='#'>White label software service</a></li>
+                                <li><Link to='/web-development'>Web Development</Link></li>
+                                <li><Link to='/mobile-app-development'>Mobile App Development</Link></li>
+                                <li><Link to='/ux-ui-design-service'>UX/UI Design Service</Link></li>
+                                <li><Link to='/hire-developers'>Headless Commerce Development</Link></li>
+                                <li><Link to='/white-label-software-service'>White label software service</Link></li>
                             </ul>
                         </div>
 
                         <div className='footer-about'>
                             <h5>Aboutt Us</h5>
                             <ul>
-                                <li><a href='#'>About Us</a></li>
-                                <li><a href='#'>Blog</a></li>
-                                <li><a href='#'>Case studies</a></li>
-                                <li><a href='#'>Careers</a></li>
+                                <li><Link to='/about-us'>About Us</Link></li>
+                                <li><Link to='/blog'>Blog</Link></li>
+                                <li><Link to='/case-studies'>Case studies</Link></li>
+                                <li><Link to='/career'>Careers</Link></li>
                             </ul>
                         </div>
 

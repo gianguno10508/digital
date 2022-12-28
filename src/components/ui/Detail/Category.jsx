@@ -1,14 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Category({ allListCategory, listCategory }) {
-    // const [menuItems, setMenuItems] = useState();
-    // console.log(menuItems);
-    // const filterCategory = (category) => {
-
-    //     const newItems = listCategory.filter((item) => item.category === category);
-    //     setMenuItems(newItems);
-    // }
+function Category({ listCategory }) {
     return (
         <div className='widget_categories'>
             <div className='widget-content'>
@@ -20,7 +13,7 @@ function Category({ allListCategory, listCategory }) {
                                 className='cat-item' key={index}
                             >
                                 <Link to={`/category/${item.category}`}> {item.category}</Link>
-                                ({item.list.length})
+                                &nbsp;&nbsp;({item.list.length})
                             </li>
                         ))
                     }
