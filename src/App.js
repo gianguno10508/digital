@@ -34,7 +34,7 @@ function App(props) {
         <Route path='/case-studies' element={<CaseStudies />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/:title' element={<Detail />} />
+        <Route path='/detail/:title' element={<Detail />} />
         <Route path='/category/:category' element={<ListContentCategory />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/career' element={<Career />} />

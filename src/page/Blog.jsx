@@ -34,7 +34,6 @@ function Blog() {
     const usersperPage = 5;
     const pagesVisited = pageNumber * usersperPage;
     const pageCount = Math.ceil(listItems.length / usersperPage);
-    console.log(pageCount);
     const onPageChange = ({ selected }) => {
         setPageNumber(selected)
     }

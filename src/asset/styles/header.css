@@ -8,8 +8,18 @@
 
 .done {
     background-color: #fff !important;
+    color: #000;
 }
-
+.done .LOGO_brown {
+    display: block !important;
+}
+.done .LOGO_WHITE {
+    display: none !important;
+}
+.done .header-wapper .nav-btn i,
+.done .header-wapper .header-navigation-wrapper li a{
+    color: #000 !important;
+}
 .header-main {
     position: fixed;
     width: 100%;
@@ -64,6 +74,7 @@
 .header .header-wapper .header-logo-wapper .LOGO_WHITE {
     display: block;
 }
+
 
 .header:hover .LOGO_brown {
     display: block !important;
@@ -272,7 +283,9 @@
     .header .header-wapper .nav-btn i {
         color: #fff !important;
     }
-
+    .done .header-wapper .nav-btn i {
+        color: #000 !important;
+    }
     .header-main:hover .header-wapper .nav-btn i {
         color: #5A7184;
     }

@@ -45,10 +45,10 @@ function Header() {
     const scrollDirection = useScrollDirection();
 
     const { pathname } = useLocation();
-
+    let urlElements = window.location.href.split('/');
     return (
 
-        <div className={`header-main ${scrollDirection === "down" ? "hide" : "show"} ${top} ${pathname === '/our-solution' ? 'done' : ''}`} >
+        <div className={`header-main ${scrollDirection === "down" ? "hide" : "show"} ${top} ${pathname === '/our-solution' || urlElements[3] === 'detail' || urlElements[3] === 'category' ? 'done' : ''}`} >
             <div className='header-wapper section-inner'>
                 {/* _______LOGO______ */}
                 <div className='header-logo-wapper'>

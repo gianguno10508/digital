@@ -10,7 +10,7 @@ function ListItems({ item, index }) {
                     <div className='blog-wapper'>
                         {
                             item.image &&
-                            <Link to={`/${item.title}`}><img src={item.image.sourceUrl} alt='img' /></Link>
+                            <Link to={`/detail/${item.title}`}><img src={item.image.sourceUrl} alt='img' /></Link>
                         }
                     </div>
 
@@ -18,7 +18,7 @@ function ListItems({ item, index }) {
                 </div>
                 <div className='blog-content'>
                     <h4 className='blog-title'>
-                        <Link to={`/${item.title}`}>{item.title}</Link>
+                        <Link to={`/detail/${item.title}`}>{item.title}</Link>
                     </h4>
                     <div className='blog-description'>
                         <p>{item.description}</p>
